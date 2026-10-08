@@ -35,7 +35,34 @@ switches as their original device types; do not replace them with IOU L2 switche
 - Symbol: `:/symbols/classic/multilayer_switch.svg`
 - Width: 51; height: 48
 
-## Shared settings and conversion conventions
+## Available C3640 appliance
+
+The user also has this appliance installed on the GNS3 VM running on a remote
+server. Its supplied working node uses `compute_id: local`. This availability
+update does not supersede the preferred IOU models or request existing lab changes.
+
+- Node type: `dynamips`
+- Platform: `c3600`; chassis: `3640`
+- Image: `c3640-a3js-mz.124-25d.image`
+- Image MD5: `493c4ef6578801d74d715e7d11596964`
+- Template ID: `b7a0bd2a-0e7d-4ea8-8c93-3b580f78971e`
+- RAM: **192 MB**; NVRAM: **256 KB**; `iomem`: `5`
+- `idlepc`: `0x6050b114`; `idlemax`: `500`; `idlesleep`: `30`
+- `clock_divisor`: `4`; `exec_area`: `64`
+- `mmap`: `true`; `sparsemem`: `true`; `auto_delete_disks`: `false`
+- `disk0`: `0`; `disk1`: `0`; `aux`: `null`; `usage`: empty string
+- `system_id`: `FTX0945W0MY`
+- `port_name_format`: `Ethernet{0}`; `port_segment_size`: `0`
+- Symbol: `:/symbols/classic/router.svg`; width: 66; height: 45
+- The example has `slot0` through `slot3` set to `null`. Select appropriate
+  modules for the lab's required links when using this appliance; do not assume
+  the example has network interfaces installed.
+- Assign distinct node UUIDs, Dynamips IDs, and MAC addresses rather than copying
+  the example's instance identifiers. Allocate console ports automatically.
+- Use Dynamips-specific startup-config packaging when using this appliance;
+  the IOU configuration directory convention below applies only to IOU nodes.
+
+## Shared IOU settings and conversion conventions
 
 - `compute_id`: `local`
 - `console_type`: `telnet`
@@ -49,6 +76,9 @@ switches as their original device types; do not replace them with IOU L2 switche
 - `usage`: empty string
 - Assign unique node UUIDs and IOU application IDs per topology. Allocate console
   ports automatically rather than copying a sample's fixed console port.
+
+## Conversion conventions for all device types
+
 - Adapt interface names, link endpoints, and startup and solution configurations
   together. Preserve the exercise's addressing and intended initial state.
 - Whenever startup configurations change, update the corresponding solution
@@ -63,7 +93,7 @@ switches as their original device types; do not replace them with IOU L2 switche
   when required to preserve the lab's operation after existing switches or routers
   are replaced. Limit these changes to what is necessary for that compatibility;
   otherwise preserve their configurations.
-- Bundle router and switch startup configs under
+- Bundle IOU router and switch startup configs under
   `project-files/iou/<node-id>/startup-config.cfg`; include these with
   `project.gns3` in portable `.gns3project` archives.
 - These defaults govern subsequent lab work. A request to remember settings alone
