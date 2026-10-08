@@ -51,6 +51,18 @@ switches as their original device types; do not replace them with IOU L2 switche
   ports automatically rather than copying a sample's fixed console port.
 - Adapt interface names, link endpoints, and startup and solution configurations
   together. Preserve the exercise's addressing and intended initial state.
+- Whenever startup configurations change, update the corresponding solution
+  configurations (including `final-configs`) accordingly. Verify that each
+  updated solution is functionally equivalent to its original solution after
+  accounting for the device and interface changes. Check the lab-relevant
+  addressing, connectivity, protocol behavior, authentication, and other solution
+  requirements; syntax or interface-name checks alone are insufficient. Report
+  the verification performed and distinguish configuration analysis from live
+  testing, explicitly identifying any behavior that could not be verified.
+- Configuration changes to Frame Relay switches or routers are authorized only
+  when required to preserve the lab's operation after existing switches or routers
+  are replaced. Limit these changes to what is necessary for that compatibility;
+  otherwise preserve their configurations.
 - Bundle router and switch startup configs under
   `project-files/iou/<node-id>/startup-config.cfg`; include these with
   `project.gns3` in portable `.gns3project` archives.
