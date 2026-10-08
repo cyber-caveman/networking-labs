@@ -16,12 +16,30 @@ The local zoo needs your help with their OSPF network. Since a recent animal bre
 
 ## Additional Information:
 
-## IOS:
+## GNS3 2.2.56.1
 
-- IOU L3: `x86_64_crb_linux-adventerprisek9-ms.bin`
-- Image MD5: `4a2fce8de21d1831fbceffd155e41ae7`
-- Uses the supplied IOU template settings: 768 MB RAM, 128 KB NVRAM,
-  one Ethernet adapter (four ports), one serial adapter, and default IOU values enabled.
+Import `OSPF Authentication IOU.gns3project` with **File > Import portable project**.
+The archive includes the startup configs and the original topology illustration.
+For direct opening, keep `OSPF Authentication.gns3` beside `project-files`.
+
+Exercise routers use `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), 768 MB RAM, 128 KB NVRAM,
+four Ethernet adapters and four serial adapters. Console ports are allocated automatically.
+The unmanaged Ethernet switches retain their original device type.
+
+Startup and solution configs use the mapped IOU interfaces. Ethernet interfaces
+retain the original bandwidth values in Kbit/s so OSPF metrics preserve the exercise.
+Original reference images and legacy `.net` files may show the old interface names;
+the converted `.gns3` project is the runnable topology.
+
+| Original interface in reference image | IOU interface |
+| --- | --- |
+| FastEthernet0/0 | Ethernet0/0 |
+| FastEthernet1/0 | Ethernet0/1 |
+
+Containerlab files are independent and unchanged. Structure, config packaging and
+interface mappings were validated; boot and protocol behavior require the target
+GNS3 server and the specified images.
 
 ## Import into GNS3:
 
@@ -65,3 +83,14 @@ must still be verified on the target GNS3 server with the specified IOU image.
 ## Video Solution:
 
 - [YouTube Video](http://www.youtube.com/watch?v=awytpQIOGCk)
+
+## Configuration verification
+
+Area 0 MD5, Area 1 plaintext, paired virtual-link MD5 and Area 2 attachment retained.
+
+Live authenticated adjacencies and virtual-link establishment not tested.
+
+These findings come from configuration analysis against the original files.
+Boot, command support, adjacencies, routing tables and packet forwarding were not
+tested live. See [the full verification report](../VERIFICATION.md) in the repository
+(or `VERIFICATION.md` included in the portable archive).

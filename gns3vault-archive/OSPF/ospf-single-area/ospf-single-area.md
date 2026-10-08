@@ -25,12 +25,51 @@ AsianFish inc. is expanding their business towards Europe so they need to expand
 * Change the OSPF timers on the link between Amsterdam and Barcelona so hello packets are being sent every 5 seconds.
 * The HongKong router will have access to the Internet in the future, you need to advertise a default route in OSPF so Amsterdam and Barcelona will send traffic for unknown networks to HongKong.
 
-## IOS
+## GNS3 2.2.56.1
 
-c3640-jk9s-mz.124-16.bin
+Import `OSPF Single Area IOU.gns3project` with **File > Import portable project**.
+The archive includes the startup configs and the original topology illustration.
+For direct opening, keep `OSPF Single Area.gns3` beside `project-files`.
+
+Exercise routers use `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), 768 MB RAM, 128 KB NVRAM,
+four Ethernet adapters and four serial adapters. Console ports are allocated automatically.
+
+Startup and solution configs use the mapped IOU interfaces. Ethernet interfaces
+retain the original bandwidth values in Kbit/s so OSPF metrics preserve the exercise.
+Original reference images and legacy `.net` files may show the old interface names;
+the converted `.gns3` project is the runnable topology.
+
+| Router | Original interface | IOU interface |
+| --- | --- | --- |
+| HongKong | FastEthernet0/0 | Ethernet0/0 |
+| HongKong | FastEthernet1/0 | Ethernet0/1 |
+| Amsterdam | FastEthernet0/0 | Ethernet0/0 |
+| Amsterdam | FastEthernet1/0 | Ethernet0/1 |
+| Barcelona | FastEthernet0/0 | Ethernet0/0 |
+| Barcelona | FastEthernet1/0 | Ethernet0/1 |
+
+Source solution caveat: `final-configs/Amsterdam.cfg` contains a HongKong
+configuration in the original archive. It is retained as supplied, with interface
+names adapted; it is not an Amsterdam solution.
+
+Containerlab files are independent and unchanged. Structure, config packaging and
+interface mappings were validated; boot and protocol behavior require the target
+GNS3 server and the specified images.
 
 ## Topology
 
 ## Video Solution
 
 http://www.youtube.com/watch?v=ugAqUqZdGkM
+
+## Configuration verification
+
+Barcelona’s bandwidth 100 Kbit/s (cost 1000), MD5, hello interval 5 and network statements retained; HongKong plaintext/MD5 and default origination retained.
+
+Amsterdam.cfg is a duplicate HongKong config in the source, so the provided set is not a valid three-router solution. Its missing Loopback0 declaration was repaired; the misidentified solution is otherwise preserved.
+
+These findings come from configuration analysis against the original files.
+Boot, command support, adjacencies, routing tables and packet forwarding were not
+tested live. See [the full verification report](../VERIFICATION.md) in the repository
+(or `VERIFICATION.md` included in the portable archive).

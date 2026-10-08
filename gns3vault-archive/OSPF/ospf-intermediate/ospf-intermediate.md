@@ -32,9 +32,35 @@ As a network engineer you are familiar with the concepts of OSPF and single-area
   - Loopback14: 172.16.4.1 /24
 - You are not allowed to advertise this loopback in OSPF or by using redistribution. Ensure other routers can reach this loopback.
 
-## IOS
+## GNS3 2.2.56.1
 
-- **Image**: c3640-jk9s-mz.124-16.bin
+Import `OSPF Intermediate IOU.gns3project` with **File > Import portable project**.
+The archive includes the startup configs and the original topology illustration.
+For direct opening, keep `OSPF Intermediate.gns3` beside `project-files`.
+
+Exercise routers use `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), 768 MB RAM, 128 KB NVRAM,
+four Ethernet adapters and four serial adapters. Console ports are allocated automatically.
+
+Startup and solution configs use the mapped IOU interfaces. Ethernet interfaces
+retain the original bandwidth values in Kbit/s so OSPF metrics preserve the exercise.
+Original reference images and legacy `.net` files may show the old interface names;
+the converted `.gns3` project is the runnable topology.
+
+| Router | Original interface | IOU interface |
+| --- | --- | --- |
+| R4 | FastEthernet0/0 | Ethernet0/0 |
+| R4 | FastEthernet1/0 | Ethernet0/1 |
+| R1 | FastEthernet0/0 | Ethernet0/0 |
+| R1 | FastEthernet1/0 | Ethernet0/1 |
+| R2 | FastEthernet0/0 | Ethernet0/0 |
+| R2 | FastEthernet1/0 | Ethernet0/1 |
+| R3 | FastEthernet0/0 | Ethernet0/0 |
+| R3 | FastEthernet1/0 | Ethernet0/1 |
+
+Containerlab files are independent and unchanged. Structure, config packaging and
+interface mappings were validated; boot and protocol behavior require the target
+GNS3 server and the specified images.
 
 ## Topology
 
@@ -42,3 +68,14 @@ As a network engineer you are familiar with the concepts of OSPF and single-area
 
 - http://www.youtube.com/watch?v=C2uc8qEacOM
 - http://www.youtube.com/watch?v=cb5ai2zldug
+
+## Configuration verification
+
+Reference bandwidth 1500, 2000 Kbit/s R1–R2 bandwidth (cost 750), other Ethernet costs 15, matching authentication/dead timers, final R4–R2 shutdown, NSSA, /22 range and default origination retained.
+
+Source final configs omit R1 router-id 1.1.1.2 and R4 Loopback14; R4 priority 200 favors R4 rather than the requested R3 DR. These pre-existing differences remain.
+
+These findings come from configuration analysis against the original files.
+Boot, command support, adjacencies, routing tables and packet forwarding were not
+tested live. See [the full verification report](../VERIFICATION.md) in the repository
+(or `VERIFICATION.md` included in the portable archive).
