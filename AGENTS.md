@@ -20,6 +20,10 @@ project. Preserve that compatible project format and startup-config packaging.
 
 ## IOU L2 switches
 
+Use this model when replacing CLI-configurable switches. Preserve unmanaged
+("dumb") switches that do not support CLI configuration, hubs, and Frame Relay
+switches as their original device types; do not replace them with IOU L2 switches.
+
 - Node type: `iou`
 - Image: `i86bi-linux-l2-adventerprisek9-15.2d.bin`
 - MD5: `f16db44433beb3e8c828db5ddad1de8a`
