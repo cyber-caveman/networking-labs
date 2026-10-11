@@ -14,7 +14,7 @@ project. Preserve that compatible project format and startup-config packaging.
 - Ethernet adapters: **4**
 - Serial adapters: **4**
 - RAM: **768 MB**
-- NVRAM: **128 KB**
+- NVRAM: **512 KB**
 - Symbol: `:/symbols/classic/router.svg`
 - Width: 66; height: 45
 
@@ -31,7 +31,7 @@ switches as their original device types; do not replace them with IOU L2 switche
 - Ethernet adapters: **4**
 - Serial adapters: **0**
 - RAM: **256 MB**
-- NVRAM: **32 KB** (user override of the example's 16 KB)
+- NVRAM: **512 KB**
 - Symbol: `:/symbols/classic/multilayer_switch.svg`
 - Width: 51; height: 48
 
