@@ -1,263 +1,280 @@
 {
     "name": "bgp-route-reflectors-startup-configs",
-    "resources_type": "local",
+    "project_id": "a32a85d8-a76b-5a99-829d-2741944e0189",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "ellipses": [
+        "computes": [],
+        "drawings": [
             {
-                "border_style": 2,
-                "fill_color": "#ffff7f",
-                "height": 315.369624409,
-                "width": 506.995562111,
-                "x": -230.516810667,
-                "y": -210.717820794,
-                "z": -2.0
-            }
-        ],
-        "links": [
-            {
-                "description": "Link from Berry port FastEthernet0/0 to Cherry port FastEthernet0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 6,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "defdcdad-c42f-5fde-8344-c53bedf0f1b0",
+                "x": -231,
+                "y": -211,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"507\" height=\"315\"><ellipse cx=\"253.5\" cy=\"157.5\" rx=\"252.5\" ry=\"156.5\" fill=\"#ffff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "description": "Link from Berry port Serial1/0 to Dairy port Serial0/1",
-                "destination_node_id": 3,
-                "destination_port_id": 12,
-                "id": 2,
-                "source_node_id": 1,
-                "source_port_id": 2
+                "drawing_id": "c08e8d96-4329-587b-b72b-b5e3b59f84f4",
+                "x": -129,
+                "y": -63,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.12.0 /24</text></svg>"
             },
             {
-                "description": "Link from Cherry port Serial1/0 to Dairy port Serial0/0",
-                "destination_node_id": 3,
-                "destination_port_id": 11,
-                "id": 3,
-                "source_node_id": 2,
-                "source_port_id": 7
+                "drawing_id": "02ad796b-093b-5bac-afe9-78fc2421e93c",
+                "x": 4,
+                "y": -206,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 100</text></svg>"
+            },
+            {
+                "drawing_id": "ce6bf21a-5ee1-5ad2-9f8a-3c2b4855826d",
+                "x": 2,
+                "y": -128,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.13.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "a55136c4-78e9-572f-931d-b89b306fdafe",
+                "x": 7,
+                "y": -7,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.23.0 /24</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Berry",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Cherry on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Dairy on port Serial0/1",
-                        "id": 2,
-                        "link_id": 2,
-                        "name": "Serial1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 3,
-                        "name": "Serial1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 4,
-                        "name": "Serial1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 5,
-                        "name": "Serial1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Berry",
+                "node_id": "185dd353-8330-50e9-923c-10997b72e3d9",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -108,
+                "y": -11,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2101,
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x60509e98",
-                    "image": "C3640-JK.BIN",
-                    "name": "Berry",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-4T",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -108.0,
-                "y": -11.0
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Cherry",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Berry on port FastEthernet0/0",
-                        "id": 6,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Dairy on port Serial0/0",
-                        "id": 7,
-                        "link_id": 3,
-                        "name": "Serial1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 8,
-                        "name": "Serial1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 9,
-                        "name": "Serial1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 10,
-                        "name": "Serial1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Cherry",
+                "node_id": "4a76eae1-c2c1-5f65-8eea-3cdf7d2d4376",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -111,
+                "y": -141,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2100,
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x60509e98",
-                    "image": "C3640-JK.BIN",
-                    "name": "Cherry",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-4T",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -110.942604793,
-                "y": -141.464466094
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Dairy",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Dairy",
+                "node_id": "d2ddd25e-4870-547b-a121-8d81f377a2f7",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 142,
+                "y": -90,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "fba120c4-984f-5f64-8da7-176206255a58",
+                "nodes": [
                     {
-                        "description": "connected to Cherry on port Serial1/0",
-                        "id": 11,
-                        "link_id": 3,
-                        "name": "Serial0/0",
+                        "node_id": "185dd353-8330-50e9-923c-10997b72e3d9",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "description": "connected to Berry on port Serial1/0",
-                        "id": 12,
-                        "link_id": 2,
-                        "name": "Serial0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 13,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 14,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
+                        "node_id": "4a76eae1-c2c1-5f65-8eea-3cdf7d2d4376",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2102,
-                    "chassis": "3640",
-                    "console": 2003,
-                    "idlepc": "0x60509e98",
-                    "image": "C3640-JK.BIN",
-                    "name": "Dairy",
-                    "ram": 192,
-                    "slot0": "NM-4T",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": 141.681853612,
-                "y": -89.8528137424
-            }
-        ],
-        "notes": [
-            {
-                "color": "#323232",
-                "font": "Andale Mono,8,-1,5,75,0,0,0,0,0",
-                "text": "192.168.12.0 /24",
-                "x": -128.693434176,
-                "y": -63.3259018078
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": "AS 100",
-                "x": 4.24264068712,
-                "y": -206.161471607
+                "link_id": "fbb10a74-a5bd-5cbc-bc24-8e54c26961be",
+                "nodes": [
+                    {
+                        "node_id": "185dd353-8330-50e9-923c-10997b72e3d9",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "d2ddd25e-4870-547b-a121-8d81f377a2f7",
+                        "adapter_number": 4,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Serial4/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "font": "Andale Mono,8,-1,5,75,0,0,0,0,0",
-                "text": "192.168.13.0 /24",
-                "x": 2.12132034356,
-                "y": -127.672618896
-            },
-            {
-                "color": "#323232",
-                "font": "Andale Mono,8,-1,5,75,0,0,0,0,0",
-                "text": "192.168.23.0 /24",
-                "x": 7.07106781187,
-                "y": -7.46446609407
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "83a663a8-f484-57a5-9c7d-adbfd7084b8f",
+                "nodes": [
+                    {
+                        "node_id": "4a76eae1-c2c1-5f65-8eea-3cdf7d2d4376",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "d2ddd25e-4870-547b-a121-8d81f377a2f7",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

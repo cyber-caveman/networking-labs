@@ -1,312 +1,428 @@
 {
     "name": "BGP Max AS Limit",
-    "resources_type": "local",
+    "project_id": "14932363-a9c9-553d-b5f8-2851e3d284ab",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "ellipses": [
+        "computes": [],
+        "drawings": [
             {
-                "border_style": 2,
-                "fill_color": "#aaff7f",
-                "height": 134.23906935,
-                "width": 139.895923599,
-                "x": -211.119841048,
-                "y": -99.3969696198,
-                "z": -2.0
+                "drawing_id": "f6f0ab71-b701-5c17-8773-58350f33bf57",
+                "x": -211,
+                "y": -99,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"134\"><ellipse cx=\"70.0\" cy=\"67.0\" rx=\"69.0\" ry=\"66.0\" fill=\"#aaff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "border_style": 2,
-                "fill_color": "#aaffff",
-                "height": 134.23906935,
-                "width": 139.895923599,
-                "x": -309.206673506,
-                "y": 58.4888527119,
-                "z": -2.0
+                "drawing_id": "64e54500-eac3-539c-84d5-981baefc7251",
+                "x": -309,
+                "y": 58,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"134\"><ellipse cx=\"70.0\" cy=\"67.0\" rx=\"69.0\" ry=\"66.0\" fill=\"#aaffff\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "border_style": 2,
-                "fill_color": "#ffaa7f",
-                "height": 134.23906935,
-                "width": 139.895923599,
-                "x": -84.7487373416,
-                "y": 65.8650070515,
-                "z": -2.0
+                "drawing_id": "8b632e02-33e7-5277-b6eb-cdef81e8f20f",
+                "x": -85,
+                "y": 66,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"134\"><ellipse cx=\"70.0\" cy=\"67.0\" rx=\"69.0\" ry=\"66.0\" fill=\"#ffaa7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "border_style": 2,
-                "fill_color": "#ffff7f",
-                "height": 134.23906935,
-                "width": 139.895923599,
-                "x": -408.707719527,
-                "y": -101.823376491,
-                "z": -2.0
-            }
-        ],
-        "links": [
-            {
-                "description": "Link from NewYork port FastEthernet0/0 to Tilburg port FastEthernet0/0",
-                "destination_node_id": 3,
-                "destination_port_id": 4,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "dd9230b2-2eab-5946-a7e6-668738d63b6d",
+                "x": -409,
+                "y": -102,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"134\"><ellipse cx=\"70.0\" cy=\"67.0\" rx=\"69.0\" ry=\"66.0\" fill=\"#ffff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "description": "Link from NewYork port FastEthernet1/0 to Tokio port FastEthernet0/0",
-                "destination_node_id": 4,
-                "destination_port_id": 6,
-                "id": 2,
-                "source_node_id": 1,
-                "source_port_id": 2
+                "drawing_id": "8b2f4c22-ed79-50fb-bd50-648c37eac814",
+                "x": -106,
+                "y": 33,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.34.0 /24</text></svg>"
             },
             {
-                "description": "Link from Shanghai port FastEthernet0/0 to Tilburg port FastEthernet1/0",
-                "destination_node_id": 3,
-                "destination_port_id": 5,
-                "id": 3,
-                "source_node_id": 2,
-                "source_port_id": 3
+                "drawing_id": "0c38c2de-fccb-5dc7-a8bf-76b186c9326f",
+                "x": -399,
+                "y": 32,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.12.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "6c8439b6-19e3-586a-aae2-efc7c77eacf6",
+                "x": -257,
+                "y": 77,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "a17d0c75-761f-55bc-a874-1d1df380cf2e",
+                "x": -259,
+                "y": 32,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.23.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "410a66be-8b53-55ea-a298-15bad0f68921",
+                "x": -240,
+                "y": 78,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "dff2fc80-2e4c-59eb-9957-383211e09a59",
+                "x": -141,
+                "y": -5,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "7f80a543-2602-5e44-9727-d5308e30dc3d",
+                "x": -161,
+                "y": -99,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 3</text></svg>"
+            },
+            {
+                "drawing_id": "69720cde-8d73-5c33-bb31-78cba4d6ee20",
+                "x": -68,
+                "y": 82,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.4</text></svg>"
+            },
+            {
+                "drawing_id": "83011111-6d18-5815-b7cd-2b8013ad5184",
+                "x": -34,
+                "y": 174,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 4</text></svg>"
+            },
+            {
+                "drawing_id": "491f908c-ca16-5e98-a17c-b7309601eae1",
+                "x": -361,
+                "y": -97,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 1</text></svg>"
+            },
+            {
+                "drawing_id": "7377f8ce-e7a5-5dd4-9882-8f6e9e10406c",
+                "x": -315,
+                "y": -6,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "7314d9ec-e751-5887-971e-b36f0c278787",
+                "x": -258,
+                "y": 165,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 2</text></svg>"
+            },
+            {
+                "drawing_id": "d7e3546e-d368-5515-8840-013d9979f4de",
+                "x": -165,
+                "y": -5,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "NewYork",
-                    "x": -2.79289321881,
-                    "y": 39.3467170881
+                    "x": -3,
+                    "y": 39,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Tilburg on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Tokio on port FastEthernet0/0",
-                        "id": 2,
-                        "link_id": 2,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "NewYork",
+                "node_id": "c7c7fd8c-8bec-5e31-be04-7bbb9f9f3c23",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -270,
+                "y": 97,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2007,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "NewYork",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -269.880771698,
-                "y": 96.7939392396
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Shanghai",
-                    "x": -2.17157287525,
-                    "y": 42.8822509941
+                    "x": -2,
+                    "y": 43,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Tilburg on port FastEthernet1/0",
-                        "id": 3,
-                        "link_id": 3,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Shanghai",
+                "node_id": "e98e2052-260b-5581-b6ae-0bd6a5b7a34b",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -49,
+                "y": 98,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2009,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Shanghai",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -48.5563491861,
-                "y": 97.5010460208
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Tilburg",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to NewYork on port FastEthernet0/0",
-                        "id": 4,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Shanghai on port FastEthernet0/0",
-                        "id": 5,
-                        "link_id": 3,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Tilburg",
+                "node_id": "0d544022-c664-5cc6-bc96-fe50b1ea2fed",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -180,
+                "y": -43,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2006,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Tilburg",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -180.078210487,
-                "y": -42.5060966545
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 4,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Tokio",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Tokio",
+                "node_id": "9237e57d-1773-584c-a837-5617ff8efa10",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -370,
+                "y": -41,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 4,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "ea869272-b07a-5c88-abe3-b49b52af4d30",
+                "nodes": [
                     {
-                        "description": "connected to NewYork on port FastEthernet1/0",
-                        "id": 6,
-                        "link_id": 2,
-                        "name": "FastEthernet0/0",
+                        "node_id": "c7c7fd8c-8bec-5e31-be04-7bbb9f9f3c23",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "0d544022-c664-5cc6-bc96-fe50b1ea2fed",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "chassis": "3640",
-                    "console": 2008,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Tokio",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i4_startup-config.cfg"
-                },
-                "router_id": 4,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -370.289934627,
-                "y": -41.0918830921
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": "192.168.34.0 /24",
-                "x": -106.066017178,
-                "y": 32.8528137426
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "192.168.12.0 /24",
-                "x": -398.80822459,
-                "y": 31.8406204337
+                "link_id": "0b2b9e2b-88b4-5e6c-a454-1f4e9e2f0cc9",
+                "nodes": [
+                    {
+                        "node_id": "c7c7fd8c-8bec-5e31-be04-7bbb9f9f3c23",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "9237e57d-1773-584c-a837-5617ff8efa10",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -257.386868352,
-                "y": 77.4005409574
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.23.0 /24",
-                "x": -258.801081915,
-                "y": 32.3467170881
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -239.709198823,
-                "y": 77.9066376119
-            },
-            {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": -140.714249456,
-                "y": -5.2268760406
-            },
-            {
-                "color": "#323232",
-                "text": "AS 3",
-                "x": -160.51323933,
-                "y": -98.6690475584
-            },
-            {
-                "color": "#0000ff",
-                "text": ".4",
-                "x": -67.8822509941,
-                "y": 81.5462479188
-            },
-            {
-                "color": "#323232",
-                "text": "AS 4",
-                "x": -33.941125497,
-                "y": 174.073159853
-            },
-            {
-                "color": "#323232",
-                "text": "AS 1",
-                "x": -360.624458406,
-                "y": -96.8528137426
-            },
-            {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -315.36962441,
-                "y": -5.83704909604
-            },
-            {
-                "color": "#323232",
-                "text": "AS 2",
-                "x": -258.093975134,
-                "y": 164.57568517
-            },
-            {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": -165.462986798,
-                "y": -5.02586591386
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "2e2d3ab6-67ac-5a85-9435-4c51ace68138",
+                "nodes": [
+                    {
+                        "node_id": "e98e2052-260b-5581-b6ae-0bd6a5b7a34b",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "0d544022-c664-5cc6-bc96-fe50b1ea2fed",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

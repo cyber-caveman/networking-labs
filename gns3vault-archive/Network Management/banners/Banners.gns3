@@ -1,114 +1,160 @@
 {
     "name": "Banners",
-    "resources_type": "local",
+    "project_id": "e2bacfc6-450f-5001-902c-1cf824bf4775",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from Classroom port FastEthernet0/0 to Student port FastEthernet0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 2,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "6bd14d61-14b6-5def-9df3-07ea6986bf54",
+                "x": -285,
+                "y": -111,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.12.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "4ec8e5dc-7526-57cd-853f-5d4f3611bc02",
+                "x": -322,
+                "y": -106,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "5fa21f14-6400-55e2-9479-4ea2ff0161c5",
+                "x": -132,
+                "y": -104,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Classroom",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Student on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Classroom",
+                "node_id": "c4b134d4-ebca-51fe-90bd-3ca6c8e7f2cf",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -109,
+                "y": -103,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Classroom",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -109.367532368,
-                "y": -103.317279836
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Student",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Student",
+                "node_id": "8ac98491-e869-55d2-bdc3-5af5c30cb2b1",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -389,
+                "y": -104,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "b3e8dbb6-6270-5073-bd14-2b5fe96968a3",
+                "nodes": [
                     {
-                        "description": "connected to Classroom on port FastEthernet0/0",
-                        "id": 2,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
+                        "node_id": "c4b134d4-ebca-51fe-90bd-3ca6c8e7f2cf",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "8ac98491-e869-55d2-bdc3-5af5c30cb2b1",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Student",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -389.0,
-                "y": -104.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": "192.168.12.0 /24",
-                "x": -284.964032818,
-                "y": -110.994949366
-            },
-            {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -321.73358544,
-                "y": -105.539105243
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -132.228968082,
-                "y": -104.325901808
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

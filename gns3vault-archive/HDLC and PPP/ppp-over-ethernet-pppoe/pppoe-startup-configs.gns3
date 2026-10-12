@@ -1,122 +1,169 @@
 {
     "name": "pppoe-startup-configs",
-    "resources_type": "local",
+    "project_id": "68f556ab-a9f1-56e1-af11-4d5efd7212f7",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from R1 port FastEthernet0/0 to R2 port FastEthernet0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 2,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "79d992c5-09f8-5553-af8f-ac8c99c340d9",
+                "x": -171,
+                "y": -63,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.12.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "a413ea51-2b9f-571a-8728-ff7434a20513",
+                "x": -307,
+                "y": -83,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">Poseidon</text></svg>"
+            },
+            {
+                "drawing_id": "b13deaf3-ebd5-5c83-a30f-fcd069058da0",
+                "x": -285,
+                "y": -222,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\"></text></svg>"
+            },
+            {
+                "drawing_id": "7e9d99ed-bac9-524a-b21b-c7b3c3bb63c6",
+                "x": 24,
+                "y": -84,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"56\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">Artemis</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R1",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "Poseidon",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R2 on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Poseidon",
+                "node_id": "441ee031-e836-581b-a28b-fa19dcfcbcc5",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -307,
+                "y": -60,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603d2918",
-                    "image": "c3640-jk9s-mz.124-16.bin",
-                    "name": "R1",
-                    "slot0": "NM-1FE-TX"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -307.0,
-                "y": -60.0
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R2",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "Artemis",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R1 on port FastEthernet0/0",
-                        "id": 2,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Artemis",
+                "node_id": "99569d41-54ec-5a1c-b4be-1a312df35bcf",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 20,
+                "y": -60,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x603d2918",
-                    "image": "c3640-jk9s-mz.124-16.bin",
-                    "name": "R2",
-                    "slot0": "NM-1FE-TX"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": 20.0,
-                "y": -60.0
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             }
         ],
-        "notes": [
+        "links": [
             {
-                "color": "#323232",
-                "rotate": "0",
-                "text": "192.168.12.0 /24",
-                "x": -171.0,
-                "y": -63.0
-            },
-            {
-                "color": "#323232",
-                "rotate": "0",
-                "text": "Poseidon",
-                "x": -307.050252532,
-                "y": -82.5405845398
-            },
-            {
-                "color": "#323232",
-                "rotate": "0",
-                "text": "",
-                "x": -285.0,
-                "y": -222.0
-            },
-            {
-                "color": "#323232",
-                "rotate": "0",
-                "text": "Artemis",
-                "x": 23.5857864376,
-                "y": -83.56139982
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "c2c93634-a637-5503-88cc-d08acde3065f",
+                "nodes": [
+                    {
+                        "node_id": "441ee031-e836-581b-a28b-fa19dcfcbcc5",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "99569d41-54ec-5a1c-b4be-1a312df35bcf",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

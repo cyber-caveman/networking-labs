@@ -1,386 +1,552 @@
 {
     "name": "EIGRP Stub",
-    "resources_type": "local",
+    "project_id": "1e4021a6-6373-52b2-b22b-51fff0a5e636",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from Alfie port FastEthernet0/0 to Oliver port FastEthernet3/0",
-                "destination_node_id": 5,
-                "destination_port_id": 9,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "7aaffa5c-3375-546c-8edc-4b5824025977",
+                "x": -143,
+                "y": -164,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
             },
             {
-                "description": "Link from Charlie port FastEthernet0/0 to Harry port FastEthernet1/0",
-                "destination_node_id": 3,
-                "destination_port_id": 4,
-                "id": 2,
-                "source_node_id": 2,
-                "source_port_id": 2
+                "drawing_id": "16bfde97-ab6f-5da4-948d-80022280dfda",
+                "x": -88,
+                "y": -43,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
             },
             {
-                "description": "Link from Harry port FastEthernet0/0 to Oliver port FastEthernet1/0",
-                "destination_node_id": 5,
-                "destination_port_id": 7,
-                "id": 3,
-                "source_node_id": 3,
-                "source_port_id": 3
+                "drawing_id": "0f2a5a90-19e0-5c8c-8fb4-d7ccb8ebe477",
+                "x": 29,
+                "y": -125,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.4</text></svg>"
             },
             {
-                "description": "Link from Jack port FastEthernet0/0 to Oliver port FastEthernet0/0",
-                "destination_node_id": 5,
-                "destination_port_id": 6,
-                "id": 4,
-                "source_node_id": 4,
-                "source_port_id": 5
+                "drawing_id": "e7cca75f-86a4-5b14-9650-fc20adacd4c5",
+                "x": -269,
+                "y": -122,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
             },
             {
-                "description": "Link from Oliver port FastEthernet2/0 to Thomas port FastEthernet0/0",
-                "destination_node_id": 6,
-                "destination_port_id": 10,
-                "id": 5,
-                "source_node_id": 5,
-                "source_port_id": 8
+                "drawing_id": "5bb494aa-9f6b-5d64-ac52-70bcc3c5c7e1",
+                "x": -73,
+                "y": -93,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.24.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "c332931d-d396-54b6-af35-5850c903d5fd",
+                "x": -185,
+                "y": 21,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.25.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "64f92421-2ea2-507e-ba80-c8fbd5a7cf8e",
+                "x": -143,
+                "y": 166,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.6</text></svg>"
+            },
+            {
+                "drawing_id": "5a0fd026-29c1-52c8-b74d-67a3f571496b",
+                "x": -155,
+                "y": -61,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "af0432ab-a58f-5c2f-81aa-6c4f6025e1a1",
+                "x": -186,
+                "y": 138,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.56.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "b142078d-1871-5819-87bf-77ad49c6fb65",
+                "x": -177,
+                "y": -130,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.23.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "1ab6ae71-622d-5b64-a355-6b35f6207006",
+                "x": -278,
+                "y": -84,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.12.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "921da26c-01a5-56fe-9302-a99e9c8cf677",
+                "x": -140,
+                "y": -5,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "7e4adb11-b634-5002-8ea5-e3c9fbd8951c",
+                "x": -140,
+                "y": 43,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.5</text></svg>"
+            },
+            {
+                "drawing_id": "b4c76f9d-c302-52a7-9907-ffc0ba6d2753",
+                "x": -142,
+                "y": 105,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.5</text></svg>"
+            },
+            {
+                "drawing_id": "a6c4bf7f-5349-5447-98e6-1322c4e145d5",
+                "x": -109,
+                "y": -63,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Alfie",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Oliver on port FastEthernet3/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Alfie",
+                "node_id": "1985de31-6030-5ff7-bf76-c9520c281e4e",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 52,
+                "y": -141,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2006,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Alfie",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": 51.5857864376,
-                "y": -140.615223689
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Charlie",
-                    "x": 62.8969696197,
-                    "y": -0.958369439657
+                    "x": 63,
+                    "y": -1,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Harry on port FastEthernet1/0",
-                        "id": 2,
-                        "link_id": 2,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Charlie",
+                "node_id": "bdbaf094-885f-56c5-93e2-10d8cca93a1e",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -152,
+                "y": 187,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2004,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Charlie",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -152.242640687,
-                "y": 187.038059223
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Harry",
-                    "x": 61.7401153702,
-                    "y": 6.81980515339
+                    "x": 62,
+                    "y": 7,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Oliver on port FastEthernet1/0",
-                        "id": 3,
-                        "link_id": 3,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Charlie on port FastEthernet0/0",
-                        "id": 4,
-                        "link_id": 2,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Harry",
+                "node_id": "3d89a2f5-6a67-51fb-9b4b-9eac432c2729",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -153,
+                "y": 64,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Harry",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -152.828427125,
-                "y": 64.4730880654
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 4,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Jack",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Oliver on port FastEthernet0/0",
-                        "id": 5,
-                        "link_id": 4,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Jack",
+                "node_id": "b37e0360-7cbe-5a26-8ecd-37868c4a35f5",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -154,
+                "y": -206,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Jack",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i4_startup-config.cfg"
-                },
-                "router_id": 4,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -153.707106781,
-                "y": -206.443650814
+                    "application_id": 4,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 5,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Oliver",
-                    "x": 64.2756492761,
-                    "y": 13.8908729653
+                    "x": 64,
+                    "y": 14,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Jack on port FastEthernet0/0",
-                        "id": 6,
-                        "link_id": 4,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Harry on port FastEthernet0/0",
-                        "id": 7,
-                        "link_id": 3,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to Thomas on port FastEthernet0/0",
-                        "id": 8,
-                        "link_id": 5,
-                        "name": "FastEthernet2/0",
-                        "port_number": 0,
-                        "slot_number": 2
-                    },
-                    {
-                        "description": "connected to Alfie on port FastEthernet0/0",
-                        "id": 9,
-                        "link_id": 1,
-                        "name": "FastEthernet3/0",
-                        "port_number": 0,
-                        "slot_number": 3
-                    }
-                ],
+                "locked": false,
+                "name": "Oliver",
+                "node_id": "da86edb6-61e9-51ea-9017-e9d9fd67cf76",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -151,
+                "y": -44,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Oliver",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "slot2": "NM-1FE-TX",
-                    "slot3": "NM-1FE-TX",
-                    "startup_config": "configs\\i5_startup-config.cfg"
-                },
-                "router_id": 5,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -151.0,
-                "y": -44.0
+                    "application_id": 5,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 6,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Thomas",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Thomas",
+                "node_id": "a15d4e5f-ae10-580c-bc9c-8b1f456bb70e",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -335,
+                "y": -141,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 6,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "a4a764ae-7c40-5f72-95c1-f7619c2c1ac0",
+                "nodes": [
                     {
-                        "description": "connected to Oliver on port FastEthernet2/0",
-                        "id": 10,
-                        "link_id": 5,
-                        "name": "FastEthernet0/0",
+                        "node_id": "1985de31-6030-5ff7-bf76-c9520c281e4e",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "da86edb6-61e9-51ea-9017-e9d9fd67cf76",
+                        "adapter_number": 0,
+                        "port_number": 3,
+                        "label": {
+                            "text": "Ethernet0/3",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "chassis": "3640",
-                    "console": 2005,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Thomas",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i6_startup-config.cfg"
-                },
-                "router_id": 6,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -335.0,
-                "y": -141.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": -143.134992949,
-                "y": -163.920310217
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -87.587265734,
-                "y": -43.3517677219
+                "link_id": "80d91cc2-f3cf-5f82-91f1-b618b2554e95",
+                "nodes": [
+                    {
+                        "node_id": "bdbaf094-885f-56c5-93e2-10d8cca93a1e",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "3d89a2f5-6a67-51fb-9b4b-9eac432c2729",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".4",
-                "x": 29.3990616607,
-                "y": -124.523340597
+                "link_id": "323e50d3-eca0-58ae-a5fc-4355fcdc3543",
+                "nodes": [
+                    {
+                        "node_id": "3d89a2f5-6a67-51fb-9b4b-9eac432c2729",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "da86edb6-61e9-51ea-9017-e9d9fd67cf76",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -269.0,
-                "y": -122.0
+                "link_id": "893c7e99-367d-5f45-b4ce-4df4aa35bf3d",
+                "nodes": [
+                    {
+                        "node_id": "b37e0360-7cbe-5a26-8ecd-37868c4a35f5",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "da86edb6-61e9-51ea-9017-e9d9fd67cf76",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "192.168.24.0 /24",
-                "x": -72.7781745931,
-                "y": -92.9497474683
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.25.0 /24",
-                "x": -184.585786438,
-                "y": 20.9289321881
-            },
-            {
-                "color": "#0000ff",
-                "text": ".6",
-                "x": -143.134992949,
-                "y": 166.000612745
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -154.762409947,
-                "y": -61.3345237792
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.56.0 /24",
-                "x": -186.485281374,
-                "y": 138.422835534
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.23.0 /24",
-                "x": -177.0,
-                "y": -130.0
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.12.0 /24",
-                "x": -278.221825407,
-                "y": -84.1213203436
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -140.306565824,
-                "y": -5.22330470336
-            },
-            {
-                "color": "#0000ff",
-                "text": ".5",
-                "x": -140.306565824,
-                "y": 43.3660530717
-            },
-            {
-                "color": "#0000ff",
-                "text": ".5",
-                "x": -142.427886168,
-                "y": 104.683332908
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -108.80046917,
-                "y": -62.9497474683
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "08eb940f-be2e-5f7e-aad7-8c5eb0d5e73b",
+                "nodes": [
+                    {
+                        "node_id": "da86edb6-61e9-51ea-9017-e9d9fd67cf76",
+                        "adapter_number": 0,
+                        "port_number": 2,
+                        "label": {
+                            "text": "Ethernet0/2",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "a15d4e5f-ae10-580c-bc9c-8b1f456bb70e",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

@@ -119,9 +119,76 @@ All your customers are now connected to the MPLS cloud, and they are very satisf
 - Use a Route Distuingisher (RD) of 555:555.
 - Create additional route-targets to make sure the Palm Club and Coco Loco sites are able to access the Internet.
 
-## IOS
+## GNS3 2.2.56.1
 
-c3640-jk9o3s-mz.124-16.bin
+Import [advanced-mpls-vpn IOU.gns3project](advanced-mpls-vpn%20IOU.gns3project) using **File > Import portable project**. To open `advanced-mpls-vpn.gns3` directly, keep it beside `project-files`.
+
+IOU L3 routers use `x86_64_crb_linux-adventerprisek9-ms.bin`, 768 MB RAM, **512 KB NVRAM**, four Ethernet and four serial adapters. CLI switches use the preferred IOU L2 image `i86bi-linux-l2-adventerprisek9-15.2d.bin`, 256 MB RAM, **512 KB NVRAM**, four Ethernet adapters and no serial adapters. Images, checksums, templates and shared settings follow `AGENTS.md`; consoles allocate automatically. Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Unmanaged Ethernet and built-in Frame Relay switches retain their device types and VLAN/PVC settings. Connected IOU interfaces use ANSI LMI for the built-in Frame Relay switch.
+
+Startup and supplied final configurations use the interface mappings below. Effective bandwidth, delay, administrative state and routing/policy command contexts were compared against their source. Obsolete hardware-only commands are removed. Ports omitted to fit the selected model are unused hardware-only ports, listed in the verification notes.
+
+| Device | Source interface | Current interface |
+| --- | --- | --- |
+| MelonBRANCH | Ethernet0/0 | Ethernet0/0 |
+| MelonBRANCH | Ethernet0/2 | Ethernet0/1 |
+| MelonBRANCH | Ethernet0/3 | Ethernet0/2 |
+| MelonBRANCH | Ethernet0/1 | Ethernet0/3 |
+| INTERNET | Ethernet0/0 | Ethernet0/0 |
+| INTERNET | Ethernet0/1 | Ethernet0/1 |
+| INTERNET | Ethernet0/2 | Ethernet0/2 |
+| INTERNET | Ethernet0/3 | Ethernet0/3 |
+| PalmBRANCH | Ethernet0/0 | Ethernet0/0 |
+| PalmBRANCH | Ethernet0/1 | Ethernet0/1 |
+| PalmBRANCH | Ethernet0/2 | Ethernet0/2 |
+| PalmBRANCH | Ethernet0/3 | Ethernet0/3 |
+| CENTRALSERVER | Ethernet0/0 | Ethernet0/0 |
+| CENTRALSERVER | Ethernet0/1 | Ethernet0/1 |
+| CENTRALSERVER | Ethernet0/2 | Ethernet0/2 |
+| CENTRALSERVER | Ethernet0/3 | Ethernet0/3 |
+| P | Ethernet0/0 | Ethernet0/0 |
+| P | Ethernet0/1 | Ethernet0/1 |
+| P | Ethernet0/3 | Ethernet0/2 |
+| P | Ethernet0/2 | Ethernet0/3 |
+| PalmHQ | Ethernet0/0 | Ethernet0/0 |
+| PalmHQ | Ethernet0/1 | Ethernet0/1 |
+| PalmHQ | Ethernet0/2 | Ethernet0/2 |
+| PalmHQ | Ethernet0/3 | Ethernet0/3 |
+| PE1 | Ethernet0/0 | Ethernet0/0 |
+| PE1 | Ethernet0/1 | Ethernet0/1 |
+| PE1 | Ethernet0/2 | Ethernet0/2 |
+| PE1 | Ethernet0/3 | Ethernet0/3 |
+| PE1 | Ethernet1/0 | Ethernet1/0 |
+| PE1 | Ethernet1/1 | Ethernet1/1 |
+| PE1 | Ethernet1/2 | Ethernet1/2 |
+| PE1 | Ethernet1/3 | Ethernet1/3 |
+| MelonHQ | Ethernet0/0 | Ethernet0/0 |
+| MelonHQ | Ethernet0/2 | Ethernet0/1 |
+| MelonHQ | Ethernet0/3 | Ethernet0/2 |
+| MelonHQ | Ethernet0/1 | Ethernet0/3 |
+| PE2 | Ethernet0/0 | Ethernet0/0 |
+| PE2 | Ethernet0/1 | Ethernet0/1 |
+| PE2 | Ethernet0/2 | Ethernet0/2 |
+| PE2 | Ethernet0/3 | Ethernet0/3 |
+| PE2 | Ethernet1/0 | Ethernet1/0 |
+| PE2 | Ethernet1/1 | Ethernet1/1 |
+| PE2 | Ethernet1/2 | Ethernet1/2 |
+| PE2 | Ethernet1/3 | Ethernet1/3 |
+| CocoHQ | Ethernet0/0 | Ethernet0/0 |
+| CocoHQ | Ethernet0/1 | Ethernet0/1 |
+| CocoHQ | Ethernet0/2 | Ethernet0/2 |
+| CocoHQ | Ethernet0/3 | Ethernet0/3 |
+| CocoBRANCH1 | Ethernet0/0 | Ethernet0/0 |
+| CocoBRANCH1 | Ethernet0/1 | Ethernet0/1 |
+| CocoBRANCH1 | Ethernet0/2 | Ethernet0/2 |
+| CocoBRANCH1 | Ethernet0/3 | Ethernet0/3 |
+| CocoBRANCH2 | Ethernet0/0 | Ethernet0/0 |
+| CocoBRANCH2 | Ethernet0/1 | Ethernet0/1 |
+| CocoBRANCH2 | Ethernet0/2 | Ethernet0/2 |
+| CocoBRANCH2 | Ethernet0/3 | Ethernet0/3 |
+
+See [verification, reconstruction and source limitations](VERIFICATION.md). Portable archives contain the initial state and supplied solution files separately; final configs are not loaded at startup. Original `.net` files and diagrams are reference material. Containerlab artifacts are unchanged.
 
 ## Topology
 

@@ -1,0 +1,303 @@
+{
+    "name": "site-to-site-ipsec-vpn",
+    "project_id": "d30d4d52-d315-52a4-8b0b-0c1a83cdafc0",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "210a3eb9-5484-5f97-a229-b32d7015de89",
+                "x": -312,
+                "y": 67,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"172\" height=\"16\"><rect x=\"1\" y=\"1\" width=\"170\" height=\"14\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"1\"/></svg>"
+            },
+            {
+                "drawing_id": "33a909b8-6dda-5142-a05f-8cd78e846c86",
+                "x": -291,
+                "y": 64,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">192.168.13.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "e266d910-4a9e-5d1c-ae21-c82f4702437e",
+                "x": -152,
+                "y": -35,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">192.168.23.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "ad317e9a-1d35-5271-8f9b-3a891c245f99",
+                "x": -438,
+                "y": -34,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">192.168.12.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "61ec3d43-9805-5eef-90cf-d1fa5e795142",
+                "x": -118,
+                "y": 95,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">Nessie</text></svg>"
+            },
+            {
+                "drawing_id": "b5dd7048-1dad-56d1-baa4-d3ed80287d7a",
+                "x": -268,
+                "y": -148,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">KingKong</text></svg>"
+            },
+            {
+                "drawing_id": "aab393f0-daba-5fb9-b03d-9282fe952524",
+                "x": -402,
+                "y": 96,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">Godzilla</text></svg>"
+            },
+            {
+                "drawing_id": "e2c419e6-83d0-53fa-8afd-0c9284bf78aa",
+                "x": -142,
+                "y": 29,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "c0834de4-e2e7-51b0-b9b1-363f72d1018d",
+                "x": -230,
+                "y": -84,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "e6592162-d0cc-5d2a-a517-1410881144fd",
+                "x": -254,
+                "y": -84,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "9be984a1-c8b1-5429-acd0-4d7bb357fa56",
+                "x": -340,
+                "y": 30,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">.1</text></svg>"
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "text": "Godzilla",
+                    "x": 0,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                },
+                "locked": false,
+                "name": "Godzilla",
+                "node_id": "8306bcf6-f786-5330-b4f5-8b79992cb275",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -401,
+                "y": 52,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "text": "KingKong",
+                    "x": 0,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                },
+                "locked": false,
+                "name": "KingKong",
+                "node_id": "94045b50-043c-5e8c-951d-8b9b05b46078",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -263,
+                "y": -124,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "text": "Nessie",
+                    "x": 0,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                },
+                "locked": false,
+                "name": "Nessie",
+                "node_id": "afae29b0-130f-51a8-92ed-d7053081f7ae",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -122,
+                "y": 50,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "a9e4f8f4-b963-5b7c-9ed3-83637362ef0a",
+                "nodes": [
+                    {
+                        "node_id": "8306bcf6-f786-5330-b4f5-8b79992cb275",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "94045b50-043c-5e8c-951d-8b9b05b46078",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
+            },
+            {
+                "link_id": "4584f950-ee65-52dc-b6e7-13c09a9bce75",
+                "nodes": [
+                    {
+                        "node_id": "94045b50-043c-5e8c-951d-8b9b05b46078",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "afae29b0-130f-51a8-92ed-d7053081f7ae",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
+            }
+        ]
+    }
+}

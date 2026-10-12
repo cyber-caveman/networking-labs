@@ -1,146 +1,196 @@
 {
     "name": "BGPFastFallover",
-    "resources_type": "local",
+    "project_id": "f03d73e2-b7fb-5571-a9cc-1fe34110fb74",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "ellipses": [
+        "computes": [],
+        "drawings": [
             {
-                "border_style": 2,
-                "fill_color": "#aaff7f",
-                "height": 147.674098192,
-                "width": 141.421356237,
-                "x": -417.394011027,
-                "y": -196.776695297,
-                "z": -2.0
+                "drawing_id": "bb058149-ebe2-52fc-97a9-9fe70d73a2af",
+                "x": -417,
+                "y": -197,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"141\" height=\"148\"><ellipse cx=\"70.5\" cy=\"74.0\" rx=\"69.5\" ry=\"73.0\" fill=\"#aaff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "border_style": 2,
-                "fill_color": "#ffff7f",
-                "height": 147.674098192,
-                "width": 141.421356237,
-                "x": -132.228968082,
-                "y": -196.57568517,
-                "z": -2.0
-            }
-        ],
-        "links": [
+                "drawing_id": "294dfb3e-ec06-5766-86b4-4aaf70e08265",
+                "x": -132,
+                "y": -197,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"141\" height=\"148\"><ellipse cx=\"70.5\" cy=\"74.0\" rx=\"69.5\" ry=\"73.0\" fill=\"#ffff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
+            },
             {
-                "description": "Link from Kendrick port FastEthernet0/0 to Scott port FastEthernet0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 2,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "2966d4d1-c368-5de5-859b-048cb6418506",
+                "x": -273,
+                "y": -144,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.12.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "fada7f4b-3e65-505a-9cc4-4742d9520d31",
+                "x": -81,
+                "y": -77,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 2</text></svg>"
+            },
+            {
+                "drawing_id": "f7fada25-8b2c-5cc6-937c-f58354d1eabc",
+                "x": -365,
+                "y": -79,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 1</text></svg>"
+            },
+            {
+                "drawing_id": "1b568730-4715-5f18-9cfa-319b83a39d21",
+                "x": -319,
+                "y": -146,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "66504c24-39af-55db-bd7c-67b488e61c61",
+                "x": -116,
+                "y": -144,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Kendrick",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Scott on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Kendrick",
+                "node_id": "1b8db4d4-7f02-57f2-abcb-80fa6bc69ac4",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -388,
+                "y": -145,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Kendrick",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -388.0,
-                "y": -145.0
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Scott",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Scott",
+                "node_id": "12faa524-3db9-5dd6-aa68-bf9dc234aaaa",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -92,
+                "y": -144,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "64ea105c-0c11-5ea6-9dc4-bcffcb127b90",
+                "nodes": [
                     {
-                        "description": "connected to Kendrick on port FastEthernet0/0",
-                        "id": 2,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
+                        "node_id": "1b8db4d4-7f02-57f2-abcb-80fa6bc69ac4",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "12faa524-3db9-5dd6-aa68-bf9dc234aaaa",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Scott",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -91.6898628385,
-                "y": -143.622366364
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": "192.168.12.0 /24",
-                "x": -272.943217538,
-                "y": -143.521861301
-            },
-            {
-                "color": "#323232",
-                "text": "AS 2",
-                "x": -81.3172798365,
-                "y": -77.2548339959
-            },
-            {
-                "color": "#323232",
-                "text": "AS 1",
-                "x": -364.867099092,
-                "y": -79.1751442127
-            },
-            {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -318.905158315,
-                "y": -146.350288425
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -115.965512115,
-                "y": -144.429978209
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

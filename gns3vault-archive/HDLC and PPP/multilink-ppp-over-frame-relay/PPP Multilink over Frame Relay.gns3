@@ -1,229 +1,282 @@
 {
     "name": "PPP Multilink over Frame Relay",
-    "resources_type": "local",
+    "project_id": "27575caf-5e73-55ca-8dc7-068ac5ec1cb2",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from FR1 port 1 to Pim port Serial0/0",
-                "destination_node_id": 3,
-                "destination_port_id": 8,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "1ac28da7-f230-5621-847a-3f5cb6fc1a13",
+                "x": -295,
+                "y": 82,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">DLCI 201</text></svg>"
             },
             {
-                "description": "Link from FR1 port 2 to Frank port Serial0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 4,
-                "id": 2,
-                "source_node_id": 1,
-                "source_port_id": 2
+                "drawing_id": "8ca9b611-7a48-55a6-b378-5189de57361b",
+                "x": -233,
+                "y": 138,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">L0: 2.2.2.2 /24</text></svg>"
             },
             {
-                "description": "Link from FR1 port 3 to Frank port Serial0/1",
-                "destination_node_id": 2,
-                "destination_port_id": 5,
-                "id": 3,
-                "source_node_id": 1,
-                "source_port_id": 3
+                "drawing_id": "ee3e4c8c-4e02-52b8-9cd0-eb249050486e",
+                "x": -231,
+                "y": -259,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">L0: 1.1.1.1 /24</text></svg>"
+            },
+            {
+                "drawing_id": "05cf5168-429d-5c74-a81c-29e28c5de269",
+                "x": -120,
+                "y": 84,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#ff0000\">DLCI 211</text></svg>"
+            },
+            {
+                "drawing_id": "30703131-0b0d-5f73-a76b-454ff68cd42c",
+                "x": -285,
+                "y": -171,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">DLCI 102</text></svg>"
+            },
+            {
+                "drawing_id": "405dae79-505c-5be9-b3e6-604e3aa0663c",
+                "x": -117,
+                "y": -172,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#ff0000\">DLCI 112</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Frame Relay switch",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 32,
                 "label": {
                     "text": "FR1",
-                    "x": 48.71930009,
-                    "y": 9.64823227814
+                    "x": 49,
+                    "y": 10,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Pim on port Serial0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "1",
-                        "port_number": 1
-                    },
-                    {
-                        "description": "connected to Frank on port Serial0/0",
-                        "id": 2,
-                        "link_id": 2,
-                        "name": "2",
-                        "port_number": 2
-                    },
-                    {
-                        "description": "connected to Frank on port Serial0/1",
-                        "id": 3,
-                        "link_id": 3,
-                        "name": "3",
-                        "port_number": 3
-                    }
-                ],
+                "locked": false,
+                "name": "FR1",
+                "node_id": "49d81180-5afa-52df-8b73-65b168921934",
+                "node_type": "frame_relay_switch",
+                "port_name_format": "Serial{0}",
+                "port_segment_size": 0,
+                "symbol": ":/symbols/classic/frame_relay_switch.svg",
+                "width": 64,
+                "x": -204,
+                "y": -85,
+                "z": 1,
                 "properties": {
                     "mappings": {
                         "1:102": "2:201",
                         "1:112": "3:211"
-                    },
-                    "name": "FR1"
-                },
-                "server_id": 1,
-                "type": "FrameRelaySwitch",
-                "x": -203.690908859,
-                "y": -85.0182899632
+                    }
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Frank",
-                    "x": 8.0,
-                    "y": 42.1751442127
+                    "x": 8,
+                    "y": 42,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to FR1 on port 2",
-                        "id": 4,
-                        "link_id": 2,
-                        "name": "Serial0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to FR1 on port 3",
-                        "id": 5,
-                        "link_id": 3,
-                        "name": "Serial0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 6,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 7,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Frank",
+                "node_id": "258e9b45-5bdf-5fa7-9058-1ea58039fba3",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -209,
+                "y": 75,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Frank",
-                    "slot0": "NM-4T",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -209.069588515,
-                "y": 74.8736290226
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Pim",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Pim",
+                "node_id": "cf18896a-4b84-5d95-a5e5-9926851ac4da",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -206,
+                "y": -216,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "fb7c1976-b6ae-55bb-88d4-3b7c70902cba",
+                "nodes": [
                     {
-                        "description": "connected to FR1 on port 1",
-                        "id": 8,
-                        "link_id": 1,
-                        "name": "Serial0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 9,
-                        "name": "Serial0/1",
+                        "node_id": "49d81180-5afa-52df-8b73-65b168921934",
+                        "adapter_number": 0,
                         "port_number": 1,
-                        "slot_number": 0
+                        "label": {
+                            "text": "1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "id": 10,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 11,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
+                        "node_id": "cf18896a-4b84-5d95-a5e5-9926851ac4da",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Pim",
-                    "slot0": "NM-4T",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -205.928932188,
-                "y": -215.686291501
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": "DLCI 201",
-                "x": -294.863527755,
-                "y": 81.6431816443
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "L0: 2.2.2.2 /24",
-                "x": -232.63813101,
-                "y": 137.705627485
+                "link_id": "7d5fdee2-7ebd-5fac-8ff1-ec33310e29cc",
+                "nodes": [
+                    {
+                        "node_id": "49d81180-5afa-52df-8b73-65b168921934",
+                        "adapter_number": 0,
+                        "port_number": 2,
+                        "label": {
+                            "text": "2",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "258e9b45-5bdf-5fa7-9058-1ea58039fba3",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "L0: 1.1.1.1 /24",
-                "x": -231.223917448,
-                "y": -258.780266634
-            },
-            {
-                "color": "#ff0000",
-                "text": "DLCI 211",
-                "x": -120.208152802,
-                "y": 84.2705986422
-            },
-            {
-                "color": "#0000ff",
-                "text": "DLCI 102",
-                "x": -284.964032818,
-                "y": -171.300035894
-            },
-            {
-                "color": "#ff0000",
-                "text": "DLCI 112",
-                "x": -117.379725677,
-                "y": -172.208152802
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "f3e54551-ba87-5964-9cf8-4798ed92d326",
+                "nodes": [
+                    {
+                        "node_id": "49d81180-5afa-52df-8b73-65b168921934",
+                        "adapter_number": 0,
+                        "port_number": 3,
+                        "label": {
+                            "text": "3",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "258e9b45-5bdf-5fa7-9058-1ea58039fba3",
+                        "adapter_number": 4,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Serial4/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

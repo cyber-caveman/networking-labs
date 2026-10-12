@@ -1,215 +1,236 @@
 {
     "name": "bgp-update-source-startup-configs",
-    "resources_type": "local",
+    "project_id": "a8e56a68-e943-5f06-a8e1-ce3e12c5a05c",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "ellipses": [
+        "computes": [],
+        "drawings": [
             {
-                "border_style": 2,
-                "fill_color": "#ffff7f",
-                "height": 216.183766184,
-                "width": 437.0,
-                "x": -16.8786796564,
-                "y": -88.1974387891,
-                "z": -1.0
-            }
-        ],
-        "links": [
-            {
-                "description": "Link from King port FastEthernet0/0 to Kong port FastEthernet0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 6,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "21102c2d-0061-5ec0-8d0b-25c7722210a2",
+                "x": -17,
+                "y": -88,
+                "z": -1,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"437\" height=\"216\"><ellipse cx=\"218.5\" cy=\"108.0\" rx=\"217.5\" ry=\"107.0\" fill=\"#ffff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "description": "Link from King port Serial1/0 to Kong port Serial1/0",
-                "destination_node_id": 2,
-                "destination_port_id": 7,
-                "id": 2,
-                "source_node_id": 1,
-                "source_port_id": 2
+                "drawing_id": "a32b3b62-75c9-534e-8368-43a2bf2ff32b",
+                "x": 136,
+                "y": -30,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"136\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.112.X /24</text></svg>"
+            },
+            {
+                "drawing_id": "70285d07-8acd-59f3-a61c-6e08210253a4",
+                "x": 279,
+                "y": -19,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "74036b50-b6c5-5bad-8091-3b8f52fd6db1",
+                "x": 172,
+                "y": -78,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 100</text></svg>"
+            },
+            {
+                "drawing_id": "6683d6a7-bb9e-5c3d-80ed-601fcbc292ef",
+                "x": 279,
+                "y": 49,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "f5816d38-04f7-525d-8eb7-4df3a618b1ba",
+                "x": 134,
+                "y": 65,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"136\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.122.X /24</text></svg>"
+            },
+            {
+                "drawing_id": "3d3f0884-7f6f-52b9-b9af-3bd05f16f3f8",
+                "x": 132,
+                "y": 37,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "26028612-6214-558f-a0b4-d20981298e25",
+                "x": 132,
+                "y": -5,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "King",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Kong on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Kong on port Serial1/0",
-                        "id": 2,
-                        "link_id": 2,
-                        "name": "Serial1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 3,
-                        "name": "Serial1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 4,
-                        "name": "Serial1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 5,
-                        "name": "Serial1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "King",
+                "node_id": "81d75315-9b46-531c-bd6d-770b6f6d8ebe",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 35,
+                "y": 8,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2105,
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "King",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-4T",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": 35.0,
-                "y": 8.0
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Kong",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Kong",
+                "node_id": "72e92432-6487-500c-a900-9975307f3366",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 297,
+                "y": 8,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "6d04be91-d3ea-5d3f-885f-381d89b96dbf",
+                "nodes": [
                     {
-                        "description": "connected to King on port FastEthernet0/0",
-                        "id": 6,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
+                        "node_id": "81d75315-9b46-531c-bd6d-770b6f6d8ebe",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "description": "connected to King on port Serial1/0",
-                        "id": 7,
-                        "link_id": 2,
-                        "name": "Serial1/0",
+                        "node_id": "72e92432-6487-500c-a900-9975307f3366",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 8,
-                        "name": "Serial1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 9,
-                        "name": "Serial1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 10,
-                        "name": "Serial1/3",
-                        "port_number": 3,
-                        "slot_number": 1
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2106,
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Kong",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-4T",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": 297.0,
-                "y": 8.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#323232",
-                "text": "192.168.112.X /24",
-                "x": 135.764501988,
-                "y": -30.091883092
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": ".2",
-                "x": 278.600071787,
-                "y": -19.4852813742
-            },
-            {
-                "color": "#323232",
-                "text": "AS 100",
-                "x": 171.826947828,
-                "y": -78.175144213
-            },
-            {
-                "color": "#323232",
-                "text": ".2",
-                "x": 279.307178569,
-                "y": 49.1040764009
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.122.X /24",
-                "x": 133.643181644,
-                "y": 65.3675323681
-            },
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": 131.521861301,
-                "y": 37.0832611207
-            },
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": 132.228968082,
-                "y": -5.34314575051
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "d06ed506-5697-5f15-ad4a-00111e7471f4",
+                "nodes": [
+                    {
+                        "node_id": "81d75315-9b46-531c-bd6d-770b6f6d8ebe",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "72e92432-6487-500c-a900-9975307f3366",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

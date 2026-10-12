@@ -1,283 +1,343 @@
 {
     "name": "icnd2-assessment-startup-configs",
-    "resources_type": "local",
+    "project_id": "76304645-f8ae-5e07-863a-9789667750cf",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from Chewbacca port Serial0/0 to Luke port Serial0/0",
-                "destination_node_id": 3,
-                "destination_port_id": 9,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "30e73563-a1cd-52b5-bce6-12005c503c7f",
+                "x": 66,
+                "y": -70,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.13.0 /28</text></svg>"
             },
             {
-                "description": "Link from Chewbacca port Serial0/1 to HanSolo port Serial0/1",
-                "destination_node_id": 2,
-                "destination_port_id": 6,
-                "id": 2,
-                "source_node_id": 1,
-                "source_port_id": 2
+                "drawing_id": "e6361d03-8d73-5661-bdf2-e5ed97c7212b",
+                "x": 2,
+                "y": -111,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
             },
             {
-                "description": "Link from HanSolo port Serial0/0 to Luke port Serial0/1",
-                "destination_node_id": 3,
-                "destination_port_id": 10,
-                "id": 3,
-                "source_node_id": 2,
-                "source_port_id": 5
+                "drawing_id": "c657413e-07f3-5e78-95a8-13d0118e6170",
+                "x": 49,
+                "y": 17,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "328d16a4-bb8e-5790-9548-4d8e40643be6",
+                "x": 55,
+                "y": -9,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "90c51b25-7b64-54fe-9283-b960d12d8bbe",
+                "x": -49,
+                "y": -199,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L0: 1.1.1.1 /30</text></svg>"
+            },
+            {
+                "drawing_id": "acf5c395-a685-5965-8339-c25092de8737",
+                "x": 140,
+                "y": 23,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L0: 3.3.3.3 /25</text></svg>"
+            },
+            {
+                "drawing_id": "bb71650a-2622-5c3c-9f20-9d7bd38a32b3",
+                "x": -19,
+                "y": -111,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "d0937667-d4fc-5196-81d1-c59a9285136a",
+                "x": -71,
+                "y": 61,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.23.0 /26</text></svg>"
+            },
+            {
+                "drawing_id": "a40f5e2a-7c5a-59df-9f8d-5477af5f0466",
+                "x": -257,
+                "y": 28,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L0: 2.2.2.2 /27</text></svg>"
+            },
+            {
+                "drawing_id": "1cd3e0e3-fbd1-5865-9264-c992e3994008",
+                "x": -187,
+                "y": -70,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.12.0 /29</text></svg>"
+            },
+            {
+                "drawing_id": "6a782390-c60a-5d2b-a96e-e02e0d7347ca",
+                "x": -92,
+                "y": 10,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "eac3034b-81a0-52e2-b929-9e6466b5e29a",
+                "x": -98,
+                "y": -17,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.2</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Chewbacca",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Luke on port Serial0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "Serial0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to HanSolo on port Serial0/1",
-                        "id": 2,
-                        "link_id": 2,
-                        "name": "Serial0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 3,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 4,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Chewbacca",
+                "node_id": "e3b4ef58-c9e8-512a-a9fc-205c00facfbf",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -34,
+                "y": -153,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2100,
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x60509e98",
-                    "image": "C3640-JK.BIN",
-                    "name": "Chewbacca",
-                    "ram": 192,
-                    "slot0": "NM-4T",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -34.0,
-                "y": -153.0
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "HanSolo",
-                    "x": 5.57106781188,
-                    "y": 47.8319984624
+                    "x": 6,
+                    "y": 48,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Luke on port Serial0/1",
-                        "id": 5,
-                        "link_id": 3,
-                        "name": "Serial0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Chewbacca on port Serial0/1",
-                        "id": 6,
-                        "link_id": 2,
-                        "name": "Serial0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 7,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 8,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "HanSolo",
+                "node_id": "3b343197-426c-5a89-858b-2880004f6ece",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 71,
+                "y": 11,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2102,
-                    "chassis": "3640",
-                    "console": 2003,
-                    "idlepc": "0x60509e98",
-                    "image": "C3640-JK.BIN",
-                    "name": "HanSolo",
-                    "ram": 192,
-                    "slot0": "NM-4T",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": 71.0,
-                "y": 11.0
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Luke",
-                    "x": 8.87867965644,
-                    "y": 49.2462120247
+                    "x": 9,
+                    "y": 49,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Luke",
+                "node_id": "8c5754de-8578-5a86-ac70-46eb1c43074e",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -156,
+                "y": 14,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "1f439786-0e43-51df-8620-369fcbbae09d",
+                "nodes": [
                     {
-                        "description": "connected to Chewbacca on port Serial0/0",
-                        "id": 9,
-                        "link_id": 1,
-                        "name": "Serial0/0",
+                        "node_id": "e3b4ef58-c9e8-512a-a9fc-205c00facfbf",
+                        "adapter_number": 4,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "description": "connected to HanSolo on port Serial0/0",
-                        "id": 10,
-                        "link_id": 3,
-                        "name": "Serial0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 11,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 12,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
+                        "node_id": "8c5754de-8578-5a86-ac70-46eb1c43074e",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2101,
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x60509e98",
-                    "image": "C3640-JK.BIN",
-                    "name": "Luke",
-                    "ram": 192,
-                    "slot0": "NM-4T",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -156.0,
-                "y": 14.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#323232",
-                "text": "192.168.13.0 /28",
-                "x": 66.4680374315,
-                "y": -69.6898628385
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": ".1",
-                "x": 1.61670298556,
-                "y": -110.594408409
+                "link_id": "b8933ee2-01a5-5d56-b6a5-e1678721dc30",
+                "nodes": [
+                    {
+                        "node_id": "e3b4ef58-c9e8-512a-a9fc-205c00facfbf",
+                        "adapter_number": 4,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Serial4/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "3b343197-426c-5a89-858b-2880004f6ece",
+                        "adapter_number": 4,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Serial4/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": ".3",
-                "x": 49.4974746831,
-                "y": 16.5771644663
-            },
-            {
-                "color": "#323232",
-                "text": ".3",
-                "x": 55.1543289326,
-                "y": -8.87867965644
-            },
-            {
-                "color": "#323232",
-                "text": "L0: 1.1.1.1 /30",
-                "x": -49.4974746831,
-                "y": -199.090403796
-            },
-            {
-                "color": "#323232",
-                "text": "L0: 3.3.3.3 /25",
-                "x": 140.007142675,
-                "y": 22.941125497
-            },
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": -19.2527419549,
-                "y": -110.724350724
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.23.0 /26",
-                "x": -71.4177848998,
-                "y": 61.124891681
-            },
-            {
-                "color": "#323232",
-                "text": "L0: 2.2.2.2 /27",
-                "x": -256.679761571,
-                "y": 27.8908729653
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.12.0 /29",
-                "x": -187.383297014,
-                "y": -69.6898628385
-            },
-            {
-                "color": "#323232",
-                "text": ".2",
-                "x": -91.9238815543,
-                "y": 10.2132034356
-            },
-            {
-                "color": "#323232",
-                "text": ".2",
-                "x": -98.2878425849,
-                "y": -17.3639610307
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "86c974e4-1f8d-500c-af1f-892f6b69f989",
+                "nodes": [
+                    {
+                        "node_id": "3b343197-426c-5a89-858b-2880004f6ece",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "8c5754de-8578-5a86-ac70-46eb1c43074e",
+                        "adapter_number": 4,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Serial4/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

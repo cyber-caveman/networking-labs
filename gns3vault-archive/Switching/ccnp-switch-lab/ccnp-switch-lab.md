@@ -4,9 +4,8 @@
 
 ## Scenario:
 
-**For this lab you need REAL hardware. You can't use switches in GNS3!**
 
-**Minimum Equipment needed: (Or use rack rentals...)**
+**Original physical-equipment reference:**
 
 - Core Switches: Cisco 3560 or Cisco 3550 (3550 can't do Private Vlan)
 - Distribution Switches: Cisco 3560 or Cisco 3550 (doesn't matter which one) perhaps a 2950 could do.
@@ -54,8 +53,57 @@ You never liked hierarchy and so routing isn't your way to go....who needs a sub
 - Configure D2 so A1 and A2 can never become the root bridge. Test this by setting the priority to a lower value on A1 or A2.
 - Configure A2 so port fax/x (pick an interface with nothing connected to it) skips all STP states and goes to forwarding immediately.
 
-## IOS:
+## GNS3 2.2.56.1
 
-Basic IOS for the switches should be sufficient. No special features needed.
+Import [ccnp-switch-lab IOU.gns3project](ccnp-switch-lab%20IOU.gns3project) using **File > Import portable project**. To open `ccnp-switch-lab.gns3` directly, keep it beside `project-files`.
+
+IOU L3 routers use `x86_64_crb_linux-adventerprisek9-ms.bin`, 768 MB RAM, **512 KB NVRAM**, four Ethernet and four serial adapters. CLI switches use the preferred IOU L2 image `i86bi-linux-l2-adventerprisek9-15.2d.bin`, 256 MB RAM, **512 KB NVRAM**, four Ethernet adapters and no serial adapters. Images, checksums, templates and shared settings follow `AGENTS.md`; consoles allocate automatically. Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Unmanaged Ethernet and built-in Frame Relay switches retain their device types and VLAN/PVC settings. Connected IOU interfaces use ANSI LMI for the built-in Frame Relay switch.
+
+Startup and supplied final configurations use the interface mappings below. Effective bandwidth, delay, administrative state and routing/policy command contexts were compared against their source. Obsolete hardware-only commands are removed. Ports omitted to fit the selected model are unused hardware-only ports, listed in the verification notes.
+
+CLI switches explicitly select PVST when the source relies on that default. Converted EtherSwitch routers retain their default IP-routing state and routed FastEthernet0 ports. Use the IOU names below when following old interface references in the instructions and diagrams.
+
+| Device | Source interface | Current interface |
+| --- | --- | --- |
+| C1 | FastEthernet0/0 | Ethernet0/0 |
+| C1 | FastEthernet0/1 | Ethernet0/1 |
+| C1 | FastEthernet0/2 | Ethernet0/2 |
+| C1 | FastEthernet0/3 | Ethernet0/3 |
+| C1 | FastEthernet0/4 | Ethernet1/0 |
+| C1 | FastEthernet0/5 | Ethernet1/1 |
+| C1 | FastEthernet0/6 | Ethernet1/2 |
+| C2 | FastEthernet0/0 | Ethernet0/0 |
+| C2 | FastEthernet0/1 | Ethernet0/1 |
+| C2 | FastEthernet0/2 | Ethernet0/2 |
+| C2 | FastEthernet0/3 | Ethernet0/3 |
+| C2 | FastEthernet0/4 | Ethernet1/0 |
+| C2 | FastEthernet0/5 | Ethernet1/1 |
+| C2 | FastEthernet0/6 | Ethernet1/2 |
+| D1 | FastEthernet0/0 | Ethernet0/0 |
+| D1 | FastEthernet0/1 | Ethernet0/1 |
+| D1 | FastEthernet0/2 | Ethernet0/2 |
+| D1 | FastEthernet0/3 | Ethernet0/3 |
+| D1 | FastEthernet0/4 | Ethernet1/0 |
+| D1 | FastEthernet0/5 | Ethernet1/1 |
+| D1 | FastEthernet0/6 | Ethernet1/2 |
+| D1 | FastEthernet0/7 | Ethernet1/3 |
+| D2 | FastEthernet0/0 | Ethernet0/0 |
+| D2 | FastEthernet0/1 | Ethernet0/1 |
+| D2 | FastEthernet0/2 | Ethernet0/2 |
+| D2 | FastEthernet0/3 | Ethernet0/3 |
+| D2 | FastEthernet0/4 | Ethernet1/0 |
+| D2 | FastEthernet0/5 | Ethernet1/1 |
+| D2 | FastEthernet0/6 | Ethernet1/2 |
+| D2 | FastEthernet0/7 | Ethernet1/3 |
+| A1 | FastEthernet0/0 | Ethernet0/0 |
+| A1 | FastEthernet0/1 | Ethernet0/1 |
+| A2 | FastEthernet0/0 | Ethernet0/0 |
+| A2 | FastEthernet0/1 | Ethernet0/1 |
+| R1 | FastEthernet0/0 | Ethernet0/0 |
+| R2 | FastEthernet0/0 | Ethernet0/0 |
+
+See [verification, reconstruction and source limitations](VERIFICATION.md). Portable archives contain the initial state and supplied solution files separately; final configs are not loaded at startup. Original `.net` files and diagrams are reference material. Containerlab artifacts are unchanged.
 
 ## Topology:

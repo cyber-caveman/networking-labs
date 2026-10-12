@@ -1,3 +1,7 @@
+## Current GNS3 portable projects
+
+All lab categories have been updated to the device preferences in `AGENTS.md`, including 512 KB IOU NVRAM. See [conversion status, downloads and verification limits](CONVERSION-STATUS.md).
+
 # GNS3Vault Labs
 
 This folder contains networking labs from **gns3vault.com**. Since I decided to take the website offline, I've made these labs available here to ensure they remain accessible to the networking community.

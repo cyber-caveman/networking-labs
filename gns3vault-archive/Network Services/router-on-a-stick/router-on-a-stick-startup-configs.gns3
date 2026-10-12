@@ -1,250 +1,344 @@
 {
     "name": "router-on-a-stick-startup-configs",
-    "resources_type": "local",
+    "project_id": "a0ffe729-dd62-5f67-bc77-9fffc80e5f78",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from Hadley port FastEthernet0/0 to SW1 port 2",
-                "destination_node_id": 1,
-                "destination_port_id": 6,
-                "id": 1,
-                "source_node_id": 2,
-                "source_port_id": 1
+                "drawing_id": "c7d7ffca-385d-5b19-a45d-d3ad91a0a13f",
+                "x": -307,
+                "y": -43,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"452\" height=\"118\"><rect x=\"1\" y=\"1\" width=\"450\" height=\"116\" fill=\"#aaffff\" stroke=\"#000000\" stroke-width=\"1\"/></svg>"
             },
             {
-                "description": "Link from John port FastEthernet0/0 to SW1 port 1",
-                "destination_node_id": 1,
-                "destination_port_id": 5,
-                "id": 2,
-                "source_node_id": 3,
-                "source_port_id": 3
+                "drawing_id": "951553ed-b477-5a59-a040-fdd4237f0531",
+                "x": -308,
+                "y": -171,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"452\" height=\"118\"><rect x=\"1\" y=\"1\" width=\"450\" height=\"116\" fill=\"#ffff7f\" stroke=\"#000000\" stroke-width=\"1\"/></svg>"
             },
             {
-                "description": "Link from SW1 port 3 to Sam port FastEthernet0/0",
-                "destination_node_id": 4,
-                "destination_port_id": 8,
-                "id": 3,
-                "source_node_id": 1,
-                "source_port_id": 7
+                "drawing_id": "25dc30b1-7b5e-5e7b-9851-e0f67e0213ea",
+                "x": -208,
+                "y": -12,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "6ef8552f-166f-57b0-95d9-d25a221b0285",
+                "x": -206,
+                "y": -124,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "b957e778-08dc-53c2-a186-42f92c747b32",
+                "x": -153,
+                "y": 31,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"38\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">VLAN 3</text><text x=\"0\" y=\"32\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.3.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "79ece16c-5f4b-53c3-aafa-efc9ef5a2f9e",
+                "x": -153,
+                "y": -167,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"38\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">VLAN 2</text><text x=\"0\" y=\"32\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.2.0 /24</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3725",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Hadley",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to SW1 on port 2",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 2,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Hadley",
+                "node_id": "968e0416-21c2-5fce-8554-79d5cad90879",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -271,
+                "y": 12,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2101,
-                    "console": 2009,
-                    "idlepc": "0x60bf8ba0",
-                    "image": "C3725-AD.BIN",
-                    "name": "Hadley",
-                    "ram": 256,
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3725",
-                "x": -271.29498526,
-                "y": 11.941125497
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3725",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "John",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to SW1 on port 1",
-                        "id": 3,
-                        "link_id": 2,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 4,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "John",
+                "node_id": "86bc0772-2053-5de4-8693-d6def774e60a",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -272,
+                "y": -137,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2100,
-                    "console": 2008,
-                    "idlepc": "0x60bf8ba0",
-                    "image": "C3725-AD.BIN",
-                    "name": "John",
-                    "ram": 256,
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3725",
-                "x": -272.002092041,
-                "y": -136.551298552
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Ethernet switch",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 32,
                 "label": {
                     "text": "SW1",
-                    "x": 19.2426406871,
-                    "y": -22.1715728753
+                    "x": 19,
+                    "y": -22,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to John on port FastEthernet0/0",
-                        "id": 5,
-                        "link_id": 2,
-                        "name": "1",
-                        "port_number": 1,
-                        "type": "access",
-                        "vlan": 2
-                    },
-                    {
-                        "description": "connected to Hadley on port FastEthernet0/0",
-                        "id": 6,
-                        "link_id": 1,
-                        "name": "2",
-                        "port_number": 2,
-                        "type": "access",
-                        "vlan": 3
-                    },
-                    {
-                        "description": "connected to Sam on port FastEthernet0/0",
-                        "id": 7,
-                        "link_id": 3,
-                        "name": "3",
-                        "port_number": 3,
-                        "type": "dot1q",
-                        "vlan": 4
-                    }
-                ],
+                "locked": false,
+                "name": "SW1",
+                "node_id": "3c95458d-9b37-5432-bc5d-4354fa2f49a6",
+                "node_type": "ethernet_switch",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "symbol": ":/symbols/classic/ethernet_switch.svg",
+                "width": 72,
+                "x": -112,
+                "y": -63,
+                "z": 1,
                 "properties": {
-                    "name": "SW1"
-                },
-                "server_id": 1,
-                "type": "EthernetSwitch",
-                "x": -111.867532368,
-                "y": -62.6690475583
+                    "ports_mapping": [
+                        {
+                            "name": "Ethernet0",
+                            "port_number": 0,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet1",
+                            "port_number": 1,
+                            "type": "access",
+                            "vlan": 2
+                        },
+                        {
+                            "name": "Ethernet2",
+                            "port_number": 2,
+                            "type": "access",
+                            "vlan": 3
+                        },
+                        {
+                            "name": "Ethernet3",
+                            "port_number": 3,
+                            "type": "dot1q",
+                            "vlan": 4
+                        }
+                    ]
+                }
             },
             {
-                "description": "Router c3725",
-                "id": 4,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Sam",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Sam",
+                "node_id": "237dab9f-c5b9-5010-870a-99050e046e6a",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 67,
+                "y": -71,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 4,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "da580c79-d1dd-59cc-9c79-abe747348816",
+                "nodes": [
                     {
-                        "description": "connected to SW1 on port 3",
-                        "id": 8,
-                        "link_id": 3,
-                        "name": "FastEthernet0/0",
+                        "node_id": "968e0416-21c2-5fce-8554-79d5cad90879",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "id": 9,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
+                        "node_id": "3c95458d-9b37-5432-bc5d-4354fa2f49a6",
+                        "adapter_number": 0,
+                        "port_number": 2,
+                        "label": {
+                            "text": "2",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2102,
-                    "console": 2010,
-                    "idlepc": "0x60bf8ba0",
-                    "image": "C3725-AD.BIN",
-                    "name": "Sam",
-                    "ram": 256,
-                    "startup_config": "configs\\i4_startup-config.cfg"
-                },
-                "router_id": 4,
-                "server_id": 1,
-                "type": "C3725",
-                "x": 66.7020561473,
-                "y": -70.7903679019
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -207.889393669,
-                "y": -12.4020202536
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -206.475180106,
-                "y": -123.923881554
+                "link_id": "3cd0a992-717d-5d52-a6da-089dcda43b3c",
+                "nodes": [
+                    {
+                        "node_id": "86bc0772-2053-5de4-8693-d6def774e60a",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "3c95458d-9b37-5432-bc5d-4354fa2f49a6",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "VLAN 3\n192.168.3.0 /24",
-                "x": -152.735064736,
-                "y": 30.9325035256
-            },
-            {
-                "color": "#0000ff",
-                "text": "VLAN 2\n192.168.2.0 /24",
-                "x": -153.442171517,
-                "y": -166.85638508
-            }
-        ],
-        "rectangles": [
-            {
-                "fill_color": "#aaffff",
-                "height": 118.086832458,
-                "width": 452.042243305,
-                "x": -306.731799771,
-                "y": -43.3345237792,
-                "z": -2.0
-            },
-            {
-                "fill_color": "#ffff7f",
-                "height": 118.086832458,
-                "width": 451.841233178,
-                "x": -307.591449816,
-                "y": -171.119841047,
-                "z": -2.0
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "5556ea8e-4b76-5283-b9d6-b4b6c6e48c6a",
+                "nodes": [
+                    {
+                        "node_id": "3c95458d-9b37-5432-bc5d-4354fa2f49a6",
+                        "adapter_number": 0,
+                        "port_number": 3,
+                        "label": {
+                            "text": "3",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "237dab9f-c5b9-5010-870a-99050e046e6a",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

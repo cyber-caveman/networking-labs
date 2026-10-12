@@ -61,9 +61,57 @@ X.X.X.X
 
 - Configure AS300 so it is no longer a transit AS for AS200 to reach 172.16.1.1 in AS100. AS400 should not be influenced.
 
-## IOS:
+## GNS3 2.2.56.1
 
-- c3640-jk9s-mz.124-16.bin
+Import `bgp-advanced-startup-configs IOU.gns3project` with **File > Import portable project**.
+For direct opening, keep `bgp-advanced-startup-configs.gns3` beside `project-files`.
+
+Routers use the preferred IOU L3 image `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), template
+`b3b10b90-adfb-43f8-b289-b68bcf322ad8`, 768 MB RAM, 512 KB NVRAM,
+four Ethernet and four serial adapters, with automatically allocated consoles.
+Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Physical interface names and link endpoints are updated together in startup and
+all supplied final configs. Original bandwidth and delay are explicit where
+needed to preserve EIGRP/IGP metric inputs. Source protocol settings and intended
+startup state are preserved; final configs are not loaded at startup.
+
+| Router | Original interface | IOU interface |
+| --- | --- | --- |
+| R1 | FastEthernet0/0 | Ethernet0/0 |
+| R1 | FastEthernet1/0 | Ethernet0/1 |
+| R10 | FastEthernet0/0 | Ethernet0/0 |
+| R10 | FastEthernet1/0 | Ethernet0/1 |
+| R11 | FastEthernet0/0 | Ethernet0/0 |
+| R11 | FastEthernet1/0 | Ethernet0/1 |
+| R2 | FastEthernet0/0 | Ethernet0/0 |
+| R2 | FastEthernet1/0 | Ethernet0/1 |
+| R3 | FastEthernet0/0 | Ethernet0/0 |
+| R3 | FastEthernet1/0 | Ethernet0/1 |
+| R4 | FastEthernet0/0 | Ethernet0/0 |
+| R4 | FastEthernet1/0 | Ethernet0/1 |
+| R4 | FastEthernet2/0 | Ethernet0/2 |
+| R4 | FastEthernet3/0 | Ethernet0/3 |
+| R5 | FastEthernet0/0 | Ethernet0/0 |
+| R5 | FastEthernet1/0 | Ethernet0/1 |
+| R5 | FastEthernet2/0 | Ethernet0/2 |
+| R6 | FastEthernet0/0 | Ethernet0/0 |
+| R6 | FastEthernet1/0 | Ethernet0/1 |
+| R6 | FastEthernet2/0 | Ethernet0/2 |
+| R7 | FastEthernet0/0 | Ethernet0/0 |
+| R7 | FastEthernet1/0 | Ethernet0/1 |
+| R8 | FastEthernet0/0 | Ethernet0/0 |
+| R8 | FastEthernet1/0 | Ethernet0/1 |
+| R9 | FastEthernet0/0 | Ethernet0/0 |
+| R9 | FastEthernet1/0 | Ethernet0/1 |
+
+Original topology images and `.net` files are references; the converted project
+and mapping table specify the current interfaces. Containerlab files are unchanged.
+
+See `VERIFICATION.md` in this folder or portable archive for configuration analysis
+and source issues. Live IOS command support, neighbor formation, route selection,
+Frame Relay PVC state and packet forwarding have not been tested on the remote server.
 
 ## Topology:
 

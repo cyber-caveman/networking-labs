@@ -19,7 +19,7 @@ The archive includes the startup configs and the original topology illustration.
 For direct opening, keep `OSPF Summarization Discard Route.gns3` beside `project-files`.
 
 Exercise routers use `x86_64_crb_linux-adventerprisek9-ms.bin`
-(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), 768 MB RAM, 128 KB NVRAM,
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), 768 MB RAM, 512 KB NVRAM,
 four Ethernet adapters and four serial adapters. Console ports are allocated automatically.
 
 Startup and solution configs use the mapped IOU interfaces. Ethernet interfaces

@@ -1,364 +1,468 @@
 {
     "name": "bgp-always-compare-med-startup-configs",
-    "resources_type": "local",
+    "project_id": "60e508d1-cdc5-5738-9513-3e4ab20ecab1",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "ellipses": [
+        "computes": [],
+        "drawings": [
             {
-                "border_style": 2,
-                "fill_color": "#aaff00",
-                "height": 200.0,
-                "width": 200.0,
-                "x": -106.773123959,
-                "y": -178.89801564,
-                "z": -1.0
+                "drawing_id": "21af0169-633e-5928-b4bd-418955990f91",
+                "x": -107,
+                "y": -179,
+                "z": -1,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\"><ellipse cx=\"100.0\" cy=\"100.0\" rx=\"99.0\" ry=\"99.0\" fill=\"#aaff00\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "border_style": 2,
-                "fill_color": "#ffff7f",
-                "height": 200.0,
-                "width": 568.11626971,
-                "x": -469.828427125,
-                "y": 73.7071067812,
-                "z": -1.0
+                "drawing_id": "4ade7d11-129c-52c3-a9e0-cc7258cefd1d",
+                "x": -470,
+                "y": 74,
+                "z": -1,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"568\" height=\"200\"><ellipse cx=\"284.0\" cy=\"100.0\" rx=\"283.0\" ry=\"99.0\" fill=\"#ffff7f\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "border_style": 2,
-                "fill_color": "#aaffff",
-                "height": 200.0,
-                "width": 200.0,
-                "x": -467.397582364,
-                "y": -181.019335984,
-                "z": -1.0
-            }
-        ],
-        "links": [
-            {
-                "description": "Link from Batman port FastEthernet1/0 to Spiderman port FastEthernet2/0",
-                "destination_node_id": 3,
-                "destination_port_id": 7,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 2
+                "drawing_id": "fae69211-5222-5c5f-b7b7-ba0ad6e45dec",
+                "x": -467,
+                "y": -181,
+                "z": -1,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\"><ellipse cx=\"100.0\" cy=\"100.0\" rx=\"99.0\" ry=\"99.0\" fill=\"#aaffff\" stroke=\"#000000\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/></svg>"
             },
             {
-                "description": "Link from Ironman port FastEthernet0/0 to Spiderman port FastEthernet0/0",
-                "destination_node_id": 3,
-                "destination_port_id": 5,
-                "id": 2,
-                "source_node_id": 2,
-                "source_port_id": 3
+                "drawing_id": "ca1dce7f-adf8-5940-afc0-cd2c1e052034",
+                "x": -339,
+                "y": 154,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.3</text></svg>"
             },
             {
-                "description": "Link from Ironman port FastEthernet1/0 to Superman port FastEthernet1/0",
-                "destination_node_id": 4,
-                "destination_port_id": 9,
-                "id": 3,
-                "source_node_id": 2,
-                "source_port_id": 4
+                "drawing_id": "31890c0f-02d2-5428-bccd-521c7bace39f",
+                "x": -368,
+                "y": 135,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.3</text></svg>"
             },
             {
-                "description": "Link from Spiderman port FastEthernet1/0 to Superman port FastEthernet0/0",
-                "destination_node_id": 4,
-                "destination_port_id": 8,
-                "id": 4,
-                "source_node_id": 3,
-                "source_port_id": 6
+                "drawing_id": "366b12af-75eb-5b39-b325-e7b9faa0aff7",
+                "x": -213,
+                "y": 80,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 300</text></svg>"
+            },
+            {
+                "drawing_id": "62099a32-a754-5b35-aacc-cc1dc49bcd39",
+                "x": -43,
+                "y": 134,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.4</text></svg>"
+            },
+            {
+                "drawing_id": "d73bbd22-b365-5312-b0fe-2a43dc391dfc",
+                "x": -489,
+                "y": 46,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.13.X /24</text></svg>"
+            },
+            {
+                "drawing_id": "dbc9e0a2-0865-54bf-bf5e-df704ed4b370",
+                "x": -61,
+                "y": -81,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "d83a76a8-3d1c-508e-958c-8ebe5252eb7f",
+                "x": -343,
+                "y": -76,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "484a2dbb-066d-5d49-916b-ff2a8a93da1d",
+                "x": -247,
+                "y": 174,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.34.X /24</text></svg>"
+            },
+            {
+                "drawing_id": "2cb4109f-bb1d-5365-b4fc-868149859a6d",
+                "x": -339,
+                "y": -104,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "d60d060c-b672-50a1-928a-72441b0a48ef",
+                "x": -246,
+                "y": -104,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.12.X /24</text></svg>"
+            },
+            {
+                "drawing_id": "edc5bfa6-76a3-5c42-99ff-c87493e3c4b7",
+                "x": -392,
+                "y": -177,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 100</text></svg>"
+            },
+            {
+                "drawing_id": "0e4e4e0b-f135-522d-938d-e52cc219b30b",
+                "x": -33,
+                "y": -172,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 200</text></svg>"
+            },
+            {
+                "drawing_id": "2e22c79b-8385-56bf-8d9a-96359305459a",
+                "x": -373,
+                "y": -63,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "9309349d-692e-5f62-96cd-90d175dcb43a",
+                "x": -233,
+                "y": -17,
+                "z": 2,
+                "rotation": 36,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.14.X /24</text></svg>"
+            },
+            {
+                "drawing_id": "4dea4250-77e0-5617-8dbb-73b0ef1a2556",
+                "x": -64,
+                "y": 171,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.4</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Batman",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Spiderman on port FastEthernet2/0",
-                        "id": 2,
-                        "link_id": 1,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Batman",
+                "node_id": "c36e35f4-c0a3-5208-a1c9-2851ace064d3",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -40,
+                "y": -102,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2106,
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Batman",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -40.4142135624,
-                "y": -101.97918472
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Ironman",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Spiderman on port FastEthernet0/0",
-                        "id": 3,
-                        "link_id": 2,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Superman on port FastEthernet1/0",
-                        "id": 4,
-                        "link_id": 3,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Ironman",
+                "node_id": "45381f1d-64f5-50bd-a108-da0375b6f6db",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -403,
+                "y": 152,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2107,
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Ironman",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -402.807611845,
-                "y": 152.292893219
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Spiderman",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Ironman on port FastEthernet0/0",
-                        "id": 5,
-                        "link_id": 2,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Superman on port FastEthernet0/0",
-                        "id": 6,
-                        "link_id": 4,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to Batman on port FastEthernet1/0",
-                        "id": 7,
-                        "link_id": 1,
-                        "name": "FastEthernet2/0",
-                        "port_number": 0,
-                        "slot_number": 2
-                    }
-                ],
+                "locked": false,
+                "name": "Spiderman",
+                "node_id": "a38ba793-cdca-558e-9ac5-ab99781e2cad",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -403,
+                "y": -102,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2105,
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Spiderman",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "slot2": "NM-1FE-TX",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -403.414213562,
-                "y": -102.221825407
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 4,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Superman",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Superman",
+                "node_id": "a7f58e43-73d8-5c6c-a6c1-c13f6de901d6",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -44,
+                "y": 151,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 4,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "624ddf08-06ee-5c89-a111-bd1d33705d1d",
+                "nodes": [
                     {
-                        "description": "connected to Spiderman on port FastEthernet1/0",
-                        "id": 8,
-                        "link_id": 4,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
+                        "node_id": "c36e35f4-c0a3-5208-a1c9-2851ace064d3",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "description": "connected to Ironman on port FastEthernet1/0",
-                        "id": 9,
-                        "link_id": 3,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 10,
-                        "name": "FastEthernet2/0",
-                        "port_number": 0,
-                        "slot_number": 2
+                        "node_id": "a38ba793-cdca-558e-9ac5-ab99781e2cad",
+                        "adapter_number": 0,
+                        "port_number": 2,
+                        "label": {
+                            "text": "Ethernet0/2",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2104,
-                    "chassis": "3640",
-                    "console": 2003,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Superman",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "slot2": "NM-1FE-TX",
-                    "startup_config": "configs\\i4_startup-config.cfg"
-                },
-                "router_id": 4,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -44.0208152802,
-                "y": 150.535533906
-            }
-        ],
-        "notes": [
-            {
-                "color": "#323232",
-                "text": ".3",
-                "x": -338.704148188,
-                "y": 153.755880016
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": ".3",
-                "x": -367.695526217,
-                "y": 134.663996924
+                "link_id": "a3bf4358-b860-569a-8e8a-7b1c360e96dc",
+                "nodes": [
+                    {
+                        "node_id": "45381f1d-64f5-50bd-a108-da0375b6f6db",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "a38ba793-cdca-558e-9ac5-ab99781e2cad",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": "AS 300",
-                "x": -212.839141137,
-                "y": 80.2167747731
+                "link_id": "64bd6d5e-28b9-5381-be06-07a12d966220",
+                "nodes": [
+                    {
+                        "node_id": "45381f1d-64f5-50bd-a108-da0375b6f6db",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "a7f58e43-73d8-5c6c-a6c1-c13f6de901d6",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#323232",
-                "text": ".4",
-                "x": -43.1335136524,
-                "y": 133.956890143
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.13.X /24",
-                "x": -488.6107858,
-                "y": 45.5685424949
-            },
-            {
-                "color": "#323232",
-                "text": ".2",
-                "x": -60.811183182,
-                "y": -81.0035713375
-            },
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": -342.946788875,
-                "y": -76.0538238692
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.34.X /24",
-                "x": -246.780266634,
-                "y": 173.55486989
-            },
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": -339.41125497,
-                "y": -103.630988335
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.12.X /24",
-                "x": -246.073159853,
-                "y": -104.338095117
-            },
-            {
-                "color": "#323232",
-                "text": "AS 100",
-                "x": -392.444263559,
-                "y": -177.170093579
-            },
-            {
-                "color": "#323232",
-                "text": "AS 200",
-                "x": -32.5269119346,
-                "y": -171.513239329
-            },
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": -372.645273685,
-                "y": -62.6187950266
-            },
-            {
-                "color": "#323232",
-                "rotate": "36",
-                "text": "192.168.14.X /24",
-                "x": -232.63813101,
-                "y": -17.3639610307
-            },
-            {
-                "color": "#323232",
-                "text": ".4",
-                "x": -63.6396103068,
-                "y": 171.433549546
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "fbeee84c-5a33-529a-8621-95fb2eab2e7a",
+                "nodes": [
+                    {
+                        "node_id": "a38ba793-cdca-558e-9ac5-ab99781e2cad",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "a7f58e43-73d8-5c6c-a6c1-c13f6de901d6",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

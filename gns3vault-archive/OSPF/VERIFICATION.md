@@ -1,3 +1,40 @@
+# OSPF: verification index
+
+24 projects checked on 2026-10-10. All installed GNS3 schema, endpoint/port, device-preference and archive-integrity checks passed. IOU NVRAM is 512 KB. Startup/final configuration analysis checks command contexts, effective bandwidth/delay, administrative state and mapped connectivity. Earlier conversions received a settings refresh without changing config text.
+
+**No live testing:** command acceptance, services, protocol behavior, convergence, hardware-dependent features and forwarding require testing on the target server. Source limitations and reconstruction assumptions are listed per lab; preserving a source solution is not proof it satisfies every exercise goal.
+
+| Lab review | Final configs | Notes |
+| --- | ---: | --- |
+| [ospf-authentication](ospf-authentication/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-auto-cost-reference-bandwidth](ospf-auto-cost-reference-bandwidth/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-demand-circuit](ospf-demand-circuit/VERIFICATION.md) | 2 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-dr-bdr-election](ospf-dr-bdr-election/VERIFICATION.md) | 5 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-flood-reduction](ospf-flood-reduction/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-intermediate](ospf-intermediate/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-lsa-type-3-summarization](ospf-lsa-type-3-summarization/VERIFICATION.md) | 5 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-lsa-type-5-summarization](ospf-lsa-type-5-summarization/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-md5-authentication-rotating-key](ospf-md5-authentication-rotating-key/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-nssa-not-so-stubby-area](ospf-nssa-not-so-stubby-area/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-over-frame-relay-broadcast](ospf-over-frame-relay-broadcast/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-over-frame-relay-non-broadcast](ospf-over-frame-relay-non-broadcast/VERIFICATION.md) | 0 | No completed final configs were supplied; none were invented. |
+| [ospf-over-frame-relay-point-to-multipoint](ospf-over-frame-relay-point-to-multipoint/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-over-frame-relay-point-to-multipoint-non-broadcast](ospf-over-frame-relay-point-to-multipoint-non-broadcast/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-over-frame-relay-point-to-point](ospf-over-frame-relay-point-to-point/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-per-neighbor-cost](ospf-per-neighbor-cost/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-single-area](ospf-single-area/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-stub-area](ospf-stub-area/VERIFICATION.md) | 2 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-summarization-discard-route](ospf-summarization-discard-route/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-suppress-forward-address](ospf-suppress-forward-address/VERIFICATION.md) | 0 | No completed final configs were supplied; none were invented. |
+| [ospf-totally-nssa](ospf-totally-nssa/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-totally-stub](ospf-totally-stub/VERIFICATION.md) | 2 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-virtual-link](ospf-virtual-link/VERIFICATION.md) | 4 | Prior verification/source notes retained; NVRAM refreshed. |
+| [ospf-virtual-link-and-summarization](ospf-virtual-link-and-summarization/VERIFICATION.md) | 3 | Prior verification/source notes retained; NVRAM refreshed. |
+
+## Earlier conversion review (historical)
+
+The following records the prior configuration analysis and source defects. Current memory settings are 512 KB; the checks above supersede old memory/packaging values.
+
 # OSPF conversion verification
 
 Configuration analysis completed for all **24 labs** against the original repository

@@ -1,545 +1,674 @@
 {
     "name": "BGP DMZ Link Bandwidth",
-    "resources_type": "local",
+    "project_id": "6856da1d-c976-5c95-98ee-24c18352bd74",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 2400,
+    "scene_height": 1600,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from Athens port FastEthernet0/0 to SW1 port 1",
-                "destination_node_id": 1,
-                "destination_port_id": 9,
-                "id": 1,
-                "source_node_id": 2,
-                "source_port_id": 1
+                "drawing_id": "2cb26a19-7dae-5841-b938-e06f8ecc469d",
+                "x": -337,
+                "y": 42,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"412\" height=\"140\"><rect x=\"1\" y=\"1\" width=\"410\" height=\"138\" fill=\"#aaff7f\" stroke=\"#000000\" stroke-width=\"1\"/></svg>"
             },
             {
-                "description": "Link from Delphi port Ethernet1/0 to Thebes port Ethernet1/0",
-                "destination_node_id": 6,
-                "destination_port_id": 22,
-                "id": 2,
-                "source_node_id": 3,
-                "source_port_id": 3
+                "drawing_id": "2ff0cc99-93e6-54e1-a73b-a28250466cd2",
+                "x": -336,
+                "y": -201,
+                "z": -2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"412\" height=\"221\"><rect x=\"1\" y=\"1\" width=\"410\" height=\"219\" fill=\"#aaffff\" stroke=\"#000000\" stroke-width=\"1\"/></svg>"
             },
             {
-                "description": "Link from Delphi port FastEthernet0/0 to SW1 port 3",
-                "destination_node_id": 1,
-                "destination_port_id": 11,
-                "id": 3,
-                "source_node_id": 3,
-                "source_port_id": 2
+                "drawing_id": "90f9ad22-214c-516c-85a3-412091a7da30",
+                "x": 4,
+                "y": -8,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
             },
             {
-                "description": "Link from Olympia port FastEthernet0/0 to Sparta port FastEthernet1/0",
-                "destination_node_id": 5,
-                "destination_port_id": 13,
-                "id": 4,
-                "source_node_id": 4,
-                "source_port_id": 7
+                "drawing_id": "11060a9d-6330-5111-8cb0-52355ffd19f8",
+                "x": -64,
+                "y": 52,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.5</text></svg>"
             },
             {
-                "description": "Link from Olympia port FastEthernet1/0 to Thebes port FastEthernet2/0",
-                "destination_node_id": 6,
-                "destination_port_id": 26,
-                "id": 5,
-                "source_node_id": 4,
-                "source_port_id": 8
+                "drawing_id": "7e1accfb-85e6-5474-bc1a-7dcd3fd572d5",
+                "x": -225,
+                "y": -49,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
             },
             {
-                "description": "Link from SW1 port 2 to Sparta port FastEthernet0/0",
-                "destination_node_id": 5,
-                "destination_port_id": 12,
-                "id": 6,
-                "source_node_id": 1,
-                "source_port_id": 10
+                "drawing_id": "bdbfba94-56b1-5a5b-ae8a-709b72a1b694",
+                "x": -289,
+                "y": 54,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.4</text></svg>"
             },
             {
-                "description": "Link from Sparta port Serial2/0 to Thebes port Serial0/0",
-                "destination_node_id": 6,
-                "destination_port_id": 18,
-                "id": 7,
-                "source_node_id": 5,
-                "source_port_id": 14
+                "drawing_id": "3263db5c-8733-5613-90a4-1a3f60b97b63",
+                "x": -29,
+                "y": -26,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "d5b0b7bb-63ac-5174-9077-0f7cdc0db18c",
+                "x": -354,
+                "y": 19,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.24.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "6c335125-d7dd-5aff-865c-35cc59b04d72",
+                "x": -153,
+                "y": -130,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "939f978c-44c0-53a0-8b01-2fb7b277e6ff",
+                "x": -245,
+                "y": -28,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "f5f18424-e914-5c47-968c-8fb345ad1fff",
+                "x": -255,
+                "y": 73,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.4</text></svg>"
+            },
+            {
+                "drawing_id": "99d8f255-86ad-512b-8f07-549492059f2c",
+                "x": -199,
+                "y": -102,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"136\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.123.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "7fbbd42f-5ec9-55bf-97b9-fffefc6c9415",
+                "x": -47,
+                "y": 78,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.5</text></svg>"
+            },
+            {
+                "drawing_id": "4bb1fbeb-aafb-5417-b333-ae5ac15e09c7",
+                "x": -44,
+                "y": 19,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.35.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "05b5672e-3d32-5418-afa1-fdceb702bc8c",
+                "x": -199,
+                "y": 99,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.45.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "3c031d6a-8ebe-5cc9-ab91-0f52fe790799",
+                "x": -289,
+                "y": -8,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "97ddf3c0-72b2-5c1f-9987-1f0ac741b450",
+                "x": -202,
+                "y": 18,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.25.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "36dbef16-58df-517c-8657-a2d6bdd18e9c",
+                "x": 1,
+                "y": 57,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.5</text></svg>"
+            },
+            {
+                "drawing_id": "5dedf278-82e6-58a2-95ce-4c245ef86247",
+                "x": 30,
+                "y": -198,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 1</text></svg>"
+            },
+            {
+                "drawing_id": "80a9e0c7-a504-5b28-9b17-cc0ad535fe9a",
+                "x": 34,
+                "y": 158,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">AS 2</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Athens",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to SW1 on port 1",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Athens",
+                "node_id": "5db4f8f8-0c01-5692-a2fb-2e6f8f221120",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -164,
+                "y": -171,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2103,
-                    "chassis": "3640",
-                    "console": 2000,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Athens",
-                    "slot0": "NM-1FE-TX",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -163.69848481,
-                "y": -170.818325857
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Delphi",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to SW1 on port 3",
-                        "id": 2,
-                        "link_id": 3,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Thebes on port Ethernet1/0",
-                        "id": 3,
-                        "link_id": 2,
-                        "name": "Ethernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 4,
-                        "name": "Ethernet1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 5,
-                        "name": "Ethernet1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 6,
-                        "name": "Ethernet1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Delphi",
+                "node_id": "03d6ae7a-e138-596b-bd15-1ce7e8541354",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -9,
+                "y": -49,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2101,
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Delphi",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-4E",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -8.95836943966,
-                "y": -48.8700576851
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 4,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Olympia",
-                    "x": -3.53553390594,
-                    "y": 38.6396103069
+                    "x": -4,
+                    "y": 39,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Sparta on port FastEthernet1/0",
-                        "id": 7,
-                        "link_id": 4,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Thebes on port FastEthernet2/0",
-                        "id": 8,
-                        "link_id": 5,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    }
-                ],
+                "locked": false,
+                "name": "Olympia",
+                "node_id": "2890a1bf-cdf8-58c0-88c6-8480968d7dd9",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -321,
+                "y": 75,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2100,
-                    "chassis": "3640",
-                    "console": 2003,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Olympia",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "startup_config": "configs\\i4_startup-config.cfg"
-                },
-                "router_id": 4,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -321.499566724,
-                "y": 74.8736290229
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Ethernet switch",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "none",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 32,
                 "label": {
                     "text": "SW1",
-                    "x": -3.38477631085,
-                    "y": -20.7573593128
+                    "x": -3,
+                    "y": -21,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Athens on port FastEthernet0/0",
-                        "id": 9,
-                        "link_id": 1,
-                        "name": "1",
-                        "port_number": 1,
-                        "type": "access",
-                        "vlan": 1
-                    },
-                    {
-                        "description": "connected to Sparta on port FastEthernet0/0",
-                        "id": 10,
-                        "link_id": 6,
-                        "name": "2",
-                        "port_number": 2,
-                        "type": "access",
-                        "vlan": 1
-                    },
-                    {
-                        "description": "connected to Delphi on port FastEthernet0/0",
-                        "id": 11,
-                        "link_id": 3,
-                        "name": "3",
-                        "port_number": 3,
-                        "type": "access",
-                        "vlan": 1
-                    }
-                ],
+                "locked": false,
+                "name": "SW1",
+                "node_id": "88e10d6d-07db-5d43-b2d0-7babf0e2fa7d",
+                "node_type": "ethernet_switch",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "symbol": ":/symbols/classic/ethernet_switch.svg",
+                "width": 72,
+                "x": -166,
+                "y": -44,
+                "z": 1,
                 "properties": {
-                    "name": "SW1"
-                },
-                "server_id": 1,
-                "type": "EthernetSwitch",
-                "x": -166.31475452,
-                "y": -43.5771644663
+                    "ports_mapping": [
+                        {
+                            "name": "Ethernet0",
+                            "port_number": 0,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet1",
+                            "port_number": 1,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet2",
+                            "port_number": 2,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet3",
+                            "port_number": 3,
+                            "type": "access",
+                            "vlan": 1
+                        }
+                    ]
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 5,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Sparta",
-                    "x": 19.5,
-                    "y": -25.0
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to SW1 on port 2",
-                        "id": 12,
-                        "link_id": 6,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Olympia on port FastEthernet0/0",
-                        "id": 13,
-                        "link_id": 4,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to Thebes on port Serial0/0",
-                        "id": 14,
-                        "link_id": 7,
-                        "name": "Serial2/0",
-                        "port_number": 0,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 15,
-                        "name": "Serial2/1",
-                        "port_number": 1,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 16,
-                        "name": "Serial2/2",
-                        "port_number": 2,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 17,
-                        "name": "Serial2/3",
-                        "port_number": 3,
-                        "slot_number": 2
-                    }
-                ],
+                "locked": false,
+                "name": "Sparta",
+                "node_id": "3a0f69a3-b276-57fb-802f-b1a2628b0b05",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -319,
+                "y": -49,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2102,
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Sparta",
-                    "slot0": "NM-1FE-TX",
-                    "slot1": "NM-1FE-TX",
-                    "slot2": "NM-4T",
-                    "startup_config": "configs\\i5_startup-config.cfg"
-                },
-                "router_id": 5,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -318.671139599,
-                "y": -48.8700576851
+                    "application_id": 5,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 6,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Thebes",
-                    "x": 4.62132034356,
-                    "y": 41.4680374317
+                    "x": 5,
+                    "y": 41,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Thebes",
+                "node_id": "b0ba8196-2c66-5ff1-83da-0942e9efe732",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -10,
+                "y": 78,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 6,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "ebab3864-c7f2-5ec5-9ab0-a8237f13be3d",
+                "nodes": [
                     {
-                        "description": "connected to Sparta on port Serial2/0",
-                        "id": 18,
-                        "link_id": 7,
-                        "name": "Serial0/0",
+                        "node_id": "5db4f8f8-0c01-5692-a2fb-2e6f8f221120",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     },
                     {
-                        "id": 19,
-                        "name": "Serial0/1",
+                        "node_id": "88e10d6d-07db-5d43-b2d0-7babf0e2fa7d",
+                        "adapter_number": 0,
                         "port_number": 1,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 20,
-                        "name": "Serial0/2",
-                        "port_number": 2,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 21,
-                        "name": "Serial0/3",
-                        "port_number": 3,
-                        "slot_number": 0
-                    },
-                    {
-                        "description": "connected to Delphi on port Ethernet1/0",
-                        "id": 22,
-                        "link_id": 2,
-                        "name": "Ethernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 23,
-                        "name": "Ethernet1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 24,
-                        "name": "Ethernet1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 25,
-                        "name": "Ethernet1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to Olympia on port FastEthernet1/0",
-                        "id": 26,
-                        "link_id": 5,
-                        "name": "FastEthernet2/0",
-                        "port_number": 0,
-                        "slot_number": 2
+                        "label": {
+                            "text": "1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2104,
-                    "chassis": "3640",
-                    "console": 2004,
-                    "idlepc": "0x603e26f0",
-                    "image": "C3640-JK.BIN",
-                    "name": "Thebes",
-                    "slot0": "NM-4T",
-                    "slot1": "NM-4E",
-                    "slot2": "NM-1FE-TX",
-                    "startup_config": "configs\\i6_startup-config.cfg"
-                },
-                "router_id": 6,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -9.66547622085,
-                "y": 77.7020561468
-            }
-        ],
-        "notes": [
-            {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": 3.53553390594,
-                "y": -8.25631329208
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".5",
-                "x": -63.6396103069,
-                "y": 52.4579361643
+                "link_id": "d4aba0f8-5442-52bb-9a94-38387d02f0e5",
+                "nodes": [
+                    {
+                        "node_id": "03d6ae7a-e138-596b-bd15-1ce7e8541354",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "b0ba8196-2c66-5ff1-83da-0942e9efe732",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -224.859956418,
-                "y": -49.372583002
+                "link_id": "96130252-aa75-59cd-a6fc-48ea62bf1590",
+                "nodes": [
+                    {
+                        "node_id": "03d6ae7a-e138-596b-bd15-1ce7e8541354",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "88e10d6d-07db-5d43-b2d0-7babf0e2fa7d",
+                        "adapter_number": 0,
+                        "port_number": 3,
+                        "label": {
+                            "text": "3",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".4",
-                "x": -289.206673506,
-                "y": 54.4751801069
+                "link_id": "7f6ab100-852a-5aa8-81d7-f4b326901b7c",
+                "nodes": [
+                    {
+                        "node_id": "2890a1bf-cdf8-58c0-88c6-8480968d7dd9",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "3a0f69a3-b276-57fb-802f-b1a2628b0b05",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": -28.9913780287,
-                "y": -26.4400794762
+                "link_id": "f09a3e4b-10ea-5ecb-a0d6-a4b6c7a6c1e1",
+                "nodes": [
+                    {
+                        "node_id": "2890a1bf-cdf8-58c0-88c6-8480968d7dd9",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "b0ba8196-2c66-5ff1-83da-0942e9efe732",
+                        "adapter_number": 1,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet1/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "192.168.24.0 /24",
-                "x": -353.553390594,
-                "y": 18.9116882455
+                "link_id": "27f25f3b-d914-5a8f-b12f-d2299a432e94",
+                "nodes": [
+                    {
+                        "node_id": "88e10d6d-07db-5d43-b2d0-7babf0e2fa7d",
+                        "adapter_number": 0,
+                        "port_number": 2,
+                        "label": {
+                            "text": "2",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "3a0f69a3-b276-57fb-802f-b1a2628b0b05",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -153.442171518,
-                "y": -130.287842585
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -245.366053072,
-                "y": -27.9583694396
-            },
-            {
-                "color": "#0000ff",
-                "text": ".4",
-                "x": -255.265548009,
-                "y": 73.3660530723
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.123.0 /24",
-                "x": -199.404112295,
-                "y": -101.802561211
-            },
-            {
-                "color": "#0000ff",
-                "text": ".5",
-                "x": -47.3761543396,
-                "y": 78.4198769416
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.35.0 /24",
-                "x": -43.8406204337,
-                "y": 18.7106781188
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.45.0 /24",
-                "x": -198.697005514,
-                "y": 98.6137443931
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -289.206673506,
-                "y": -7.85429303862
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.25.0 /24",
-                "x": -202.23253942,
-                "y": 17.8025612109
-            },
-            {
-                "color": "#0000ff",
-                "text": ".5",
-                "x": 1.41421356238,
-                "y": 56.9015869782
-            },
-            {
-                "color": "#323232",
-                "text": "AS 1",
-                "x": 29.6984848099,
-                "y": -197.969083452
-            },
-            {
-                "color": "#323232",
-                "text": "AS 2",
-                "x": 33.941125497,
-                "y": 157.504617358
-            }
-        ],
-        "rectangles": [
-            {
-                "fill_color": "#aaff7f",
-                "height": 139.501046021,
-                "width": 412.243253433,
-                "x": -336.783837972,
-                "y": 41.5182899634,
-                "z": -2.0
-            },
-            {
-                "fill_color": "#aaffff",
-                "height": 221.324422512,
-                "width": 412.243253433,
-                "x": -335.875721064,
-                "y": -200.818325857,
-                "z": -2.0
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "71fc6064-cf68-5a3a-a8f7-487ee8d2c93c",
+                "nodes": [
+                    {
+                        "node_id": "3a0f69a3-b276-57fb-802f-b1a2628b0b05",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "b0ba8196-2c66-5ff1-83da-0942e9efe732",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

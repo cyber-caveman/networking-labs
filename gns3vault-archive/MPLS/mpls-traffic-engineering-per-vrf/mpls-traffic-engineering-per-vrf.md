@@ -47,8 +47,41 @@ All IP addresses have been preconfigured for you.
 * Finish your configuration so traffic for customer Toy is sent from PE1 through P1 and P2.
 * Finish your configuration so traffic for customer Arcade is sent from PE1 through P3 and P2.
 
-## IOS:
+## GNS3 2.2.56.1
 
-c3725-adventerprisek9_ivs-mz.124-15.T13
+Import [mpls-traffic-eng-vrf-startup-configs IOU.gns3project](mpls-traffic-eng-vrf-startup-configs%20IOU.gns3project) using **File > Import portable project**. To open `mpls-traffic-eng-vrf-startup-configs.gns3` directly, keep it beside `project-files`.
+
+IOU L3 routers use `x86_64_crb_linux-adventerprisek9-ms.bin`, 768 MB RAM, **512 KB NVRAM**, four Ethernet and four serial adapters. CLI switches use the preferred IOU L2 image `i86bi-linux-l2-adventerprisek9-15.2d.bin`, 256 MB RAM, **512 KB NVRAM**, four Ethernet adapters and no serial adapters. Images, checksums, templates and shared settings follow `AGENTS.md`; consoles allocate automatically. Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Unmanaged Ethernet and built-in Frame Relay switches retain their device types and VLAN/PVC settings. Connected IOU interfaces use ANSI LMI for the built-in Frame Relay switch.
+
+Startup and supplied final configurations use the interface mappings below. Effective bandwidth, delay, administrative state and routing/policy command contexts were compared against their source. Obsolete hardware-only commands are removed. Ports omitted to fit the selected model are unused hardware-only ports, listed in the verification notes.
+
+| Device | Source interface | Current interface |
+| --- | --- | --- |
+| ArcadeBranch | FastEthernet0/0 | Ethernet0/0 |
+| ArcadeBranch | FastEthernet0/1 | Ethernet0/1 |
+| ArcadeHQ | FastEthernet0/0 | Ethernet0/0 |
+| ArcadeHQ | FastEthernet0/1 | Ethernet0/1 |
+| P1 | FastEthernet0/0 | Ethernet0/0 |
+| P1 | FastEthernet0/1 | Ethernet0/1 |
+| P2 | FastEthernet0/0 | Ethernet0/0 |
+| P2 | FastEthernet0/1 | Ethernet0/1 |
+| P3 | FastEthernet0/0 | Ethernet0/0 |
+| P3 | FastEthernet0/1 | Ethernet0/1 |
+| PE1 | FastEthernet0/0 | Ethernet0/0 |
+| PE1 | FastEthernet0/1 | Ethernet0/1 |
+| PE1 | FastEthernet1/0 | Ethernet0/2 |
+| PE1 | FastEthernet2/0 | Ethernet0/3 |
+| PE2 | FastEthernet0/0 | Ethernet0/0 |
+| PE2 | FastEthernet0/1 | Ethernet0/1 |
+| PE2 | FastEthernet1/0 | Ethernet0/2 |
+| PE2 | FastEthernet2/0 | Ethernet0/3 |
+| ToyBranch | FastEthernet0/0 | Ethernet0/0 |
+| ToyBranch | FastEthernet0/1 | Ethernet0/1 |
+| ToyHQ | FastEthernet0/0 | Ethernet0/0 |
+| ToyHQ | FastEthernet0/1 | Ethernet0/1 |
+
+See [verification, reconstruction and source limitations](VERIFICATION.md). Portable archives contain the initial state and supplied solution files separately; final configs are not loaded at startup. Original `.net` files and diagrams are reference material. Containerlab artifacts are unchanged.
 
 ## Topology:

@@ -1,576 +1,490 @@
 {
     "name": "MPLSAtomFRoverMPLS",
-    "resources_type": "local",
+    "project_id": "82bf07d0-ef93-5c68-a89f-6602063d9d59",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from R1 port Serial1/0 to R2 port Serial2/0",
-                "destination_node_id": 2,
-                "destination_port_id": 13,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "87e4f209-eaf5-5a06-bb1c-fc7eb71e4608",
+                "x": -67,
+                "y": 93,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">172.16.15.0 /24</text></svg>"
             },
             {
-                "description": "Link from R2 port FastEthernet1/0 to R3 port FastEthernet1/0",
-                "destination_node_id": 3,
-                "destination_port_id": 23,
-                "id": 2,
-                "source_node_id": 2,
-                "source_port_id": 11
+                "drawing_id": "450e1727-018c-5e4a-9dc7-0421433c42b2",
+                "x": 87,
+                "y": 58,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.5</text></svg>"
             },
             {
-                "description": "Link from R3 port FastEthernet1/1 to R4 port FastEthernet1/0",
-                "destination_node_id": 4,
-                "destination_port_id": 27,
-                "id": 3,
-                "source_node_id": 3,
-                "source_port_id": 24
+                "drawing_id": "41c4e4f3-5fbd-57b4-a927-d76f1bdd44bc",
+                "x": 204,
+                "y": -105,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">PE2</text></svg>"
             },
             {
-                "description": "Link from R4 port Serial2/0 to R5 port Serial1/0",
-                "destination_node_id": 5,
-                "destination_port_id": 39,
-                "id": 4,
-                "source_node_id": 4,
-                "source_port_id": 29
+                "drawing_id": "34e1ffd9-577d-5fa9-9a8a-24ec3045e24b",
+                "x": -198,
+                "y": -82,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.23.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "89ee6fdf-8c04-5a83-ba9c-e2f18122c302",
+                "x": -247,
+                "y": 42,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">DLCI 105</text></svg>"
+            },
+            {
+                "drawing_id": "dd7f0621-4458-56ff-bf2b-5466dbee9181",
+                "x": 17,
+                "y": -73,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "c790c817-0a20-5c99-a017-3930d1f9ec0d",
+                "x": -21,
+                "y": -98,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">P</text></svg>"
+            },
+            {
+                "drawing_id": "f13a8a15-4611-5eb3-9064-dbce938b4dc7",
+                "x": -218,
+                "y": -74,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "581c88fe-853c-5b49-8bbf-b7fdfc1f8d71",
+                "x": 37,
+                "y": -86,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"128\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">192.168.34.0 /24</text></svg>"
+            },
+            {
+                "drawing_id": "03d2ef7c-2f76-5a83-9e3c-1a87d9b4d463",
+                "x": -272,
+                "y": -97,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">PE1</text></svg>"
+            },
+            {
+                "drawing_id": "8ce53381-f16d-5554-b590-2a6adbd7a731",
+                "x": 48,
+                "y": 134,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"72\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">Warehouse</text></svg>"
+            },
+            {
+                "drawing_id": "58f1c986-4c1d-5650-bd1a-b2e21a8567f3",
+                "x": -129,
+                "y": 133,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">Store</text></svg>"
+            },
+            {
+                "drawing_id": "8c1b6604-8e99-5cdb-9c2e-e88b09d5e44c",
+                "x": 161,
+                "y": 37,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#1a1a1a\">DLCI 501</text></svg>"
+            },
+            {
+                "drawing_id": "f9e60895-b730-5ac7-bbab-7f32a8cf9bfe",
+                "x": 168,
+                "y": -76,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.4</text></svg>"
+            },
+            {
+                "drawing_id": "12348843-2389-512c-aac8-e1f71507c575",
+                "x": -67,
+                "y": -74,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.3</text></svg>"
+            },
+            {
+                "drawing_id": "69add148-f9d3-5743-9d3c-23f136538d1f",
+                "x": -126,
+                "y": 63,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#0000ff\">.1</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c7200",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R1",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "Store",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R2 on port Serial2/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "Serial1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 2,
-                        "name": "Serial1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 3,
-                        "name": "Serial1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 4,
-                        "name": "Serial1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 5,
-                        "name": "Serial1/4",
-                        "port_number": 4,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 6,
-                        "name": "Serial1/5",
-                        "port_number": 5,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 7,
-                        "name": "Serial1/6",
-                        "port_number": 6,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 8,
-                        "name": "Serial1/7",
-                        "port_number": 7,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 9,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 10,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Store",
+                "node_id": "a69ec39d-463f-5398-90eb-0138ed25e098",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -135,
+                "y": 85,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "console": 2000,
-                    "idlepc": "0x6061aca8",
-                    "image": "c7200-adventerprisek9-mz.124-20.T.bin",
-                    "name": "R1",
-                    "slot1": "PA-8T",
-                    "startup_config": "configs\\i1_startup-config.cfg"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C7200",
-                "x": -134.852200998,
-                "y": 85.3984489161
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c7200",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R2",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "PE1",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R3 on port FastEthernet1/0",
-                        "id": 11,
-                        "link_id": 2,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 12,
-                        "name": "FastEthernet1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to R1 on port Serial1/0",
-                        "id": 13,
-                        "link_id": 1,
-                        "name": "Serial2/0",
-                        "port_number": 0,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 14,
-                        "name": "Serial2/1",
-                        "port_number": 1,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 15,
-                        "name": "Serial2/2",
-                        "port_number": 2,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 16,
-                        "name": "Serial2/3",
-                        "port_number": 3,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 17,
-                        "name": "Serial2/4",
-                        "port_number": 4,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 18,
-                        "name": "Serial2/5",
-                        "port_number": 5,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 19,
-                        "name": "Serial2/6",
-                        "port_number": 6,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 20,
-                        "name": "Serial2/7",
-                        "port_number": 7,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 21,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 22,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "PE1",
+                "node_id": "61f09b30-8464-508e-b3c7-85417b431ddf",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -283,
+                "y": -70,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "console": 2001,
-                    "idlepc": "0x6061aca8",
-                    "image": "c7200-adventerprisek9-mz.124-20.T.bin",
-                    "name": "R2",
-                    "slot1": "PA-2FE-TX",
-                    "slot2": "PA-8T",
-                    "startup_config": "configs\\i2_startup-config.cfg"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C7200",
-                "x": -282.878679656,
-                "y": -69.7279220614
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c7200",
-                "id": 3,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R3",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "P",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R2 on port FastEthernet1/0",
-                        "id": 23,
-                        "link_id": 2,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to R4 on port FastEthernet1/0",
-                        "id": 24,
-                        "link_id": 3,
-                        "name": "FastEthernet1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 25,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 26,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "P",
+                "node_id": "d36cb6b2-01dd-57c1-bacb-ce064cb569f7",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -45,
+                "y": -71,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "console": 2002,
-                    "idlepc": "0x6061aca8",
-                    "image": "c7200-adventerprisek9-mz.124-20.T.bin",
-                    "name": "R3",
-                    "slot1": "PA-2FE-TX",
-                    "startup_config": "configs\\i3_startup-config.cfg"
-                },
-                "router_id": 3,
-                "server_id": 1,
-                "type": "C7200",
-                "x": -45.1385642863,
-                "y": -71.313708499
+                    "application_id": 3,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c7200",
-                "id": 4,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R4",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "PE2",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R3 on port FastEthernet1/1",
-                        "id": 27,
-                        "link_id": 3,
-                        "name": "FastEthernet1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 28,
-                        "name": "FastEthernet1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "description": "connected to R5 on port Serial1/0",
-                        "id": 29,
-                        "link_id": 4,
-                        "name": "Serial2/0",
-                        "port_number": 0,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 30,
-                        "name": "Serial2/1",
-                        "port_number": 1,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 31,
-                        "name": "Serial2/2",
-                        "port_number": 2,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 32,
-                        "name": "Serial2/3",
-                        "port_number": 3,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 33,
-                        "name": "Serial2/4",
-                        "port_number": 4,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 34,
-                        "name": "Serial2/5",
-                        "port_number": 5,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 35,
-                        "name": "Serial2/6",
-                        "port_number": 6,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 36,
-                        "name": "Serial2/7",
-                        "port_number": 7,
-                        "slot_number": 2
-                    },
-                    {
-                        "id": 37,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 38,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "PE2",
+                "node_id": "629d8cf5-3fc3-529c-a6be-3978f485e84e",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 188,
+                "y": -74,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "console": 2003,
-                    "idlepc": "0x6061aca8",
-                    "image": "c7200-adventerprisek9-mz.124-20.T.bin",
-                    "name": "R4",
-                    "slot1": "PA-2FE-TX",
-                    "slot2": "PA-8T",
-                    "startup_config": "configs\\i4_startup-config.cfg"
-                },
-                "router_id": 4,
-                "server_id": 1,
-                "type": "C7200",
-                "x": 188.015764646,
-                "y": -73.7781745931
+                    "application_id": 4,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c7200",
-                "id": 5,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
-                    "text": "R5",
-                    "x": 19.5,
-                    "y": -25.0
+                    "text": "Warehouse",
+                    "x": 20,
+                    "y": -25,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to R4 on port Serial2/0",
-                        "id": 39,
-                        "link_id": 4,
-                        "name": "Serial1/0",
-                        "port_number": 0,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 40,
-                        "name": "Serial1/1",
-                        "port_number": 1,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 41,
-                        "name": "Serial1/2",
-                        "port_number": 2,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 42,
-                        "name": "Serial1/3",
-                        "port_number": 3,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 43,
-                        "name": "Serial1/4",
-                        "port_number": 4,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 44,
-                        "name": "Serial1/5",
-                        "port_number": 5,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 45,
-                        "name": "Serial1/6",
-                        "port_number": 6,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 46,
-                        "name": "Serial1/7",
-                        "port_number": 7,
-                        "slot_number": 1
-                    },
-                    {
-                        "id": 47,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    },
-                    {
-                        "id": 48,
-                        "name": "FastEthernet0/1",
-                        "port_number": 1,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Warehouse",
+                "node_id": "7c4a8d00-315f-57b2-9899-36bd63ac30bf",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": 60,
+                "y": 81,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "console": 2004,
-                    "idlepc": "0x6061aca8",
-                    "image": "c7200-adventerprisek9-mz.124-20.T.bin",
-                    "name": "R5",
-                    "slot1": "PA-8T",
-                    "startup_config": "configs\\i5_startup-config.cfg"
-                },
-                "router_id": 5,
-                "server_id": 1,
-                "type": "C7200",
-                "x": 59.9146468383,
-                "y": 81.2390693497
+                    "application_id": 5,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             }
         ],
-        "notes": [
+        "links": [
             {
-                "color": "#0000ff",
-                "text": "172.16.15.0 /24",
-                "x": -67.1751442127,
-                "y": 92.6518036156
+                "link_id": "65edf05b-6ec2-537a-afb7-918ad9534b52",
+                "nodes": [
+                    {
+                        "node_id": "a69ec39d-463f-5398-90eb-0138ed25e098",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "61f09b30-8464-508e-b3c7-85417b431ddf",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": ".5",
-                "x": 86.9741340859,
-                "y": 58.0035713375
+                "link_id": "baee1108-20b3-596a-967a-579f18ce0350",
+                "nodes": [
+                    {
+                        "node_id": "61f09b30-8464-508e-b3c7-85417b431ddf",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "d36cb6b2-01dd-57c1-bacb-ce064cb569f7",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#1a1a1a",
-                "text": "PE2",
-                "x": 204.353859763,
-                "y": -104.630988335
+                "link_id": "74268319-1221-510e-afd7-feaee2aa37dd",
+                "nodes": [
+                    {
+                        "node_id": "d36cb6b2-01dd-57c1-bacb-ce064cb569f7",
+                        "adapter_number": 0,
+                        "port_number": 1,
+                        "label": {
+                            "text": "Ethernet0/1",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "629d8cf5-3fc3-529c-a6be-3978f485e84e",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             },
             {
-                "color": "#0000ff",
-                "text": "192.168.23.0 /24",
-                "x": -197.989898732,
-                "y": -82.0035713375
-            },
-            {
-                "color": "#1a1a1a",
-                "text": "DLCI 105",
-                "x": -246.780266634,
-                "y": 41.7401153702
-            },
-            {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": 16.9705627485,
-                "y": -72.811183182
-            },
-            {
-                "color": "#1a1a1a",
-                "text": "P",
-                "x": -20.5060966544,
-                "y": -97.5599205236
-            },
-            {
-                "color": "#0000ff",
-                "text": ".2",
-                "x": -217.788888605,
-                "y": -73.5182899632
-            },
-            {
-                "color": "#0000ff",
-                "text": "192.168.34.0 /24",
-                "x": 36.7695526217,
-                "y": -86.2462120246
-            },
-            {
-                "color": "#1a1a1a",
-                "text": "PE1",
-                "x": -271.529003976,
-                "y": -96.8528137424
-            },
-            {
-                "color": "#1a1a1a",
-                "text": "Warehouse",
-                "x": 48.0832611207,
-                "y": 133.663996924
-            },
-            {
-                "color": "#1a1a1a",
-                "text": "Store",
-                "x": -128.693434176,
-                "y": 132.956890143
-            },
-            {
-                "color": "#1a1a1a",
-                "text": "DLCI 501",
-                "x": 161.220346111,
-                "y": 36.7903679019
-            },
-            {
-                "color": "#0000ff",
-                "text": ".4",
-                "x": 168.291413922,
-                "y": -75.6396103068
-            },
-            {
-                "color": "#0000ff",
-                "text": ".3",
-                "x": -67.1751442127,
-                "y": -74.2253967444
-            },
-            {
-                "color": "#0000ff",
-                "text": ".1",
-                "x": -125.865007051,
-                "y": 62.9533188058
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "link_id": "1b33999d-990d-51f4-aeaa-6c8171c0b8a4",
+                "nodes": [
+                    {
+                        "node_id": "629d8cf5-3fc3-529c-a6be-3978f485e84e",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "7c4a8d00-315f-57b2-9899-36bd63ac30bf",
+                        "adapter_number": 4,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Serial4/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    }
+                ],
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }

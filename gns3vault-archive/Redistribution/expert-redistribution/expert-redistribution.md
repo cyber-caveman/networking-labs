@@ -26,8 +26,62 @@ You have been a network engineer as long as you can remember. Recently the compa
 * Do a traceroute from router SweetPea and Rocket to 1.1.1.1, you notice packets are sent through the OSPF network. Ensure they take the most optimal route to the destination
 * Ensure all traffic will be sent using the FastEthernet links. The Frame-Relay links should only be used as a backup when the FastEthernet links are down
 
-## IOS:
+## GNS3 2.2.56.1
 
-c3640-jk9o3s-mz.124-16.bin
+Import `Expert Redistribution IOU.gns3project` with **File > Import portable project**.
+For direct opening, keep `Expert Redistribution.gns3` beside `project-files`.
+
+Routers use the preferred IOU L3 image `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), template
+`b3b10b90-adfb-43f8-b289-b68bcf322ad8`, 768 MB RAM, 512 KB NVRAM,
+four Ethernet and four serial adapters, with automatically allocated consoles.
+Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Physical interface names and link endpoints are updated together in startup and
+all supplied final configs. Original bandwidth and delay are explicit where
+needed to preserve EIGRP/IGP metric inputs. Source protocol settings and intended
+startup state are preserved; final configs are not loaded at startup.
+
+Built-in Frame Relay switches and PVC mappings retain their original type and
+settings. Connected IOU interfaces explicitly select ANSI LMI, supported by the
+built-in switch. This is a transport compatibility adjustment in startup and
+available final configs, not a change to the routing exercise.
+
+Unmanaged Ethernet switches retain their original type and VLAN settings.
+
+| Router | Original interface | IOU interface |
+| --- | --- | --- |
+| BabyDoll | FastEthernet0/0 | Ethernet0/0 |
+| SweetPea | FastEthernet0/0 | Ethernet0/0 |
+| SweetPea | Serial1/0 | Serial4/0 |
+| SweetPea | Serial1/1 | Serial4/1 |
+| SweetPea | Serial1/2 | Serial4/2 |
+| SweetPea | Serial1/3 | Serial4/3 |
+| Rocket | FastEthernet0/0 | Ethernet0/0 |
+| Rocket | FastEthernet1/0 | Ethernet0/1 |
+| Rocket | Serial2/0 | Serial4/0 |
+| Rocket | Serial2/1 | Serial4/1 |
+| Rocket | Serial2/2 | Serial4/2 |
+| Rocket | Serial2/3 | Serial4/3 |
+| Blondie | FastEthernet0/0 | Ethernet0/0 |
+| Blondie | Serial1/0 | Serial4/0 |
+| Blondie | Serial1/1 | Serial4/1 |
+| Blondie | Serial1/2 | Serial4/2 |
+| Blondie | Serial1/3 | Serial4/3 |
+| Amber | FastEthernet0/0 | Ethernet0/0 |
+| Amber | FastEthernet1/0 | Ethernet0/1 |
+| BlueJones | FastEthernet0/0 | Ethernet0/0 |
+| WiseMan | FastEthernet0/0 | Ethernet0/0 |
+
+### Source notes
+
+No completed solution configs were supplied; none were invented.
+
+Original topology images and `.net` files are references; the converted project
+and mapping table specify the current interfaces. Containerlab files are unchanged.
+
+See `VERIFICATION.md` in this folder or portable archive for configuration analysis
+and source issues. Live IOS command support, neighbor formation, route selection,
+Frame Relay PVC state and packet forwarding have not been tested on the remote server.
 
 ## Topology:

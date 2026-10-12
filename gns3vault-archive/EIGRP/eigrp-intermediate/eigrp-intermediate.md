@@ -27,8 +27,44 @@ You and a colleague network administrator were talking about the scalability and
 - Disable the link between R3 and R4.
 - Make sure that when you type 'shutdown' on Loopback1 at R2, R1 will not send a QUERY to R3. (hint: to check this, do a 'debug eigrp packets query reply')
 
-## IOS
+## GNS3 2.2.56.1
 
-c3640-jk9s-mz.124-16.bin
+Import `eigrp-intermediate-startup-configs IOU.gns3project` with **File > Import portable project**.
+For direct opening, keep `eigrp-intermediate-startup-configs.gns3` beside `project-files`.
+
+Routers use the preferred IOU L3 image `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), template
+`b3b10b90-adfb-43f8-b289-b68bcf322ad8`, 768 MB RAM, 512 KB NVRAM,
+four Ethernet and four serial adapters, with automatically allocated consoles.
+Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Physical interface names and link endpoints are updated together in startup and
+all supplied final configs. Original bandwidth and delay are explicit where
+needed to preserve EIGRP/IGP metric inputs. Source protocol settings and intended
+startup state are preserved; final configs are not loaded at startup.
+
+| Router | Original interface | IOU interface |
+| --- | --- | --- |
+| R1 | FastEthernet0/0 | Ethernet0/0 |
+| R1 | FastEthernet1/0 | Ethernet0/1 |
+| R2 | FastEthernet0/0 | Ethernet0/0 |
+| R2 | FastEthernet1/0 | Ethernet0/1 |
+| R3 | FastEthernet0/0 | Ethernet0/0 |
+| R3 | FastEthernet1/0 | Ethernet0/1 |
+| R4 | FastEthernet0/0 | Ethernet0/0 |
+| R4 | FastEthernet1/0 | Ethernet0/1 |
+
+### Source notes
+
+No source startups were supplied. Recovered addressing from final configs, enabled the initial connected links and left routing/policies unconfigured for the exercise.
+
+The recovered initial state excludes the additional Loopback10–13 exercise networks. Source final configs contain only one of R3’s four requested loopbacks, and no R2 Loopback1; these source solution omissions are retained.
+
+Original topology images and `.net` files are references; the converted project
+and mapping table specify the current interfaces. Containerlab files are unchanged.
+
+See `VERIFICATION.md` in this folder or portable archive for configuration analysis
+and source issues. Live IOS command support, neighbor formation, route selection,
+Frame Relay PVC state and packet forwarding have not been tested on the remote server.
 
 ## Topology

@@ -28,9 +28,45 @@ After months of hard work, studying and doing labs you have the feeling you trul
 - You notice that the `6.6.6.0` network is advertised in OSPF as a `/24`, make sure it's advertised as a `/32` without changing the subnet mask.
 - The Redistributed routes in OSPF have the same cost, no matter which router you look at. Change this on R6 so the cost increases throughout the network.
 
-## IOS
+## GNS3 2.2.56.1
 
-`c3640-jk9s-mz.124-16.bin`
+Import [ospf-troubleshooting-startup-configs IOU.gns3project](ospf-troubleshooting-startup-configs%20IOU.gns3project) using **File > Import portable project**. To open `ospf-troubleshooting-startup-configs.gns3` directly, keep it beside `project-files`.
+
+IOU L3 routers use `x86_64_crb_linux-adventerprisek9-ms.bin`, 768 MB RAM, **512 KB NVRAM**, four Ethernet and four serial adapters. CLI switches use the preferred IOU L2 image `i86bi-linux-l2-adventerprisek9-15.2d.bin`, 256 MB RAM, **512 KB NVRAM**, four Ethernet adapters and no serial adapters. Images, checksums, templates and shared settings follow `AGENTS.md`; consoles allocate automatically. Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Unmanaged Ethernet and built-in Frame Relay switches retain their device types and VLAN/PVC settings. Connected IOU interfaces use ANSI LMI for the built-in Frame Relay switch.
+
+Startup and supplied final configurations use the interface mappings below. Effective bandwidth, delay, administrative state and routing/policy command contexts were compared against their source. Obsolete hardware-only commands are removed. Ports omitted to fit the selected model are unused hardware-only ports, listed in the verification notes.
+
+| Device | Source interface | Current interface |
+| --- | --- | --- |
+| R1 | FastEthernet1/0 | Ethernet0/0 |
+| R1 | FastEthernet2/0 | Ethernet0/1 |
+| R1 | Serial0/0 | Serial4/0 |
+| R1 | Serial0/1 | Serial4/1 |
+| R1 | Serial0/2 | Serial4/2 |
+| R1 | Serial0/3 | Serial4/3 |
+| R2 | FastEthernet1/0 | Ethernet0/0 |
+| R2 | Serial0/0 | Serial4/0 |
+| R2 | Serial0/1 | Serial4/1 |
+| R2 | Serial0/2 | Serial4/2 |
+| R2 | Serial0/3 | Serial4/3 |
+| R3 | Serial0/0 | Serial4/0 |
+| R3 | Serial0/1 | Serial4/1 |
+| R3 | Serial0/2 | Serial4/2 |
+| R3 | Serial0/3 | Serial4/3 |
+| R4 | FastEthernet0/0 | Ethernet0/0 |
+| R5 | FastEthernet0/0 | Ethernet0/0 |
+| R5 | FastEthernet1/0 | Ethernet0/1 |
+| R6 | FastEthernet0/0 | Ethernet0/0 |
+| R6 | FastEthernet1/0 | Ethernet0/1 |
+| R6 | Serial2/0 | Serial4/0 |
+| R6 | Serial2/1 | Serial4/1 |
+| R6 | Serial2/2 | Serial4/2 |
+| R6 | Serial2/3 | Serial4/3 |
+| R7 | FastEthernet0/0 | Ethernet0/0 |
+
+See [verification, reconstruction and source limitations](VERIFICATION.md). Portable archives contain the initial state and supplied solution files separately; final configs are not loaded at startup. Original `.net` files and diagrams are reference material. Containerlab artifacts are unchanged.
 
 ## Topology
 

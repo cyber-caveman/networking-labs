@@ -25,9 +25,41 @@ You are the senior network engineer for a global company and responsible for the
 - R8 has been configured to redistribute RIP into EIGRP AS58. However, for some reason you don't see the 88.88.88.0 network in the routing table in R5 which is also in AS58. R8 is an older router and you want to make sure it doesn't get overburdened by queries from R5 looking for lost prefixes.
 - Users in AS145 are supposed to have access to a server located in network 88.88.88.0. Make the appropriate changes on R5 so this is possible.
 
-## IOS
+## GNS3 2.2.56.1
 
-c3640-jk9s-mz.124-16.bin
+Import [eigrp-troubleshooting-startup-configs IOU.gns3project](eigrp-troubleshooting-startup-configs%20IOU.gns3project) using **File > Import portable project**. To open `eigrp-troubleshooting-startup-configs.gns3` directly, keep it beside `project-files`.
+
+IOU L3 routers use `x86_64_crb_linux-adventerprisek9-ms.bin`, 768 MB RAM, **512 KB NVRAM**, four Ethernet and four serial adapters. CLI switches use the preferred IOU L2 image `i86bi-linux-l2-adventerprisek9-15.2d.bin`, 256 MB RAM, **512 KB NVRAM**, four Ethernet adapters and no serial adapters. Images, checksums, templates and shared settings follow `AGENTS.md`; consoles allocate automatically. Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Unmanaged Ethernet and built-in Frame Relay switches retain their device types and VLAN/PVC settings. Connected IOU interfaces use ANSI LMI for the built-in Frame Relay switch.
+
+Startup and supplied final configurations use the interface mappings below. Effective bandwidth, delay, administrative state and routing/policy command contexts were compared against their source. Obsolete hardware-only commands are removed. Ports omitted to fit the selected model are unused hardware-only ports, listed in the verification notes.
+
+| Device | Source interface | Current interface |
+| --- | --- | --- |
+| R1 | FastEthernet1/0 | Ethernet0/0 |
+| R1 | Serial0/0 | Serial4/0 |
+| R1 | Serial0/1 | Serial4/1 |
+| R1 | Serial0/2 | Serial4/2 |
+| R1 | Serial0/3 | Serial4/3 |
+| R2 | Serial0/0 | Serial4/0 |
+| R2 | Serial0/1 | Serial4/1 |
+| R2 | Serial0/2 | Serial4/2 |
+| R2 | Serial0/3 | Serial4/3 |
+| R3 | Serial0/0 | Serial4/0 |
+| R3 | Serial0/1 | Serial4/1 |
+| R3 | Serial0/2 | Serial4/2 |
+| R3 | Serial0/3 | Serial4/3 |
+| R4 | FastEthernet0/0 | Ethernet0/0 |
+| R4 | FastEthernet1/0 | Ethernet0/1 |
+| R5 | FastEthernet0/0 | Ethernet0/0 |
+| R5 | FastEthernet1/0 | Ethernet0/1 |
+| R6 | FastEthernet0/0 | Ethernet0/0 |
+| R6 | FastEthernet1/0 | Ethernet0/1 |
+| R7 | FastEthernet0/0 | Ethernet0/0 |
+| R8 | FastEthernet0/0 | Ethernet0/0 |
+
+See [verification, reconstruction and source limitations](VERIFICATION.md). Portable archives contain the initial state and supplied solution files separately; final configs are not loaded at startup. Original `.net` files and diagrams are reference material. Containerlab artifacts are unchanged.
 
 ## Topology
 

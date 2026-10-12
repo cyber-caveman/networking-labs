@@ -35,3 +35,8 @@ Scroll to the bottom for the 'telnet' access route servers.
 ## Video Solution
 
 http://www.youtube.com/watch?v=HRkMjBS6XWs
+
+## Project compatibility
+
+This exercise intentionally uses a public route server and has no GNS3 topology
+or device configurations to convert.

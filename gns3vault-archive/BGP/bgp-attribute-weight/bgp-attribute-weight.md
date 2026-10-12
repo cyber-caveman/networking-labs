@@ -19,9 +19,39 @@ You wake up in what seems to be a server room...trapped in a chair and tied up b
 - Configure router Rutledge so traffic to 2.2.2.0 /24 is sent to router Goodwin.
 - Configure router Goodwin so traffic to 11.11.11.0 /24 is sent to router Rutledge.
 
-## IOS
+## GNS3 2.2.56.1
 
-c3640-jk9o3s-mz.124-16.bin
+Import `bgp-attribute-weight IOU.gns3project` with **File > Import portable project**.
+For direct opening, keep `bgp-attribute-weight.gns3` beside `project-files`.
+
+Routers use the preferred IOU L3 image `x86_64_crb_linux-adventerprisek9-ms.bin`
+(MD5 `4a2fce8de21d1831fbceffd155e41ae7`), template
+`b3b10b90-adfb-43f8-b289-b68bcf322ad8`, 768 MB RAM, 512 KB NVRAM,
+four Ethernet and four serial adapters, with automatically allocated consoles.
+Startup configs are bundled under `project-files/iou/<node-id>/startup-config.cfg`.
+
+Physical interface names and link endpoints are updated together in startup and
+all supplied final configs. Original bandwidth and delay are explicit where
+needed to preserve EIGRP/IGP metric inputs. Source protocol settings and intended
+startup state are preserved; final configs are not loaded at startup.
+
+| Router | Original interface | IOU interface |
+| --- | --- | --- |
+| Rutledge | FastEthernet0/0 | Ethernet0/0 |
+| Rutledge | FastEthernet1/0 | Ethernet0/1 |
+| Goodwin | FastEthernet0/0 | Ethernet0/0 |
+| Goodwin | FastEthernet1/0 | Ethernet0/1 |
+| Stevens | FastEthernet0/0 | Ethernet0/0 |
+| Stevens | FastEthernet1/0 | Ethernet0/1 |
+| Warren | FastEthernet0/0 | Ethernet0/0 |
+| Warren | FastEthernet1/0 | Ethernet0/1 |
+
+Original topology images and `.net` files are references; the converted project
+and mapping table specify the current interfaces. Containerlab files are unchanged.
+
+See `VERIFICATION.md` in this folder or portable archive for configuration analysis
+and source issues. Live IOS command support, neighbor formation, route selection,
+Frame Relay PVC state and packet forwarding have not been tested on the remote server.
 
 ## Topology
 

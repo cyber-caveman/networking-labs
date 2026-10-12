@@ -1,122 +1,169 @@
 {
     "name": "tclsh-scripting-startup-configs",
-    "resources_type": "local",
+    "project_id": "41c63b98-8cb0-5881-a0dd-2e94dac2e714",
+    "revision": 9,
+    "version": "2.2.0",
+    "type": "topology",
+    "auto_start": false,
+    "auto_close": true,
+    "auto_open": false,
+    "scene_width": 3200,
+    "scene_height": 2400,
+    "show_interface_labels": true,
     "topology": {
-        "links": [
+        "computes": [],
+        "drawings": [
             {
-                "description": "Link from Ping port FastEthernet0/0 to Pong port FastEthernet0/0",
-                "destination_node_id": 2,
-                "destination_port_id": 2,
-                "id": 1,
-                "source_node_id": 1,
-                "source_port_id": 1
+                "drawing_id": "0d3d19c9-cce3-51fd-a240-7b846670d928",
+                "x": -512,
+                "y": -62,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.1</text></svg>"
+            },
+            {
+                "drawing_id": "cb3e579a-d25d-50d0-a63a-1be74788d5a9",
+                "x": -488,
+                "y": -86,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"96\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">192.168.12.X</text></svg>"
+            },
+            {
+                "drawing_id": "eaa4c308-041a-594e-b19c-fb479c81e0fc",
+                "x": -393,
+                "y": -61,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"22\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">.2</text></svg>"
+            },
+            {
+                "drawing_id": "68f36f01-9737-54c3-beb9-9be9d438c297",
+                "x": -301,
+                "y": -102,
+                "z": 2,
+                "rotation": 0,
+                "locked": false,
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"102\"><text x=\"0\" y=\"16\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">Loopbacks:</text><text x=\"0\" y=\"32\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\"></text><text x=\"0\" y=\"48\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L0: 1.1.1.1 /24</text><text x=\"0\" y=\"64\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L1: 2.2.2.2 /24</text><text x=\"0\" y=\"80\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L2: 3.3.3.3 /24</text><text x=\"0\" y=\"96\" font-family=\"Arial\" font-size=\"12\" fill=\"#323232\">L3: 4.4.4.4 /24</text></svg>"
             }
         ],
         "nodes": [
             {
-                "description": "Router c3600",
-                "id": 1,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Ping",
-                    "x": 9.14300217428,
-                    "y": -23.8284271248
+                    "x": 9,
+                    "y": -24,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
-                    {
-                        "description": "connected to Pong on port FastEthernet0/0",
-                        "id": 1,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
-                        "port_number": 0,
-                        "slot_number": 0
-                    }
-                ],
+                "locked": false,
+                "name": "Ping",
+                "node_id": "11e75243-27ff-51a8-9308-4e99c48a5742",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -577,
+                "y": -58,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
                 "properties": {
-                    "aux": 2100,
-                    "chassis": "3640",
-                    "console": 2001,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Ping",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX"
-                },
-                "router_id": 1,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -577.0,
-                "y": -58.0
+                    "application_id": 1,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
             },
             {
-                "description": "Router c3600",
-                "id": 2,
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 45,
                 "label": {
                     "text": "Pong",
-                    "x": 7.67853608022,
-                    "y": -26.0746391495
+                    "x": 8,
+                    "y": -26,
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
                 },
-                "ports": [
+                "locked": false,
+                "name": "Pong",
+                "node_id": "9601e7fa-b9b2-5b67-a238-8851b913a792",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "symbol": ":/symbols/classic/router.svg",
+                "width": 66,
+                "x": -374,
+                "y": -58,
+                "z": 1,
+                "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+                "properties": {
+                    "application_id": 2,
+                    "ethernet_adapters": 4,
+                    "serial_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+                    "nvram": 512,
+                    "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+                    "ram": 768,
+                    "usage": "",
+                    "use_default_iou_values": true
+                }
+            }
+        ],
+        "links": [
+            {
+                "link_id": "1c25b295-5cbe-5bd1-b719-691269795a85",
+                "nodes": [
                     {
-                        "description": "connected to Ping on port FastEthernet0/0",
-                        "id": 2,
-                        "link_id": 1,
-                        "name": "FastEthernet0/0",
+                        "node_id": "11e75243-27ff-51a8-9308-4e99c48a5742",
+                        "adapter_number": 0,
                         "port_number": 0,
-                        "slot_number": 0
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
+                    },
+                    {
+                        "node_id": "9601e7fa-b9b2-5b67-a238-8851b913a792",
+                        "adapter_number": 0,
+                        "port_number": 0,
+                        "label": {
+                            "text": "Ethernet0/0",
+                            "x": 0,
+                            "y": 0,
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+                        }
                     }
                 ],
-                "properties": {
-                    "aux": 2101,
-                    "chassis": "3640",
-                    "console": 2002,
-                    "idlepc": "0x603e2724",
-                    "image": "C3640-JK.BIN",
-                    "name": "Pong",
-                    "ram": 192,
-                    "slot0": "NM-1FE-TX"
-                },
-                "router_id": 2,
-                "server_id": 1,
-                "type": "C3600",
-                "x": -374.0,
-                "y": -58.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#323232",
-                "text": ".1",
-                "x": -512.0,
-                "y": -61.5
-            },
-            {
-                "color": "#323232",
-                "text": "192.168.12.X",
-                "x": -488.0,
-                "y": -86.0
-            },
-            {
-                "color": "#323232",
-                "text": ".2",
-                "x": -393.0,
-                "y": -61.0
-            },
-            {
-                "color": "#323232",
-                "text": "Loopbacks:\n\nL0: 1.1.1.1 /24\nL1: 2.2.2.2 /24\nL2: 3.3.3.3 /24\nL3: 4.4.4.4 /24",
-                "x": -300.520382004,
-                "y": -101.509667992
-            }
-        ],
-        "servers": [
-            {
-                "host": "127.0.0.1",
-                "id": 1,
-                "local": true,
-                "port": 8000
+                "suspend": false,
+                "filters": {}
             }
         ]
-    },
-    "type": "topology",
-    "version": "1.0"
+    }
 }
