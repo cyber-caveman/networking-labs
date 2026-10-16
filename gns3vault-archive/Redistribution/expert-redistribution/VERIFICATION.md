@@ -26,3 +26,11 @@ Import the portable project, confirm interfaces and neighbors (`show ip interfac
 ## 2026-10-10 settings refresh
 
 All IOU devices now use 512 KB NVRAM. Other device settings were checked against `AGENTS.md`. Config text is byte-for-byte unchanged from the previously converted working tree; startup and solution behavior was not altered by this memory-setting change. Switch port lists were normalized where needed so GNS3’s port indices match the saved link endpoints. Projects pass the installed schemas and real port-factory checks; portable archives were rebuilt and checked against loose files. Prior source limitations remain. No live router testing was performed.
+
+## 2026-10-16 final solution
+
+A newly authored seven-router solution is in [`final-configs`](./final-configs/README.md). The earlier “no completed final configs” statements describe the imported source, not the current contents. Startup configs, the project, portable archive, and switch/PVC settings remain unchanged.
+
+The solution adds the required redistribution, an Ethernet path through Rocket and Amber, filtered connected redistribution of BabyDoll Loopback0, administrative-distance policy, bounded prefix exports, and backup-tag filtering. The solution README records requirement coverage, expected forwarding, failover reasoning, limitations, and live acceptance commands.
+
+Configuration analysis and an abstract model passed 1,118 forwarding checks over 16 healthy/failure scenarios. Run `python3 verify_final_configs.py` from this directory. This is not live IOS testing or a convergence simulation. Actual command acceptance, adjacencies, route selection, transient behavior, PVC operation, and forwarding on the remote VM remain to be verified.

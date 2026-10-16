@@ -75,7 +75,7 @@ Unmanaged Ethernet switches retain their original type and VLAN settings.
 
 ### Source notes
 
-No completed solution configs were supplied; none were invented.
+No completed solution configs were supplied with the source. A newly authored solution is now available in [`final-configs`](./final-configs/README.md), with full configurations for all seven routers and a live verification procedure. The original portable project continues to load the unsolved startup state.
 
 Original topology images and `.net` files are references; the converted project
 and mapping table specify the current interfaces. Containerlab files are unchanged.
