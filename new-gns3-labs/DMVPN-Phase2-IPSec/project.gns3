@@ -1,0 +1,320 @@
+{
+  "name": "DMVPN-Phase2-IPSec",
+  "project_id": "64e7acdf-97ee-4f4f-b372-514bd22677f4",
+  "revision": 9,
+  "version": "2.2.0",
+  "type": "topology",
+  "auto_start": false,
+  "auto_close": true,
+  "auto_open": false,
+  "scene_width": 1500,
+  "scene_height": 1000,
+  "show_interface_labels": true,
+  "topology": {
+    "computes": [],
+    "nodes": [
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "R11",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "R11",
+        "node_id": "cb2ddad6-e309-4780-8cb5-871e6def6240",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 1,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": -500,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "ISP",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "ISP",
+        "node_id": "7be22794-e2c9-4206-933c-1c58692d15f0",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 2,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": -100,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "R31",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "R31",
+        "node_id": "8e2341dd-34f4-40b2-8d18-890afcbe6fea",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 3,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": 300,
+        "y": -200,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "R41",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "R41",
+        "node_id": "6e150b40-b522-4402-b5e1-f8abd1c5625c",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 4,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": 300,
+        "y": 200,
+        "z": 1
+      }
+    ],
+    "links": [
+      {
+        "link_id": "061d77af-78aa-4d76-ac05-0e69ce65e038",
+        "nodes": [
+          {
+            "node_id": "cb2ddad6-e309-4780-8cb5-871e6def6240",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "7be22794-e2c9-4206-933c-1c58692d15f0",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      },
+      {
+        "link_id": "fa5cb030-2933-4ac8-ba3d-c60f70f1f2f3",
+        "nodes": [
+          {
+            "node_id": "8e2341dd-34f4-40b2-8d18-890afcbe6fea",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "7be22794-e2c9-4206-933c-1c58692d15f0",
+            "adapter_number": 0,
+            "port_number": 1,
+            "label": {
+              "text": "e0/1",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      },
+      {
+        "link_id": "201350b2-564a-40e2-a6cb-f80820e6cffe",
+        "nodes": [
+          {
+            "node_id": "6e150b40-b522-4402-b5e1-f8abd1c5625c",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "7be22794-e2c9-4206-933c-1c58692d15f0",
+            "adapter_number": 0,
+            "port_number": 2,
+            "label": {
+              "text": "e0/2",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      }
+    ],
+    "drawings": [
+      {
+        "drawing_id": "353b5ea1-5e1a-4a91-827c-80cb0d331f38",
+        "x": -550,
+        "y": -390,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1050\" height=\"94\"><rect width=\"1050\" height=\"94\" rx=\"8\" fill=\"#eef4fb\" stroke=\"#66809a\"/><text x=\"12\" y=\"26\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">DMVPN-Phase2-IPSec | EIGRP 100 | IKEv2</text><text x=\"12\" y=\"52\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">IP-only startup state | GNS3 2.2.56.1</text><text x=\"12\" y=\"78\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">Overlay: 192.168.100.0/24 | R11 hub; R31 / R41 spokes</text></svg>"
+      },
+      {
+        "drawing_id": "833f00d0-4156-43e3-a5e1-0f26b5d7172f",
+        "x": -600,
+        "y": 95,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"370\" height=\"68\"><rect width=\"370\" height=\"68\" rx=\"8\" fill=\"#eef4fb\" stroke=\"#66809a\"/><text x=\"12\" y=\"26\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">R11 | NBMA 172.16.11.1/24</text><text x=\"12\" y=\"52\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">Lo0 10.1.1.1/24 | Tu0 .11</text></svg>"
+      },
+      {
+        "drawing_id": "23300ce5-5649-4b04-aae9-1a01c83950cf",
+        "x": 240,
+        "y": -125,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"370\" height=\"68\"><rect width=\"370\" height=\"68\" rx=\"8\" fill=\"#eef4fb\" stroke=\"#66809a\"/><text x=\"12\" y=\"26\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">R31 | NBMA 172.16.31.1/24</text><text x=\"12\" y=\"52\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">Lo0 10.3.3.1/24 | Tu0 .31</text></svg>"
+      },
+      {
+        "drawing_id": "0c21b929-f617-4ecf-bc5a-01e690a58588",
+        "x": 240,
+        "y": 280,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"370\" height=\"68\"><rect width=\"370\" height=\"68\" rx=\"8\" fill=\"#eef4fb\" stroke=\"#66809a\"/><text x=\"12\" y=\"26\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">R41 | NBMA 172.16.41.1/24</text><text x=\"12\" y=\"52\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">Lo0 10.4.4.1/24 | Tu0 .41</text></svg>"
+      },
+      {
+        "drawing_id": "d38f777f-4267-4bfe-b04a-6fe181f65847",
+        "x": -230,
+        "y": 145,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"120\"><rect width=\"300\" height=\"120\" rx=\"8\" fill=\"#eef4fb\" stroke=\"#66809a\"/><text x=\"12\" y=\"26\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">ISP | transport cloud</text><text x=\"12\" y=\"52\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">e0/0 172.16.11.254/24</text><text x=\"12\" y=\"78\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">e0/1 172.16.31.254/24</text><text x=\"12\" y=\"104\" font-family=\"Arial\" font-size=\"15\" fill=\"#17324d\">e0/2 172.16.41.254/24</text></svg>"
+      }
+    ]
+  }
+}
