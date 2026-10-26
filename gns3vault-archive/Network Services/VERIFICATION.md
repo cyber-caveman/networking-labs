@@ -22,7 +22,7 @@
 | [ip-event-dampening](ip-event-dampening/VERIFICATION.md) | 3 | Configuration comparison passed; runtime untested. |
 | [ip-output-packet-accounting](ip-output-packet-accounting/VERIFICATION.md) | 3 | Wodan: missing startup recovered as addressing-only from final-configs/Wodan.cfg; exercise routing/services were not inferred unless specified below. |
 | [ip-precedence-and-mac-address-accounting](ip-precedence-and-mac-address-accounting/VERIFICATION.md) | 3 | Wodan: missing startup recovered as addressing-only from final-configs/Wodan.cfg; exercise routing/services were not inferred unless specified below. |
-| [ip-service-level-agreement-sla](ip-service-level-agreement-sla/VERIFICATION.md) | 4 | Configuration comparison passed; runtime untested. |
+| [ip-service-level-agreement-sla](ip-service-level-agreement-sla/VERIFICATION.md) | 4 | Corrected legacy IP SLA syntax for the reported IOS 17.12.1, timers and goal mismatches on 2026-10-26. Local DNS and authenticated HTTP services now included; runtime untested. |
 | [longest-prefix-match-routing](longest-prefix-match-routing/VERIFICATION.md) | 2 | Configuration comparison passed; runtime untested. |
 | [nat-and-route-map](nat-and-route-map/VERIFICATION.md) | 4 | Configuration comparison passed; runtime untested. |
 | [nat-dynamic](nat-dynamic/VERIFICATION.md) | 4 | Configuration comparison passed; runtime untested. |
