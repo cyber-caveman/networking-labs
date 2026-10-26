@@ -1,0 +1,364 @@
+{
+  "name": "ENARSI IPv6 First-Hop Security - IOU",
+  "project_id": "924b56d0-b5a3-436d-b0b0-db31ef059bff",
+  "revision": 9,
+  "version": "2.2.0",
+  "type": "topology",
+  "auto_start": false,
+  "auto_close": true,
+  "auto_open": false,
+  "scene_width": 1800,
+  "scene_height": 1100,
+  "show_interface_labels": true,
+  "topology": {
+    "computes": [],
+    "nodes": [
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 48,
+        "label": {
+          "text": "SW1",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "SW1",
+        "node_id": "4229fb08-6b05-4cb6-8c51-589b39963dee",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 1,
+          "ethernet_adapters": 4,
+          "serial_adapters": 0,
+          "l1_keepalives": false,
+          "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+          "nvram": 512,
+          "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+          "ram": 256,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/multilayer_switch.svg",
+        "template_id": "87fd8b26-489a-424e-a7de-1e590da4ccc6",
+        "width": 51,
+        "x": -100,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "R1",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "R1",
+        "node_id": "d1e9433e-deae-4eee-b123-c9bab19363c7",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 2,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": 230,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "R2",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "R2",
+        "node_id": "88154c10-f3ff-4846-915f-db5e0f48294f",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 3,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": 560,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "H1",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "H1",
+        "node_id": "0efe4134-3f7b-4857-bd99-d84614bbfb12",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 4,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": -430,
+        "y": -150,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "text": "ROGUE",
+          "x": 20,
+          "y": -25,
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;"
+        },
+        "locked": false,
+        "name": "ROGUE",
+        "node_id": "79c1bc9b-2a6f-4dcd-906e-9ae4631326a3",
+        "node_type": "iou",
+        "port_name_format": "Ethernet{segment0}/{port0}",
+        "port_segment_size": 4,
+        "properties": {
+          "application_id": 5,
+          "ethernet_adapters": 4,
+          "serial_adapters": 4,
+          "l1_keepalives": false,
+          "md5sum": "4a2fce8de21d1831fbceffd155e41ae7",
+          "nvram": 512,
+          "path": "x86_64_crb_linux-adventerprisek9-ms.bin",
+          "ram": 768,
+          "usage": "",
+          "use_default_iou_values": true
+        },
+        "symbol": ":/symbols/classic/router.svg",
+        "template_id": "b3b10b90-adfb-43f8-b289-b68bcf322ad8",
+        "width": 66,
+        "x": -430,
+        "y": 160,
+        "z": 1
+      }
+    ],
+    "links": [
+      {
+        "link_id": "14cc1e1e-8e22-401d-870e-04e8c644d211",
+        "nodes": [
+          {
+            "node_id": "4229fb08-6b05-4cb6-8c51-589b39963dee",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "d1e9433e-deae-4eee-b123-c9bab19363c7",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      },
+      {
+        "link_id": "d498185a-3358-4c11-9af4-9943580eeffb",
+        "nodes": [
+          {
+            "node_id": "4229fb08-6b05-4cb6-8c51-589b39963dee",
+            "adapter_number": 0,
+            "port_number": 1,
+            "label": {
+              "text": "e0/1",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "0efe4134-3f7b-4857-bd99-d84614bbfb12",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      },
+      {
+        "link_id": "580f5c34-f177-4aa5-a92b-3b93f84ac176",
+        "nodes": [
+          {
+            "node_id": "4229fb08-6b05-4cb6-8c51-589b39963dee",
+            "adapter_number": 0,
+            "port_number": 2,
+            "label": {
+              "text": "e0/2",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "79c1bc9b-2a6f-4dcd-906e-9ae4631326a3",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      },
+      {
+        "link_id": "84b9dae3-a534-42f8-978f-7a14226be022",
+        "nodes": [
+          {
+            "node_id": "d1e9433e-deae-4eee-b123-c9bab19363c7",
+            "adapter_number": 0,
+            "port_number": 1,
+            "label": {
+              "text": "e0/1",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "node_id": "88154c10-f3ff-4846-915f-db5e0f48294f",
+            "adapter_number": 0,
+            "port_number": 0,
+            "label": {
+              "text": "e0/0",
+              "rotation": 0,
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "suspend": false,
+        "filters": {}
+      }
+    ],
+    "drawings": [
+      {
+        "drawing_id": "65143770-86fc-4272-bfc1-b4648e4860e7",
+        "x": -500,
+        "y": -350,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1170\" height=\"74\"><rect width=\"100%\" height=\"100%\" rx=\"8\" fill=\"#eef4fa\"/><text x=\"15\" y=\"28\" font-family=\"Arial\" font-size=\"17\" fill=\"#172b45\">ENARSI | IPv6 First-Hop Security</text><text x=\"15\" y=\"55\" font-family=\"Arial\" font-size=\"17\" fill=\"#172b45\">GNS3 2.2.56.1 | Read README and run feature preflight before activities</text></svg>"
+      },
+      {
+        "drawing_id": "6c3d5ba0-26ef-4ca8-b38c-c0631632dbf8",
+        "x": -510,
+        "y": 300,
+        "z": 0,
+        "rotation": 0,
+        "locked": true,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1140\" height=\"101\"><rect width=\"100%\" height=\"100%\" rx=\"8\" fill=\"#eef4fa\"/><text x=\"15\" y=\"28\" font-family=\"Arial\" font-size=\"17\" fill=\"#172b45\">VLAN 10: 2001:db8:10::/64 | R1 ::1 | H1 ::11 | ROGUE ::66</text><text x=\"15\" y=\"55\" font-family=\"Arial\" font-size=\"17\" fill=\"#172b45\">R1-R2: 2001:db8:20::/64 | R1 ::1 | R2 ::2</text><text x=\"15\" y=\"82\" font-family=\"Arial\" font-size=\"17\" fill=\"#172b45\">Activities: Snooping / RA / DHCPv6 / Source / Destination / Prefix Guard</text></svg>"
+      }
+    ]
+  }
+}

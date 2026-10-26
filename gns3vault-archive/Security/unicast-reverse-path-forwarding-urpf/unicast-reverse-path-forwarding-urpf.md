@@ -8,7 +8,7 @@ As part of the security team you are always looking for ways to improve security
 
 * All IP addresses have been configured for you, look at the topology picture for the IP addresses.
 * OSPF has been preconfigured for you.
-* Configure router Mirror so traffic on the FastEthernet 1/0 interface will be dropped if the source IP address doesn't match the next hop address that router Mirror has in its routing table.
+* Configure router Mirror so traffic on the FastEthernet 0/1 interface will be dropped if the source IP address doesn't match the next hop address that router Mirror has in its routing table.
 * Configure router Mirror so traffic on the FastEthernet 0/0 interface will be dropped if the source IP address doesn't match anything that router Mirror has in its routing table.
 * Configure router Mirror so all dropped packets are logged.
 
