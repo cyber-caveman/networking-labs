@@ -1,0 +1,1788 @@
+{
+  "startup-configs": {
+    "R1": {
+      "hostname R1": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.12.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.13.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R5 AREA 0",
+        "ip address 10.255.15.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R6 AREA 0",
+        "ip address 10.255.16.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.1 255.255.255.255",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R2": {
+      "hostname R2": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.12.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.23.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.24.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.2 255.255.255.255",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R3": {
+      "hostname R3": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.13.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.23.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.34.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R8 AREA 30",
+        "ip address 10.255.38.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.3 255.255.255.255",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R4": {
+      "hostname R4": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 10",
+        "ip address 10.255.24.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 10",
+        "ip address 10.255.34.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.4 255.255.255.255",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.10.0.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 10.10.1.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 10.10.2.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 10.10.3.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 10.10.4.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback105": [
+        "description LAB PREFIX",
+        "ip address 10.10.5.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback108": [
+        "description LAB PREFIX",
+        "ip address 10.10.8.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback350": [
+        "description LAB PREFIX",
+        "ip address 10.10.250.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R5": {
+      "hostname R5": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.15.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.5 255.255.255.255",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.20.16.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.20.17.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.20.18.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.20.19.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 172.20.99.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R6": {
+      "hostname R6": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.16.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R7 AREA 20",
+        "ip address 10.255.67.1 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.6 255.255.255.255",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R7": {
+      "hostname R7": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R6 AREA 20",
+        "ip address 10.255.67.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.7 255.255.255.255",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.21.32.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.21.33.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.21.34.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.21.35.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R8": {
+      "hostname R8": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R3 AREA 30",
+        "ip address 10.255.38.2 255.255.255.252",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.8 255.255.255.255",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.30.0.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    }
+  },
+  "final-configs": {
+    "R1": {
+      "hostname R1": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.12.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.13.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R5 AREA 0",
+        "ip address 10.255.15.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R6 AREA 0",
+        "ip address 10.255.16.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.1 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 1.1.1.1",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "no passive-interface Ethernet0/3",
+        "area 0 authentication message-digest"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R2": {
+      "hostname R2": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.12.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.23.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.24.1 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.2 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 2.2.2.2",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "area 0 authentication message-digest",
+        "area 10 authentication",
+        "area 10 range 10.10.0.0 255.255.252.0 cost 50",
+        "area 10 range 10.10.4.0 255.255.254.0 cost 50",
+        "area 10 range 10.10.250.0 255.255.255.0 not-advertise"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R3": {
+      "hostname R3": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.13.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.23.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.34.1 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R8 AREA 30",
+        "ip address 10.255.38.1 255.255.255.252",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication null",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.3 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 3.3.3.3",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "no passive-interface Ethernet0/3",
+        "area 0 authentication message-digest",
+        "area 10 authentication",
+        "area 10 range 10.10.0.0 255.255.252.0 cost 80",
+        "area 10 range 10.10.4.0 255.255.254.0 cost 80",
+        "area 10 range 10.10.250.0 255.255.255.0 not-advertise",
+        "area 30 authentication message-digest",
+        "area 30 stub no-summary"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R4": {
+      "hostname R4": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 10",
+        "ip address 10.255.24.2 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 10",
+        "ip address 10.255.34.2 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.4 255.255.255.255",
+        "ip ospf 10 area 10",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.10.0.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 10.10.1.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 10.10.2.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 10.10.3.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 10.10.4.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback105": [
+        "description LAB PREFIX",
+        "ip address 10.10.5.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback108": [
+        "description LAB PREFIX",
+        "ip address 10.10.8.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback350": [
+        "description LAB PREFIX",
+        "ip address 10.10.250.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 4.4.4.4",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "area 10 authentication"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R5": {
+      "hostname R5": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.15.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.5 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.20.16.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.20.17.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.20.18.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.20.19.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 172.20.99.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "ip prefix-list EXT-R5 seq 10 permit 172.20.16.0/24": [],
+      "ip prefix-list EXT-R5 seq 20 permit 172.20.17.0/24": [],
+      "ip prefix-list EXT-R5 seq 30 permit 172.20.18.0/24": [],
+      "ip prefix-list EXT-R5 seq 40 permit 172.20.19.0/24": [],
+      "ip prefix-list EXT-R5 seq 50 permit 172.20.99.0/24": [],
+      "route-map CONNECTED-R5 permit 10": [
+        "match ip address prefix-list EXT-R5"
+      ],
+      "router ospf 10": [
+        "router-id 5.5.5.5",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 0 authentication message-digest",
+        "summary-address 172.20.16.0 255.255.252.0 tag 505",
+        "summary-address 172.20.99.0 255.255.255.0 not-advertise",
+        "redistribute connected subnets metric 40 metric-type 1 route-map CONNECTED-R5"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R6": {
+      "hostname R6": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.16.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R7 AREA 20",
+        "ip address 10.255.67.1 255.255.255.252",
+        "ip ospf 10 area 20",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication message-digest",
+        "ip ospf message-digest-key 7 md5 NssaKey7",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.6 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 6.6.6.6",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "area 0 authentication message-digest",
+        "area 20 nssa default-information-originate",
+        "summary-address 172.21.32.0 255.255.252.0 tag 707"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R7": {
+      "hostname R7": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R6 AREA 20",
+        "ip address 10.255.67.2 255.255.255.252",
+        "ip ospf 10 area 20",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication message-digest",
+        "ip ospf message-digest-key 7 md5 NssaKey7",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.7 255.255.255.255",
+        "ip ospf 10 area 20",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.21.32.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.21.33.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.21.34.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.21.35.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "ip prefix-list EXT-R7 seq 10 permit 172.21.32.0/24": [],
+      "ip prefix-list EXT-R7 seq 20 permit 172.21.33.0/24": [],
+      "ip prefix-list EXT-R7 seq 30 permit 172.21.34.0/24": [],
+      "ip prefix-list EXT-R7 seq 40 permit 172.21.35.0/24": [],
+      "route-map CONNECTED-R7 permit 10": [
+        "match ip address prefix-list EXT-R7"
+      ],
+      "router ospf 10": [
+        "router-id 7.7.7.7",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 20 nssa",
+        "redistribute connected subnets metric 30 metric-type 2 tag 707 route-map CONNECTED-R7"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R8": {
+      "hostname R8": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R3 AREA 30",
+        "ip address 10.255.38.2 255.255.255.252",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication null",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.8 255.255.255.255",
+        "ip ospf 10 area 30",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.30.0.1 255.255.255.0",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 8.8.8.8",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 30 authentication message-digest",
+        "area 30 stub"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    }
+  },
+  "checkpoints/nssa-asbr-final-configs": {
+    "R1": {
+      "hostname R1": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.12.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.13.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R5 AREA 0",
+        "ip address 10.255.15.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R6 AREA 0",
+        "ip address 10.255.16.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.1 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 1.1.1.1",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "no passive-interface Ethernet0/3",
+        "area 0 authentication message-digest"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R2": {
+      "hostname R2": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.12.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.23.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.24.1 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.2 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 2.2.2.2",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "area 0 authentication message-digest",
+        "area 10 authentication",
+        "area 10 range 10.10.0.0 255.255.252.0 cost 50",
+        "area 10 range 10.10.4.0 255.255.254.0 cost 50",
+        "area 10 range 10.10.250.0 255.255.255.0 not-advertise"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R3": {
+      "hostname R3": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.13.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.23.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.34.1 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R8 AREA 30",
+        "ip address 10.255.38.1 255.255.255.252",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication null",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.3 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 3.3.3.3",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "no passive-interface Ethernet0/3",
+        "area 0 authentication message-digest",
+        "area 10 authentication",
+        "area 10 range 10.10.0.0 255.255.252.0 cost 80",
+        "area 10 range 10.10.4.0 255.255.254.0 cost 80",
+        "area 10 range 10.10.250.0 255.255.255.0 not-advertise",
+        "area 30 authentication message-digest",
+        "area 30 stub no-summary"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R4": {
+      "hostname R4": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 10",
+        "ip address 10.255.24.2 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 10",
+        "ip address 10.255.34.2 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.4 255.255.255.255",
+        "ip ospf 10 area 10",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.10.0.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 10.10.1.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 10.10.2.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 10.10.3.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 10.10.4.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback105": [
+        "description LAB PREFIX",
+        "ip address 10.10.5.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback108": [
+        "description LAB PREFIX",
+        "ip address 10.10.8.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback350": [
+        "description LAB PREFIX",
+        "ip address 10.10.250.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 4.4.4.4",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "area 10 authentication"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R5": {
+      "hostname R5": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.15.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.5 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.20.16.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.20.17.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.20.18.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.20.19.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 172.20.99.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "ip prefix-list EXT-R5 seq 10 permit 172.20.16.0/24": [],
+      "ip prefix-list EXT-R5 seq 20 permit 172.20.17.0/24": [],
+      "ip prefix-list EXT-R5 seq 30 permit 172.20.18.0/24": [],
+      "ip prefix-list EXT-R5 seq 40 permit 172.20.19.0/24": [],
+      "ip prefix-list EXT-R5 seq 50 permit 172.20.99.0/24": [],
+      "route-map CONNECTED-R5 permit 10": [
+        "match ip address prefix-list EXT-R5"
+      ],
+      "router ospf 10": [
+        "router-id 5.5.5.5",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 0 authentication message-digest",
+        "summary-address 172.20.16.0 255.255.252.0 tag 505",
+        "summary-address 172.20.99.0 255.255.255.0 not-advertise",
+        "redistribute connected subnets metric 40 metric-type 1 route-map CONNECTED-R5"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R6": {
+      "hostname R6": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.16.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R7 AREA 20",
+        "ip address 10.255.67.1 255.255.255.252",
+        "ip ospf 10 area 20",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication message-digest",
+        "ip ospf message-digest-key 7 md5 NssaKey7",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.6 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 6.6.6.6",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "area 0 authentication message-digest",
+        "area 20 nssa default-information-originate"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R7": {
+      "hostname R7": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R6 AREA 20",
+        "ip address 10.255.67.2 255.255.255.252",
+        "ip ospf 10 area 20",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication message-digest",
+        "ip ospf message-digest-key 7 md5 NssaKey7",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.7 255.255.255.255",
+        "ip ospf 10 area 20",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.21.32.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.21.33.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.21.34.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.21.35.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "ip prefix-list EXT-R7 seq 10 permit 172.21.32.0/24": [],
+      "ip prefix-list EXT-R7 seq 20 permit 172.21.33.0/24": [],
+      "ip prefix-list EXT-R7 seq 30 permit 172.21.34.0/24": [],
+      "ip prefix-list EXT-R7 seq 40 permit 172.21.35.0/24": [],
+      "route-map CONNECTED-R7 permit 10": [
+        "match ip address prefix-list EXT-R7"
+      ],
+      "router ospf 10": [
+        "router-id 7.7.7.7",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 20 nssa",
+        "redistribute connected subnets metric 30 metric-type 2 tag 707 route-map CONNECTED-R7",
+        "summary-address 172.21.32.0 255.255.252.0 tag 707"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R8": {
+      "hostname R8": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R3 AREA 30",
+        "ip address 10.255.38.2 255.255.255.252",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication null",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.8 255.255.255.255",
+        "ip ospf 10 area 30",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.30.0.1 255.255.255.0",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 8.8.8.8",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 30 authentication message-digest",
+        "area 30 stub"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    }
+  },
+  "extensions/hmac-sha256/final-configs": {
+    "R1": {
+      "hostname R1": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.12.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.13.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R5 AREA 0",
+        "ip address 10.255.15.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R6 AREA 0",
+        "ip address 10.255.16.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.1 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 1.1.1.1",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "no passive-interface Ethernet0/3",
+        "area 0 authentication message-digest"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R2": {
+      "hostname R2": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.12.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 0",
+        "ip address 10.255.23.1 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.24.1 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.2 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 2.2.2.2",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "area 0 authentication message-digest",
+        "area 10 authentication",
+        "area 10 range 10.10.0.0 255.255.252.0 cost 50",
+        "area 10 range 10.10.4.0 255.255.254.0 cost 50",
+        "area 10 range 10.10.250.0 255.255.255.0 not-advertise"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R3": {
+      "hostname R3": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.13.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R2 AREA 0",
+        "ip address 10.255.23.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/2": [
+        "description TO-R4 AREA 10",
+        "ip address 10.255.34.1 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Ethernet0/3": [
+        "description TO-R8 AREA 30",
+        "ip address 10.255.38.1 255.255.255.252",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication null",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.3 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 3.3.3.3",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "no passive-interface Ethernet0/2",
+        "no passive-interface Ethernet0/3",
+        "area 0 authentication message-digest",
+        "area 10 authentication",
+        "area 10 range 10.10.0.0 255.255.252.0 cost 80",
+        "area 10 range 10.10.4.0 255.255.254.0 cost 80",
+        "area 10 range 10.10.250.0 255.255.255.0 not-advertise",
+        "area 30 authentication message-digest",
+        "area 30 stub no-summary"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R4": {
+      "hostname R4": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R2 AREA 10",
+        "ip address 10.255.24.2 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R3 AREA 10",
+        "ip address 10.255.34.2 255.255.255.252",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication-key A10plain",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.4 255.255.255.255",
+        "ip ospf 10 area 10",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.10.0.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 10.10.1.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 10.10.2.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 10.10.3.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 10.10.4.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback105": [
+        "description LAB PREFIX",
+        "ip address 10.10.5.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback108": [
+        "description LAB PREFIX",
+        "ip address 10.10.8.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "interface Loopback350": [
+        "description LAB PREFIX",
+        "ip address 10.10.250.1 255.255.255.0",
+        "ip ospf 10 area 10",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 4.4.4.4",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "area 10 authentication"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R5": {
+      "hostname R5": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.15.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.5 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.20.16.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.20.17.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.20.18.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.20.19.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback104": [
+        "description LAB PREFIX",
+        "ip address 172.20.99.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "ip prefix-list EXT-R5 seq 10 permit 172.20.16.0/24": [],
+      "ip prefix-list EXT-R5 seq 20 permit 172.20.17.0/24": [],
+      "ip prefix-list EXT-R5 seq 30 permit 172.20.18.0/24": [],
+      "ip prefix-list EXT-R5 seq 40 permit 172.20.19.0/24": [],
+      "ip prefix-list EXT-R5 seq 50 permit 172.20.99.0/24": [],
+      "route-map CONNECTED-R5 permit 10": [
+        "match ip address prefix-list EXT-R5"
+      ],
+      "router ospf 10": [
+        "router-id 5.5.5.5",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 0 authentication message-digest",
+        "summary-address 172.20.16.0 255.255.252.0 tag 505",
+        "summary-address 172.20.99.0 255.255.255.0 not-advertise",
+        "redistribute connected subnets metric 40 metric-type 1 route-map CONNECTED-R5"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R6": {
+      "hostname R6": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "key chain OSPF20": [
+        "key 20",
+        "key-string NssaSHA256-Lab",
+        "cryptographic-algorithm hmac-sha-256"
+      ],
+      "interface Ethernet0/0": [
+        "description TO-R1 AREA 0",
+        "ip address 10.255.16.2 255.255.255.252",
+        "ip ospf 10 area 0",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf message-digest-key 20 md5 CoreNew20",
+        "no shutdown"
+      ],
+      "interface Ethernet0/1": [
+        "description TO-R7 AREA 20",
+        "ip address 10.255.67.1 255.255.255.252",
+        "ip ospf 10 area 20",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication key-chain OSPF20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.6 255.255.255.255",
+        "ip ospf 10 area 0",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 6.6.6.6",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "no passive-interface Ethernet0/1",
+        "area 0 authentication message-digest",
+        "area 20 nssa default-information-originate",
+        "summary-address 172.21.32.0 255.255.252.0 tag 707"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R7": {
+      "hostname R7": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "key chain OSPF20": [
+        "key 20",
+        "key-string NssaSHA256-Lab",
+        "cryptographic-algorithm hmac-sha-256"
+      ],
+      "interface Ethernet0/0": [
+        "description TO-R6 AREA 20",
+        "ip address 10.255.67.2 255.255.255.252",
+        "ip ospf 10 area 20",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication key-chain OSPF20",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.7 255.255.255.255",
+        "ip ospf 10 area 20",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 172.21.32.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback101": [
+        "description LAB PREFIX",
+        "ip address 172.21.33.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback102": [
+        "description LAB PREFIX",
+        "ip address 172.21.34.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "interface Loopback103": [
+        "description LAB PREFIX",
+        "ip address 172.21.35.1 255.255.255.0",
+        "no shutdown"
+      ],
+      "ip prefix-list EXT-R7 seq 10 permit 172.21.32.0/24": [],
+      "ip prefix-list EXT-R7 seq 20 permit 172.21.33.0/24": [],
+      "ip prefix-list EXT-R7 seq 30 permit 172.21.34.0/24": [],
+      "ip prefix-list EXT-R7 seq 40 permit 172.21.35.0/24": [],
+      "route-map CONNECTED-R7 permit 10": [
+        "match ip address prefix-list EXT-R7"
+      ],
+      "router ospf 10": [
+        "router-id 7.7.7.7",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 20 nssa",
+        "redistribute connected subnets metric 30 metric-type 2 tag 707 route-map CONNECTED-R7"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    },
+    "R8": {
+      "hostname R8": [],
+      "no ip domain-lookup": [],
+      "ip cef": [],
+      "interface Ethernet0/0": [
+        "description TO-R3 AREA 30",
+        "ip address 10.255.38.2 255.255.255.252",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "ip ospf cost 10",
+        "ip ospf authentication null",
+        "no shutdown"
+      ],
+      "interface Loopback0": [
+        "description LAB PREFIX",
+        "ip address 10.255.0.8 255.255.255.255",
+        "ip ospf 10 area 30",
+        "no shutdown"
+      ],
+      "interface Loopback100": [
+        "description LAB PREFIX",
+        "ip address 10.30.0.1 255.255.255.0",
+        "ip ospf 10 area 30",
+        "ip ospf network point-to-point",
+        "no shutdown"
+      ],
+      "router ospf 10": [
+        "router-id 8.8.8.8",
+        "passive-interface default",
+        "no passive-interface Ethernet0/0",
+        "area 30 authentication message-digest",
+        "area 30 stub"
+      ],
+      "line con 0": [
+        "logging synchronous",
+        "exec-timeout 0 0"
+      ],
+      "end": []
+    }
+  }
+}

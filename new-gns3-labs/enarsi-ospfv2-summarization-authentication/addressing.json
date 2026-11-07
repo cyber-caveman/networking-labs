@@ -1,0 +1,499 @@
+{
+  "R1": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.12.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 2,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/1",
+      "ip": "10.255.13.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 3,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/2",
+      "ip": "10.255.15.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 5,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/3",
+      "ip": "10.255.16.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 6,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.1",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet1/0",
+      "ip": "10.255.12.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 2,
+      "vrf": "RED"
+    },
+    {
+      "name": "Ethernet1/1",
+      "ip": "10.255.15.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 5,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1000",
+      "ip": "10.255.0.1",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback900",
+      "ip": "198.18.0.1",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE",
+      "startup_vrf": "global"
+    }
+  ],
+  "R2": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.12.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 1,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/1",
+      "ip": "10.255.23.1",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 3,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/2",
+      "ip": "10.255.24.1",
+      "mask": "255.255.255.252",
+      "area": 10,
+      "peer": 4,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.2",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet1/0",
+      "ip": "10.255.12.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 1,
+      "vrf": "RED"
+    },
+    {
+      "name": "Ethernet1/1",
+      "ip": "10.255.24.1",
+      "mask": "255.255.255.252",
+      "area": 10,
+      "peer": 4,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1000",
+      "ip": "10.255.0.2",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "RED"
+    }
+  ],
+  "R3": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.13.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 1,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/1",
+      "ip": "10.255.23.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 2,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/2",
+      "ip": "10.255.34.1",
+      "mask": "255.255.255.252",
+      "area": 10,
+      "peer": 4,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/3",
+      "ip": "10.255.38.1",
+      "mask": "255.255.255.252",
+      "area": 30,
+      "peer": 8,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.3",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE"
+    }
+  ],
+  "R4": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.24.2",
+      "mask": "255.255.255.252",
+      "area": 10,
+      "peer": 2,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/1",
+      "ip": "10.255.34.2",
+      "mask": "255.255.255.252",
+      "area": 10,
+      "peer": 3,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.4",
+      "mask": "255.255.255.255",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback100",
+      "ip": "10.10.0.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback101",
+      "ip": "10.10.1.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback102",
+      "ip": "10.10.2.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback103",
+      "ip": "10.10.3.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback104",
+      "ip": "10.10.4.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback105",
+      "ip": "10.10.5.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback108",
+      "ip": "10.10.8.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback350",
+      "ip": "10.10.250.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet1/0",
+      "ip": "10.255.24.2",
+      "mask": "255.255.255.252",
+      "area": 10,
+      "peer": 2,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1000",
+      "ip": "10.255.0.4",
+      "mask": "255.255.255.255",
+      "area": 10,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1100",
+      "ip": "10.10.0.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1101",
+      "ip": "10.10.1.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1102",
+      "ip": "10.10.2.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1103",
+      "ip": "10.10.3.1",
+      "mask": "255.255.255.0",
+      "area": 10,
+      "vrf": "RED"
+    }
+  ],
+  "R5": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.15.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 1,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.5",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback100",
+      "ip": "172.20.16.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback101",
+      "ip": "172.20.17.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback102",
+      "ip": "172.20.18.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback103",
+      "ip": "172.20.19.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback104",
+      "ip": "172.20.99.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet1/0",
+      "ip": "10.255.15.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 1,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1000",
+      "ip": "10.255.0.5",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1100",
+      "ip": "172.20.16.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1101",
+      "ip": "172.20.17.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1102",
+      "ip": "172.20.18.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1103",
+      "ip": "172.20.19.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback1900",
+      "ip": "198.51.100.5",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "RED"
+    },
+    {
+      "name": "Loopback900",
+      "ip": "198.18.0.5",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE",
+      "startup_vrf": "global"
+    }
+  ],
+  "R6": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.16.2",
+      "mask": "255.255.255.252",
+      "area": 0,
+      "peer": 1,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Ethernet0/1",
+      "ip": "10.255.67.1",
+      "mask": "255.255.255.252",
+      "area": 20,
+      "peer": 7,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.6",
+      "mask": "255.255.255.255",
+      "area": 0,
+      "vrf": "BLUE"
+    }
+  ],
+  "R7": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.67.2",
+      "mask": "255.255.255.252",
+      "area": 20,
+      "peer": 6,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.7",
+      "mask": "255.255.255.255",
+      "area": 20,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback100",
+      "ip": "172.21.32.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback101",
+      "ip": "172.21.33.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback102",
+      "ip": "172.21.34.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback103",
+      "ip": "172.21.35.1",
+      "mask": "255.255.255.0",
+      "area": null,
+      "vrf": "BLUE"
+    }
+  ],
+  "R8": [
+    {
+      "name": "Ethernet0/0",
+      "ip": "10.255.38.2",
+      "mask": "255.255.255.252",
+      "area": 30,
+      "peer": 3,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback0",
+      "ip": "10.255.0.8",
+      "mask": "255.255.255.255",
+      "area": 30,
+      "vrf": "BLUE"
+    },
+    {
+      "name": "Loopback100",
+      "ip": "10.30.0.1",
+      "mask": "255.255.255.0",
+      "area": 30,
+      "vrf": "BLUE"
+    }
+  ]
+}

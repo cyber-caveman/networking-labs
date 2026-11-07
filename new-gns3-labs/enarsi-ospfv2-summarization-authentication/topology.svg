@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1320" viewBox="0 0 1500 1320">
+<rect width="1500" height="1320" fill="#f6f8fb"/>
+<text x="45" y="45" font-family="Arial" font-size="25" fill="#18334d">OSPFv2 VRF-Lite • BLUE and RED on the same eight routers</text>
+<line x1="750" y1="400" x2="450" y2="180" stroke="#466b8b" stroke-width="3"/>
+<rect x="510.0" y="268.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="600.0" y="285.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.12.0/30 · A0</text>
+<text x="600.0" y="303.0" text-anchor="middle" font-family="Arial" font-size="11">R1 e0/0 (.1) ↔ R2 e0/0 (.2)</text>
+<line x1="750" y1="400" x2="450" y2="620" stroke="#466b8b" stroke-width="3"/>
+<rect x="510.0" y="488.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="600.0" y="505.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.13.0/30 · A0</text>
+<text x="600.0" y="523.0" text-anchor="middle" font-family="Arial" font-size="11">R1 e0/1 (.1) ↔ R3 e0/0 (.2)</text>
+<line x1="450" y1="180" x2="450" y2="620" stroke="#466b8b" stroke-width="3"/>
+<rect x="360.0" y="378.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="450.0" y="395.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.23.0/30 · A0</text>
+<text x="450.0" y="413.0" text-anchor="middle" font-family="Arial" font-size="11">R2 e0/1 (.1) ↔ R3 e0/1 (.2)</text>
+<line x1="450" y1="180" x2="100" y2="400" stroke="#b66a11" stroke-width="3"/>
+<rect x="185.0" y="268.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="275.0" y="285.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.24.0/30 · A10</text>
+<text x="275.0" y="303.0" text-anchor="middle" font-family="Arial" font-size="11">R2 e0/2 (.1) ↔ R4 e0/0 (.2)</text>
+<line x1="450" y1="620" x2="100" y2="400" stroke="#b66a11" stroke-width="3"/>
+<rect x="185.0" y="488.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="275.0" y="505.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.34.0/30 · A10</text>
+<text x="275.0" y="523.0" text-anchor="middle" font-family="Arial" font-size="11">R3 e0/2 (.1) ↔ R4 e0/1 (.2)</text>
+<line x1="750" y1="400" x2="750" y2="100" stroke="#466b8b" stroke-width="3"/>
+<rect x="660.0" y="228.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="750.0" y="245.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.15.0/30 · A0</text>
+<text x="750.0" y="263.0" text-anchor="middle" font-family="Arial" font-size="11">R1 e0/2 (.1) ↔ R5 e0/0 (.2)</text>
+<line x1="750" y1="400" x2="1100" y2="400" stroke="#466b8b" stroke-width="3"/>
+<rect x="835.0" y="378.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="925.0" y="395.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.16.0/30 · A0</text>
+<text x="925.0" y="413.0" text-anchor="middle" font-family="Arial" font-size="11">R1 e0/3 (.1) ↔ R6 e0/0 (.2)</text>
+<line x1="1100" y1="400" x2="1400" y2="400" stroke="#087f72" stroke-width="3"/>
+<rect x="1160.0" y="378.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="1250.0" y="395.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.67.0/30 · A20</text>
+<text x="1250.0" y="413.0" text-anchor="middle" font-family="Arial" font-size="11">R6 e0/1 (.1) ↔ R7 e0/0 (.2)</text>
+<line x1="450" y1="620" x2="450" y2="880" stroke="#7957a4" stroke-width="3"/>
+<rect x="360.0" y="728.0" width="180" height="43" rx="5" fill="#f6f8fb"/>
+<text x="450.0" y="745.0" text-anchor="middle" font-family="Arial" font-size="13">BLUE 10.255.38.0/30 · A30</text>
+<text x="450.0" y="763.0" text-anchor="middle" font-family="Arial" font-size="11">R3 e0/3 (.1) ↔ R8 e0/0 (.2)</text>
+<circle cx="750" cy="400" r="29" fill="#18334d"/>
+<text x="750" y="406" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R1</text>
+<circle cx="450" cy="180" r="29" fill="#18334d"/>
+<text x="450" y="186" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R2</text>
+<circle cx="450" cy="620" r="29" fill="#18334d"/>
+<text x="450" y="626" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R3</text>
+<circle cx="100" cy="400" r="29" fill="#18334d"/>
+<text x="100" y="406" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R4</text>
+<circle cx="750" cy="100" r="29" fill="#18334d"/>
+<text x="750" y="106" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R5</text>
+<circle cx="1100" cy="400" r="29" fill="#18334d"/>
+<text x="1100" y="406" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R6</text>
+<circle cx="1400" cy="400" r="29" fill="#18334d"/>
+<text x="1400" y="406" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R7</text>
+<circle cx="450" cy="880" r="29" fill="#18334d"/>
+<text x="450" y="886" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R8</text>
+<text x="45" y="975" font-family="Arial" font-size="20" fill="#a52c3a">RED: independent OSPF 20, overlapping addresses, no leaks to BLUE/global</text>
+<line x1="920" y1="1080" x2="520" y2="1080" stroke="#a52c3a" stroke-width="3"/>
+<text x="720.0" y="1040" text-anchor="middle" font-family="Arial" font-size="14">10.255.12.0/30 · area 0</text>
+<text x="720.0" y="1125" text-anchor="middle" font-family="Arial" font-size="13">R1 e1/0 (.1) ↔ R2 e1/0 (.2)</text>
+<line x1="920" y1="1080" x2="1320" y2="1080" stroke="#a52c3a" stroke-width="3"/>
+<text x="1120.0" y="1040" text-anchor="middle" font-family="Arial" font-size="14">10.255.15.0/30 · area 0</text>
+<text x="1120.0" y="1125" text-anchor="middle" font-family="Arial" font-size="13">R1 e1/1 (.1) ↔ R5 e1/0 (.2)</text>
+<line x1="520" y1="1080" x2="120" y2="1080" stroke="#a52c3a" stroke-width="3"/>
+<text x="320.0" y="1040" text-anchor="middle" font-family="Arial" font-size="14">10.255.24.0/30 · area 10</text>
+<text x="320.0" y="1125" text-anchor="middle" font-family="Arial" font-size="13">R2 e1/1 (.1) ↔ R4 e1/0 (.2)</text>
+<circle cx="120" cy="1080" r="29" fill="#a52c3a"/>
+<text x="120" y="1086" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R4</text>
+<circle cx="520" cy="1080" r="29" fill="#a52c3a"/>
+<text x="520" y="1086" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R2</text>
+<circle cx="920" cy="1080" r="29" fill="#a52c3a"/>
+<text x="920" y="1086" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R1</text>
+<circle cx="1320" cy="1080" r="29" fill="#a52c3a"/>
+<text x="1320" y="1086" text-anchor="middle" font-family="Arial" font-size="19" fill="white">R5</text>
+<text x="45" y="1210" font-family="Arial" font-size="15">BLUE: original dual-ABR campus, external services, NSSA and stub branch.</text>
+<text x="45" y="1240" font-family="Arial" font-size="15">RED: duplicate campus/service addresses; unique 198.51.100.5/32 isolation probe on R5.</text>
+<text x="45" y="1270" font-family="Arial" font-size="15">R1/R5 Loopback900: pre-addressed globally, migrate to BLUE during V1.</text>
+</svg>
